@@ -1,7 +1,7 @@
 # Личный проект «Погнали» 
 
 * Студент: [Olga Chernikova](https://up.htmlacademy.ru/adaptive/23/user/1085591).
-* Наставник: [Павел Позняк](https://up.htmlacademy.ru/htmlcss/31/user/907403).
+* Наставник: [Павел Позняк](https://up.htmlacademy.ru/adaptive/23/user/907403).
 
 ---
 
