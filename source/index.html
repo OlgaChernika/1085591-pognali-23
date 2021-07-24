@@ -7,48 +7,48 @@
     <title>HTML Academy: Погнали</title>
   </head>
   <body>
-    <header>
-      <a href="#" class="header__logo" aria-label="Перейти на главную страницу">
-        <picture>
-          <img class="header__logo-image logo__image" src="" alt="Логотип сервиса Погнали">
-        </picture>
+    <header class="header">
+      <a href="#" class="header__logo logo" aria-label="Перейти на главную страницу">
+        <img class="logo__image" src="" alt="Логотип сервиса Погнали">
       </a>
-      <nav class="header__nav">
-        <button class="nav__toggle" type="button" aria-label="Кнопка открытия меню"></button>
-        <ul class="nav__list site__list">
-          <li class="site__item">
-            <a class="site__link" href="#">О сервисе</a>
+      <div class="header__menu">
+        <nav class="header__nav nav">
+          <button class="nav__toggle" type="button" aria-label="Кнопка открытия меню"></button>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">О сервисе</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="form.html">Направления</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="catalog.html">Попутчики</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__communications communications">
+          <ul class="communications__list">
+            <li class="communications__item">
+              <a class="communications__link communications__link--phone" href="tel:88005558628" aria-label="Наш телефон">8 800 555-86-28</a>
+            </li>
+            <li class="communications__item">
+              <a class="communications__link communications__link--email" href="mailto:mail@htmlacademy.ru" aria-label="Наш email">mail@htmlacademy.ru</a>
+            </li>
+          </ul>
+          <a class="communications__authorize authorize-link" href="#" aria-label="Перейти на страницу авторизации">Авторизация</a>
+        </div>
+        <ul class="header__social social">
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="#" aria-label="Наша страница на Facebook"></a>
           </li>
-          <li class="site__item">
-            <a class="site__link" href="form.html">Направления</a>
+          <li class="social__item">
+            <a class="social__link social__link--inst" href="#" aria-label="Наша страница в Instagram"></a>
           </li>
-          <li class="site__item">
-            <a class="site__link" href="catalog.html">Попутчики</a>
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#" aria-label="Наша страница в VK"></a>
           </li>
         </ul>
-      </nav>
-      <div class="header__communications communications">
-        <ul class="communications__list">
-          <li class="communications__item">
-            <a class="communications__link communications__link--phone" href="tel:88005558628" aria-label="Наш телефон">8 800 555-86-28</a>
-          </li>
-          <li class="communications__item">
-            <a class="communications__link communications__link--email" href="mailto:mail@htmlacademy.ru" aria-label="Наш email">mail@htmlacademy.ru</a>
-          </li>
-        </ul>
-        <a class="communications__authorize authorize-link" href="#" aria-label="Перейти на страницу авторизации">Авторизация</a>
       </div>
-      <ul class="header__social social__list">
-        <li class="social__item">
-          <a class="social__link social__link--fb" href="#" aria-label="Наша страница на Facebook"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--inst" href="#" aria-label="Наша страница в Instagram"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--vk" href="#" aria-label="Наша страница в VK"></a>
-        </li>
-      </ul>
     </header>
     <main>
       <h1 class="visyally-hidden">Сервис для поиска попутчиков для путешествий</h1>
@@ -69,7 +69,7 @@
           <p class="promo__review-quote">«Лучшее приложение, что я видел в жизни!»</p>
           <cite class="promo__review-author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
         </blockquote>
-        <ul class="promo__site-guide">
+        <ul class="promo__site-guide site-guide">
           <li class="site-guide__item">Выберите направление</li>
           <li class="site-guide__item">Изучите идеи путешественников</li>
           <li class="site-guide__item">Находите тех, кто похож на вас</li>
@@ -89,25 +89,19 @@
             <h3 class="routes__land-title">Таиланд</h3>
             <p class="routes__land-tagline">Джунгли зовут!</p>
             <span class="routes__counter">18321</span>
-            <picture>
-              <img class="routes__image" src="" alt="Побережье Тайланда">
-            </picture>
+            <img class="routes__image" src="" alt="Побережье Тайланда">
           </li>
           <li class="routes__item routes__item--france">
             <h3 class="routes__land-title">Франция</h3>
             <p class="routes__land-tagline">Трэ бьен, манифик!</p>
             <span class="routes__counter">12518</span>
-            <picture>
-              <img class="routes__image" src="" alt="Побережье Тайланда">
-            </picture>
+            <img class="routes__image" src="" alt="Бульвар Капуцинов">
           </li>
           <li class="routes__item routes__item--czech-republiic">
             <h3 class="routes__land-title">Чехия</h3>
             <p class="routes__land-tagline">Закоулки старой Европы</p>
             <span class="routes__counter">5326</span>
-            <picture>
-              <img class="routes__image" src="" alt="Побережье Тайланда">
-            </picture>
+            <img class="routes__image" src="" alt="Набережная Праги">
           </li>
         </ul>
         <a class="routes__link show-button" href="form.html" aria-label="Показать все направления">Показать все</a>
@@ -119,9 +113,7 @@
         <ul class="companions__list">
           <li class="companions__item profile">
             <a class="profile__link" href="#" aria-label="Посмотреть профиль">
-              <picture>
-                <img class="profile__image" src="" alt="Таня Фирсова - фото профиля">
-              </picture>
+              <img class="profile__image" src="" alt="Таня Фирсова - фото профиля">
             </a>
             <h3 class="profile__name">
               <a class="profile__name-link profile__status profile__status--offline" href="#" aria-label="Посмотреть профиль">Таня Фирсова</a>
@@ -159,25 +151,23 @@
               </li>
             </ul>
             <ul class="profile__way-list">
-              <li class="profile__way-item--current profile__way--fly">
+              <li class="profile__way-item profile__way-item--current profile__way-item--fly">
                 <span class="profile__tooltip">Авиаперелет</span>
               </li>
-              <li class="profile__way-item profile__way--car">
+              <li class=" profile__way-item profile__way-item--car">
                 <span class="profile__tooltip">Автотранспорт</span>
               </li>
-              <li class="profile__way-item profile__way--bicycle">
+              <li class="profile__way-item profile__way-item--bicycle">
                 <span class="profile__tooltip">Велосипед</span>
               </li>
-              <li class="profile__way-item profile__way--on-foot">
+              <li class="profile__way-item profile__way-item--on-foot">
                 <span class="profile__tooltip">Пешком</span>
               </li>
             </ul>
           </li>
           <li class="companions__item profile">
             <a class="profile__link" href="#" aria-label="Посмотреть профиль">
-              <picture>
-                <img class="profile__image" src="" alt="Петя Демин - фото профиля">
-              </picture>
+              <img class="profile__image" src="" alt="Петя Демин - фото профиля">
             </a>
             <h3 class="profile__name">
               <a class="profile__name-link profile__status profile__status--online" href="#" aria-label="Посмотреть профиль">Петя Демин</a>
@@ -209,36 +199,36 @@
               </li>
             </ul>
             <ul class="profile__way-list">
-              <li class="profile__way-item--current profile__way--fly">
+              <li class="profile__way-item profile__way-item--current profile__way-item--fly">
                 <span class="profile__tooltip">Авиаперелет</span>
               </li>
-              <li class="profile__way-item--current profile__way--car">
+              <li class="profile__way-item profile__way-item--current profile__way-item--car">
                 <span class="profile__tooltip">Автотранспорт</span>
               </li>
-              <li class="profile__way-item profile__way--bicycle">
+              <li class="profile__way-item profile__way-item--bicycle">
                 <span class="profile__tooltip">Велосипед</span>
               </li>
-              <li class="profile__way-item profile__way--on-foot">
+              <li class="profile__way-item profile__way-item--current profile__way-item--on-foot">
                 <span class="profile__tooltip">Пешком</span>
               </li>
             </ul>
           </li>
         </ul>
-        <a class="routes__link show-button" href="catalog.html" aria-label="Показать всех попутчиков">Показать всех</a>
+        <a class="companions__link show-button" href="catalog.html" aria-label="Показать всех попутчиков">Показать всех</a>
       </section>
       <section class="add-profile">
         <h2 class="add-profile__title">Добавьте свой профиль</h2>
         <picture>
           <img class="add-profile__image " src="" alt="Добавьте ваше фото">
         </picture>
-        <ul class="add-profile__tariff tariff__list">
+        <ul class="add-profile__tariff tariff">
           <li class="tariff__item">
             <dl class="tariff__advantage">
               <dt class="tariff__power">Базовое размещение</dt>
               <dd class="tariff__price">Бесплатно</dd>
             </dl>
           </li>
-          <li class="tariff_item">
+          <li class="tariff__item">
             <dl class="tariff__advantage">
               <dt class="tariff__power">Вывод на первых позициях</dt>
               <dd class="tariff__price"99 руб./мес</dd>
@@ -251,7 +241,7 @@
             </dl>
           </li>
         </ul>
-        <a class="add-profile__link tariff__link" href="#">Показать тарифы для бизнеса</a>
+        <a class="add-profile__link" href="#">Показать тарифы для бизнеса</a>
       </section>
       <section class="authorize">
         <h2 class="authorize__title">Авторизация и обратная связь</h2>
@@ -283,20 +273,16 @@
         </div>
         <div class="map__wrapper">
           <a class="map__link" href="#" aria-label="Открыть карту с адресом г. Санкт-Петербург, ул. Большая Конюшенная, 19/8">
-            <picture>
-              <img class="map__image" src="" alt="Карта с адресом г. Санкт-Петербург, ул. Большая Конюшенная, 19/8">
-            </picture>
+            <img class="map__image" src="" alt="Карта с адресом г. Санкт-Петербург, ул. Большая Конюшенная, 19/8">
           </a>
         </div>
       </section>
     </main>
-    <footer>
-      <a href="#" class="footer__logo" aria-label="Перейти на главную страницу">
-        <picture>
-          <img class="footer__logo-image logo__image" src="" alt="Логотип сервиса Погнали">
-        </picture>
+    <footer class="footer">
+      <a href="#" class="footer__logo logo" aria-label="Перейти на главную страницу">
+          <img class="logo__image" src="" alt="Логотип сервиса Погнали">
       </a>
-      <ul class="footer__social social__list">
+      <ul class="footer__social social">
         <li class="social__item">
           <a class="social__link social__link--fb" href="#" aria-label="Наша страница на Facebook"></a>
         </li>
@@ -312,9 +298,9 @@
         <a class="producer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML и CSS. Адаптивная вёрстка и автоматизация"></a>
       </div>
     </footer>
-    <section class="tariffs modal">
-      <h2 class="tariffs__title">Бизнес-тарифы</h2>
-      <ul class="tariff__list">
+    <section class="for-business modal">
+      <h2 class="for-business__title">Бизнес-тарифы</h2>
+      <ul class="for-business__tariff tariff">
         <li class="tariff__item">
           <dl class="tariff__advantage">
             <dt class="tariff__power">Реклама у блоггера</dt>
@@ -340,7 +326,7 @@
           </dl>
         </li>
       </ul>
-      <button class="tariffs__button-close" type="button">Закрыть окно</button>
+      <button class="for-business__button-close" type="button">Закрыть окно</button>
     </section>
   </body>
 </html>
