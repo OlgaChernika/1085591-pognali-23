@@ -9,20 +9,20 @@
   <body>
     <header class="header">
       <a href="#" class="header__logo logo" aria-label="Перейти на главную страницу">
-        <img class="logo__image" src="" alt="Логотип сервиса Погнали">
+        <img class="logo__image" src="../source/img/logo_mobile.svg" width="95" height="15" alt="Логотип сервиса Погнали">
       </a>
       <div class="header__menu">
         <nav class="header__nav nav">
-          <button class="nav__toggle" type="button" aria-label="Кнопка открытия меню"></button>
+          <button class="nav__toggle" type="button" aria-label="Кнопка открытия/закрытия меню"></button>
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link" href="#">О сервисе</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="form.html">Направления</a>
+              <a class="nav__link" href="../source/form.html">Направления</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="catalog.html">Попутчики</a>
+              <a class="nav__link" href="../source/catalog.html">Попутчики</a>
             </li>
           </ul>
         </nav>
@@ -51,7 +51,7 @@
       </div>
     </header>
     <main>
-      <h1 class="visyally-hidden">Сервис для поиска попутчиков для путешествий</h1>
+      <h1 class="visually-hidden">Сервис для поиска попутчиков для путешествий</h1>
       <section class="promo">
         <p class="promo__tagline">В путешествие с крутыми попутчиками!</p>
         <div class=" promo__communications communications">
@@ -89,22 +89,22 @@
             <h3 class="routes__land-title">Таиланд</h3>
             <p class="routes__land-tagline">Джунгли зовут!</p>
             <span class="routes__counter">18321</span>
-            <img class="routes__image" src="" alt="Побережье Тайланда">
+            <img class="routes__image" src="../source/img/thailand-mobile.jpg" width="270" height="110" alt="Побережье Тайланда">
           </li>
           <li class="routes__item routes__item--france">
             <h3 class="routes__land-title">Франция</h3>
             <p class="routes__land-tagline">Трэ бьен, манифик!</p>
             <span class="routes__counter">12518</span>
-            <img class="routes__image" src="" alt="Бульвар Капуцинов">
+            <img class="routes__image" src="../source/img/france-mobile.jpg" width="270" height="110" alt="Бульвар Капуцинов">
           </li>
           <li class="routes__item routes__item--czech-republiic">
             <h3 class="routes__land-title">Чехия</h3>
             <p class="routes__land-tagline">Закоулки старой Европы</p>
             <span class="routes__counter">5326</span>
-            <img class="routes__image" src="" alt="Набережная Праги">
+            <img class="routes__image" src="../source/img/czech-mobile.jpg" width="270" height="110" alt="Набережная Праги">
           </li>
         </ul>
-        <a class="routes__link show-button" href="form.html" aria-label="Показать все направления">Показать все</a>
+        <a class="routes__link show-button" href="../source/form.html" aria-label="Показать все направления">Показать все</a>
       </section>
       <section class="companions">
         <h2 class="companions__title">Попутчики</h2>
@@ -113,12 +113,14 @@
         <ul class="companions__list">
           <li class="companions__item profile">
             <a class="profile__link" href="#" aria-label="Посмотреть профиль">
-              <img class="profile__image" src="" alt="Таня Фирсова - фото профиля">
+              <img class="profile__image" src="../source/img/profile-firsova.jpg" width="270" height="270" alt="Таня Фирсова - фото профиля">
             </a>
             <h3 class="profile__name">
               <a class="profile__name-link profile__status profile__status--offline" href="#" aria-label="Посмотреть профиль">Таня Фирсова</a>
             </h3>
-            <span class="profile__level">99 level</span>
+            <div class="profile__level level">
+              <p class="level__number">99<span class="level__text">level</span></p>
+            </div>
             <ul class="profile__tags-list">
               <li class="profile__tags-item">
                 <a class="profile__tags-link" href="#" aria-label="Найти попутчика по тегу">#ЗОЖ</a>
@@ -154,7 +156,7 @@
               <li class="profile__way-item profile__way-item--current profile__way-item--fly">
                 <span class="profile__tooltip">Авиаперелет</span>
               </li>
-              <li class=" profile__way-item profile__way-item--car">
+              <li class="profile__way-item profile__way-item--car">
                 <span class="profile__tooltip">Автотранспорт</span>
               </li>
               <li class="profile__way-item profile__way-item--bicycle">
@@ -167,12 +169,14 @@
           </li>
           <li class="companions__item profile">
             <a class="profile__link" href="#" aria-label="Посмотреть профиль">
-              <img class="profile__image" src="" alt="Петя Демин - фото профиля">
+              <img class="profile__image" src="../source/img/profile-demin.jpg" width="270" height="270" alt="Петя Демин - фото профиля">
             </a>
             <h3 class="profile__name">
               <a class="profile__name-link profile__status profile__status--online" href="#" aria-label="Посмотреть профиль">Петя Демин</a>
             </h3>
-            <span class="profile__level">80 level</span>
+            <div class="profile__level level">
+              <p class="level__number">80<span class="level__text">level</span></p>
+            </div>
             <ul class="profile__tags-list">
               <li class="profile__tags-item">
                 <a class="profile__tags-link" href="#" aria-label="Найти попутчика по тегу">#бургер</a>
@@ -214,12 +218,12 @@
             </ul>
           </li>
         </ul>
-        <a class="companions__link show-button" href="catalog.html" aria-label="Показать всех попутчиков">Показать всех</a>
+        <a class="companions__link show-button" href="../source/catalog.html" aria-label="Показать всех попутчиков">Показать всех</a>
       </section>
       <section class="add-profile">
         <h2 class="add-profile__title">Добавьте свой профиль</h2>
         <picture>
-          <img class="add-profile__image " src="" alt="Добавьте ваше фото">
+          <img class="add-profile__image" src="../source/img/add-profile.png" width="100" height="100" alt="Добавьте ваше фото">
         </picture>
         <ul class="add-profile__tariff tariff">
           <li class="tariff__item">
@@ -231,7 +235,7 @@
           <li class="tariff__item">
             <dl class="tariff__advantage">
               <dt class="tariff__power">Вывод на первых позициях</dt>
-              <dd class="tariff__price"99 руб./мес</dd>
+              <dd class="tariff__price">99 руб./мес</dd>
             </dl>
           </li>
           <li class="tariff__item">
@@ -273,14 +277,14 @@
         </div>
         <div class="map__wrapper">
           <a class="map__link" href="#" aria-label="Открыть карту с адресом г. Санкт-Петербург, ул. Большая Конюшенная, 19/8">
-            <img class="map__image" src="" alt="Карта с адресом г. Санкт-Петербург, ул. Большая Конюшенная, 19/8">
+            <img class="map__image" src="../source/img/background_map.png" width="320" height="424" alt="Карта с адресом г. Санкт-Петербург, ул. Большая Конюшенная, 19/8">
           </a>
         </div>
       </section>
     </main>
     <footer class="footer">
       <a href="#" class="footer__logo logo" aria-label="Перейти на главную страницу">
-          <img class="logo__image" src="" alt="Логотип сервиса Погнали">
+          <img class="logo__image" src="../source/img/logo_mobile.svg" width="95" height="15" alt="Логотип сервиса Погнали">
       </a>
       <ul class="footer__social social">
         <li class="social__item">
