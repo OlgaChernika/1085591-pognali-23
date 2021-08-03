@@ -1,0 +1,15 @@
+.nav {
+  &__list {
+    @include list-reset;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  &__link {
+    color: $deep-blue-color;
+    text-transform: uppercase;
+  }
+}

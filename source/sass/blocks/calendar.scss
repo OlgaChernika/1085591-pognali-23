@@ -1,0 +1,109 @@
+.calendar {
+  &__month-wrapper {
+    margin-bottom: 22px;
+    border-top: 1px solid $border-calendar-color;
+    border-bottom: 1px solid $border-calendar-color;
+    display: flex;
+  }
+
+  &__month {
+    margin: 0;
+    padding: 11px 0;
+    min-width: 100px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: $blue-text;
+  }
+
+  &__arrow {
+    padding: 0;
+    width: 60px;
+    background-color: $white-color;
+  }
+
+  &__week {
+    @include list-reset;
+    margin: 0;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(7, 31px);
+  }
+
+  &__week-day {
+    display: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: $grey-text;
+  }
+
+  &__week-day--short {
+    display: block;
+  }
+
+  &__week-day--weekend {
+    color: $orange-text;
+  }
+
+  &__list {
+    @include list-reset;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(7, 31px);
+  }
+
+  &__item {
+    margin-left: -1px;
+    margin-top: -1px;
+    height: 31px;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: $blue-text;
+    background-color: $bg-grey-color;
+    border: 1px solid $bg-blue-grey-color;
+  }
+
+  &__item--disabled {
+    font-weight: normal;
+    color: $grey-opacity-text;
+    background-color: $white-color;
+  }
+
+  &__item--current {
+    background-color: $blue-text;
+    color: $white-color;
+  }
+
+  &__item--selected::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: -2px;
+    left: -1px;
+    border: 2px solid $orange-text;
+    z-index: 1;
+  }
+
+  &__month-beginning {
+    margin: 0;
+    display: none;
+  }
+
+  &__comment {
+    margin: 0;
+    display: none;
+  }
+}

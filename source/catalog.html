@@ -5,24 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Погнали</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="inner-page">
-    <header class="header">
-      <a href="../source/index.html" class="header__logo logo" aria-label="Перейти на главную страницу">
-        <img class="logo__image" src="../source/img/logo_mobile.svg" width="95" height="15" alt="Логотип сервиса Погнали">
-      </a>
+    <header class="inner-page__header header">
+      <div class="header__top-wrapper container">
+        <a href="index.html" class="header__logo logo" aria-label="Перейти на главную страницу">
+          <img class="logo__image logo__image--deep" src="img/logo_mobile.svg" width="95" height="15" alt="Логотип сервиса Погнали">
+          <img class="logo__image logo__image--white" src="img/logo_mobile-white.svg" width="95" height="15" alt="Логотип сервиса Погнали">
+        </a>
+        <button class="header__toggle" type="button" aria-label="Кнопка открытия/закрытия меню"></button>
+      </div>
       <div class="header__menu">
         <nav class="header__nav nav">
-          <button class="nav__toggle" type="button" aria-label="Кнопка открытия/закрытия меню"></button>
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link" href="#">О сервисе</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="../source/form.html">Направления</a>
+              <a class="nav__link" href="form.html">Направления</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="../source/catalog.html">Попутчики</a>
+              <a class="nav__link" href="catalog.html">Попутчики</a>
             </li>
           </ul>
         </nav>
@@ -51,142 +55,146 @@
       </div>
     </header>
     <main class="inner-page__catalog">
-      <h1 class="inner-page__title">Попутчики</h1>
+      <div class="inner-page__wrapper-title">
+        <h1 class="inner-page__title container">Попутчики</h1>
+      </div>
       <section class="land-filter">
-        <h2 class="land-filter__title">Фильтрация по странам:</h2>
-        <ul class="land-filter__route">
-          <li class="land-filter__route-item">
-            <a class="land-filter__route-link land-filter__route-link--current" href="#">Европа</a>
-          </li>
-          <li class="land-filter__route-item">
-            <a class="land-filter__route-link" href="#">Азия</a>
-          </li>
-          <li class="land-filter__route-item">
-            <a class="land-filter__route-link" href="#">Америка</a>
-          </li>
-          <li class="land-filter__route-item">
-            <a class="land-filter__route-link" href="#">Острова</a>
-          </li>
-        </ul>
-        <ul class="land-filter__alphabet alphabet">
-          <li class="alphabet__item">
-            <a class="alphabet__link alphabet__link--current" href="#">А</a>
-          </li>
-          <li class="alphabet__item">
-            <a class="alphabet__link" href="#">Б</a>
-          </li>
-          <li class="alphabet__item">
-            <a class="alphabet__link" href="#">В</a>
-          </li>
-          <li class="alphabet__item">
-            <a class="alphabet__link" href="#">Г</a>
-          </li>
-          <li class="alphabet__item">
-            <a class="alphabet__link" href="#">Д</a>
-          </li>
-          <li class="alphabet__item">
-            <a class="alphabet__link" href="#">Е</a>
-          </li>
-          <li class="alphabet__item">
-            <a class="alphabet__link" href="#">З</a>
-          </li>
-          <li class="alphabet__item">
-            <a class="alphabet__link" href="#">И</a>
-          </li>
-          <li class="alphabet__item">
-            <a class="alphabet__link" href="#">К</a>
-          </li>
-          <li class="alphabet__item">
-            <a class="alphabet__link" href="#">Л</a>
-          </li>
-          <li class="alphabet__item">
-            <a class="alphabet__link" href="#">М</a>
-          </li>
-          <li class="alphabet__item">
-            <a class="alphabet__link" href="#">Н</a>
-          </li>
-          <li class="alphabet__item">
-            <a class="alphabet__link" href="#">О</a>
-          </li>
-          <li class="alphabet__item">
-            <a class="alphabet__link" href="#">П</a>
-          </li>
-          <li class="alphabet__item">
-            <a class="alphabet__link" href="#">Р</a>
-          </li>
-          <li class="alphabet__item">
-            <a class="alphabet__link" href="#">С</a>
-          </li>
-          <li class="alphabet__item">
-            <a class="alphabet__link" href="#">Т</a>
-          </li>
-          <li class="alphabet__item">
-            <a class="alphabet__link" href="#">У</a>
-          </li>
-          <li class="alphabet__item">
-            <a class="alphabet__link" href="#">Ф</a>
-          </li>
-          <li class="alphabet__item">
-            <a class="alphabet__link" href="#">Х</a>
-          </li>
-          <li class="alphabet__item">
-            <a class="alphabet__link" href="#">Ч</a>
-          </li>
-          <li class="alphabet__item">
-            <a class="alphabet__link" href="#">Ш</a>
-          </li>
-          <li class="alphabet__item">
-            <a class="alphabet__link" href="#">Э</a>
-          </li>
-          <li class="alphabet__item">
-            <a class="alphabet__link" href="#">Ю</a>
-          </li>
-          <li class="alphabet__item">
-            <a class="alphabet__link" href="#">Я</a>
-          </li>
-        </ul>
-        <ul class="land-filter__routes-by-letter routes-by-letter">
-          <li class="routes-by-letter__item">
-            <a class="routes-by-letter__link" href="#">Австралия</a>
-          </li>
-          <li class="routes-by-letter__item">
-            <a class="routes-by-letter__link" href="#">Австрия</a>
-          </li>
-          <li class="routes-by-letter__item">
-            <a class="routes-by-letter__link" href="#">Азербайджан</a>
-          </li>
-          <li class="routes-by-letter__item">
-            <a class="routes-by-letter__link" href="#">Албания</a>
-          </li>
-          <li class="routes-by-letter__item">
-            <a class="routes-by-letter__link" href="#">Алжир</a>
-          </li>
-          <li class="routes-by-letter__item">
-            <a class="routes-by-letter__link" href="#">Ангола</a>
-          </li>
-          <li class="routes-by-letter__item">
-            <a class="routes-by-letter__link" href="#">Андорра</a>
-          </li>
-          <li class="routes-by-letter__item">
-            <a class="routes-by-letter__link" href="#">Антигуа и Барбуда</a>
-          </li>
-          <li class="routes-by-letter__item">
-            <a class="routes-by-letter__link" href="#">Аргентина</a>
-          </li>
-          <li class="routes-by-letter__item">
-            <a class="routes-by-letter__link" href="#">Армения</a>
-          </li>
-          <li class="routes-by-letter__item">
-            <a class="routes-by-letter__link" href="#">Афганистан</a>
-          </li>
-        </ul>
-        <button class="land-filter__close-button" type="button">Свернуть</button>
+        <div class="land-filter__container container">
+          <h2 class="land-filter__title">Фильтрация по странам:</h2>
+          <ul class="land-filter__route">
+            <li class="land-filter__route-item">
+              <a class="land-filter__route-link land-filter__route-link--current" href="#">Европа</a>
+            </li>
+            <li class="land-filter__route-item">
+              <a class="land-filter__route-link" href="#">Азия</a>
+            </li>
+            <li class="land-filter__route-item">
+              <a class="land-filter__route-link" href="#">Америка</a>
+            </li>
+            <li class="land-filter__route-item">
+              <a class="land-filter__route-link" href="#">Острова</a>
+            </li>
+          </ul>
+          <ul class="land-filter__alphabet alphabet">
+            <li class="alphabet__item">
+              <a class="alphabet__link alphabet__link--current" href="#">А</a>
+            </li>
+            <li class="alphabet__item">
+              <a class="alphabet__link" href="#">Б</a>
+            </li>
+            <li class="alphabet__item">
+              <a class="alphabet__link" href="#">В</a>
+            </li>
+            <li class="alphabet__item">
+              <a class="alphabet__link" href="#">Г</a>
+            </li>
+            <li class="alphabet__item">
+              <a class="alphabet__link" href="#">Д</a>
+            </li>
+            <li class="alphabet__item">
+              <a class="alphabet__link" href="#">Е</a>
+            </li>
+            <li class="alphabet__item">
+              <a class="alphabet__link" href="#">З</a>
+            </li>
+            <li class="alphabet__item">
+              <a class="alphabet__link" href="#">И</a>
+            </li>
+            <li class="alphabet__item">
+              <a class="alphabet__link" href="#">К</a>
+            </li>
+            <li class="alphabet__item">
+              <a class="alphabet__link" href="#">Л</a>
+            </li>
+            <li class="alphabet__item">
+              <a class="alphabet__link" href="#">М</a>
+            </li>
+            <li class="alphabet__item">
+              <a class="alphabet__link" href="#">Н</a>
+            </li>
+            <li class="alphabet__item">
+              <a class="alphabet__link" href="#">О</a>
+            </li>
+            <li class="alphabet__item">
+              <a class="alphabet__link" href="#">П</a>
+            </li>
+            <li class="alphabet__item">
+              <a class="alphabet__link" href="#">Р</a>
+            </li>
+            <li class="alphabet__item">
+              <a class="alphabet__link" href="#">С</a>
+            </li>
+            <li class="alphabet__item">
+              <a class="alphabet__link" href="#">Т</a>
+            </li>
+            <li class="alphabet__item">
+              <a class="alphabet__link" href="#">У</a>
+            </li>
+            <li class="alphabet__item">
+              <a class="alphabet__link" href="#">Ф</a>
+            </li>
+            <li class="alphabet__item">
+              <a class="alphabet__link" href="#">Х</a>
+            </li>
+            <li class="alphabet__item">
+              <a class="alphabet__link" href="#">Ч</a>
+            </li>
+            <li class="alphabet__item">
+              <a class="alphabet__link" href="#">Ш</a>
+            </li>
+            <li class="alphabet__item">
+              <a class="alphabet__link" href="#">Э</a>
+            </li>
+            <li class="alphabet__item">
+              <a class="alphabet__link" href="#">Ю</a>
+            </li>
+            <li class="alphabet__item">
+              <a class="alphabet__link" href="#">Я</a>
+            </li>
+          </ul>
+          <ul class="land-filter__routes-by-letter routes-by-letter">
+            <li class="routes-by-letter__item">
+              <a class="routes-by-letter__link" href="#">Австралия</a>
+            </li>
+            <li class="routes-by-letter__item">
+              <a class="routes-by-letter__link" href="#">Австрия</a>
+            </li>
+            <li class="routes-by-letter__item">
+              <a class="routes-by-letter__link" href="#">Азербайджан</a>
+            </li>
+            <li class="routes-by-letter__item">
+              <a class="routes-by-letter__link" href="#">Албания</a>
+            </li>
+            <li class="routes-by-letter__item">
+              <a class="routes-by-letter__link" href="#">Алжир</a>
+            </li>
+            <li class="routes-by-letter__item">
+              <a class="routes-by-letter__link" href="#">Ангола</a>
+            </li>
+            <li class="routes-by-letter__item">
+              <a class="routes-by-letter__link" href="#">Андорра</a>
+            </li>
+            <li class="routes-by-letter__item">
+              <a class="routes-by-letter__link" href="#">Антигуа и Барбуда</a>
+            </li>
+            <li class="routes-by-letter__item">
+              <a class="routes-by-letter__link" href="#">Аргентина</a>
+            </li>
+            <li class="routes-by-letter__item">
+              <a class="routes-by-letter__link" href="#">Армения</a>
+            </li>
+            <li class="routes-by-letter__item">
+              <a class="routes-by-letter__link" href="#">Афганистан</a>
+            </li>
+          </ul>
+          <button class="land-filter__close-button" type="button">Свернуть</button>
+        </div>
       </section>
       <section class="companions-filter">
         <h2 class="companions-filter__title">Подберите идеального попутчика</h2>
         <form class="companions-filter__form" action="https://echo.htmlacademy.ru" method="GET">
           <fieldset class="companions-filter__fieldset">
-            <legend class="companions-filter__legend">Хобби:</legend>
+            <button class="companions-filter__button" type="button">Хобби:</button>
             <ul class="companions-filter__checkbox checkbox">
               <li class="checkbox__item">
                 <input class="checkbox__input visually-hidden" type="checkbox" name="hobby" id="hobby-gym" value="gym">
@@ -203,8 +211,8 @@
             </ul>
           </fieldset>
           <fieldset class="companions-filter__fieldset">
-            <legend class="companions-filter__legend">Музыка:</legend>
-            <ul class="companions-filter__checkbox checkbox">
+            <button class="companions-filter__button" type="button">Музыка:</button>
+            <ul class="companions-filter__checkbox companions-filter__checkbox--opened checkbox">
               <li class="checkbox__item">
                 <input class="checkbox__input visually-hidden" type="checkbox" name="music" id="music-rock" value="rock">
                 <label class="checkbox__label" for="music-rock">Тяжелый рок</label>
@@ -220,7 +228,7 @@
             </ul>
           </fieldset>
           <fieldset class="companions-filter__fieldset">
-            <legend class="companions-filter__legend">Еда:</legend>
+            <button class="companions-filter__button" type="button">Еда:</button>
             <ul class="companions-filter__checkbox checkbox">
               <li class="checkbox__item">
                 <input class="checkbox__input visually-hidden" type="checkbox" name="food" id="food-meat" value="meat">
@@ -237,8 +245,8 @@
             </ul>
           </fieldset>
           <fieldset class="companions-filter__fieldset">
-            <legend class="companions-filter__legend">Транспорт:</legend>
-            <ul class="companions-filter__checkbox transport">
+            <button class="companions-filter__button" type="button">Транспорт:</button>
+            <ul class="companions-filter__checkbox companions-filter__checkbox--opened transport">
               <li class="transport__item">
                 <input class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-fly" value="fly">
                 <label class="transport__label transport__label--fly" for="transport-fly">
@@ -262,8 +270,8 @@
             </ul>
           </fieldset>
           <fieldset class="companions-filter__fieldset">
-            <legend class="companions-filter__legend">Левел:</legend>
-            <div class="companions-filter__range">
+            <button class="companions-filter__button" type="button">Левел:</button>
+            <div class="companions-filter__range companions-filter__checkbox companions-filter__checkbox--opened">
               <div class="companions-filter__range-controls">
                 <div class="companions-filter__scale">
                   <div class="companions-filter__bar"></div>
@@ -272,26 +280,26 @@
                 <button class="companions-filter__toggle companions-filter__toggle--max" type="button" aria-label="Настроить максимальный уровень"></button>
               </div>
               <div class="companions-filter__levels">
-                <span class="companions-filter__min-level">30</span>
-                <span class="companions-filter__max-level">100</span>
+                <input class="companions-filter__input companions-filter__input--min-level" type="text" name="min-vevel" value="30"></input>
+                <input class="companions-filter__input companions-filter__input--max-level" type="text" name="max-level" value="100"></input>
               </div>
             </div>
           </fieldset>
-          <button class="companions-filter__button" type="submit">Показать</button>
+          <button class="companions-filter__button-show" type="submit">Показать</button>
         </form>
       </section>
       <section class="catalog">
         <div class="catalog__wrapper">
           <h2 class="visually-hidden">Список попутчиков</h2>
-          <ul class="catalog__list">
+          <ul class="catalog__list ">
             <li class="catalog__item card">
               <div class="card__name-wrapper">
-                <h3 class="card__name">
-                  <a class="card__name-link card__status card__status--offline">Таня Фирсова</a>
-                </h3>
                 <a class="card__link" href="#" aria-label="Посмотреть профиль">
-                  <img class="card__img" src="../source/img/firsova-min.jpg" width="70" height="70" alt="Таня Фирсова - фото профиля">
+                  <img class="card__img" src="img/firsova-min.jpg" width="70" height="70" alt="Таня Фирсова - фото профиля">
                 </a>
+                <h3 class="card__name">
+                  <a class="card__name-link card__status">Таня Фирсова</a>
+                </h3>
                 <ul class="card__tags-list">
                   <li class="card__tags-item">
                     <a class="card__tags-link" href="#" aria-label="Найти попутчика по тегу">#ЗОЖ</a>
@@ -309,54 +317,59 @@
                     <a class="card__tags-link" href="#" aria-label="Найти попутчика по тегу">#авокадо</a>
                   </li>
                   <li class="card__tags-item">
-                    <a class="card__tags-link" aria-label="Найти попутчика по тегу">#смузи</a>
+                    <a class="card__tags-link" href="#" aria-label="Найти попутчика по тегу">#смузи</a>
                   </li>
                 </ul>
               </div>
-              <div class="card__routes-wrapper">
-                <p class="card__routes-description">хочет посетить:</p>
+              <div class="card__wrapper card__routes-wrapper">
+                <p class="card__description card__routes-description ">хочет посетить:</p>
                 <ul class="card__routes">
                   <li class="card__routes-item card__routes-item--sri-lanka">Шри-Ланка</li>
                   <li class="card__routes-item card__routes-item--thailand">Тайланд</li>
                   <li class="card__routes-item card__routes-item--seychelles">Сейшелы</li>
                 </ul>
               </div>
-              <div class="card__transport-wrapper">
-                <p class="card__transport-description">транспорт:</p>
-                <ul class="card__transrort">
-                  <li class="card__transrort-item card__transrort-item--current card__transrort-item--fly">
-                    <span class="card__tooltip">Авиаперелет</span>
-                  </li>
-                  <li class="card__transrort-item card__transrort-item--car">
-                    <span class="card__tooltip">Автотранспорт</span>
-                  </li>
-                  <li class="card__transrort-item card__transrort-item--bicycle">
-                    <span class="card__tooltip">Велосипед</span>
-                  </li>
-                  <li class="card__transrort-item card__transrort-item--on-foot">
-                    <span class="card__tooltip">Пешком</span>
-                  </li>
-                </ul>
+              <div class="card__wrapper card__transport-level-wrapper">
+                <div class="card__transport-wrapper">
+                  <p class="card__description card__transport-description">транспорт:</p>
+                  <ul class="card__transport">
+                    <li class="card__transport-item card__transport-item--current card__transport-item--fly">
+                      <span class="card__tooltip">Авиаперелет</span>
+                    </li>
+                    <li class="card__transport-item card__transport-item--car">
+                      <span class="card__tooltip">Автотранспорт</span>
+                    </li>
+                    <li class="card__transport-item card__transport-item--bicycle">
+                      <span class="card__tooltip">Велосипед</span>
+                    </li>
+                    <li class="card__transport-item card__transport-item--on-foot">
+                      <span class="card__tooltip">Пешком</span>
+                    </li>
+                  </ul>
+                </div>
                 <div class="card__level-wrapper">
-                  <p class="card__level-description">левел:</p>
+                  <p class="card__description card__level-description">левел:</p>
                   <div class="card__level level">
-                    <p class="level__number">99<span class="level__text level__text--hidden">level</span></p>
+                    <div class="level__number">
+                      <span class="level__text level__text--bold">99</span>
+                      <span class="level__text level__text--hidden">level</span>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="card__add-wrapper">
-                <button class="card__add-button" type="button">Позвать!</button>
+                <a class="card__add-button" href="#">Позвать!</a>
                 <span class="card__like-counter card__like-counter--liked">1,5 М</span>
               </div>
             </li>
             <li class="catalog__item card">
               <div class="card__name-wrapper">
-                <h3 class="card__name">
-                  <a class="card__name-link card__status card__status--offline">Петя Демин</a>
-                </h3>
                 <a class="card__link" href="#" aria-label="Посмотреть профиль">
-                  <img class="card__img" src="../source/img/demin-min.jpg" width="70" height="70" alt="Петя Демин - фото профиля">
+                  <img class="card__img" src="img/demin-min.jpg" width="70" height="70" alt="Петя Демин - фото профиля">
                 </a>
+                <h3 class="card__name">
+                  <a class="card__name-link card__status">Петя Демин</a>
+                </h3>
                 <ul class="card__tags-list">
                   <li class="card__tags-item">
                     <a class="card__tags-link" href="#" aria-label="Найти попутчика по тегу">#бургер</a>
@@ -375,49 +388,54 @@
                   </li>
                 </ul>
               </div>
-              <div class="card__routes-wrapper">
-                <p class="card__routes-description">хочет посетить:</p>
+              <div class="card__wrapper card__routes-wrapper">
+                <p class="card__description card__routes-description">хочет посетить:</p>
                 <ul class="card__routes">
                   <li class="card__routes-item card__routes-item--belgium">Бельгия</li>
                   <li class="card__routes-item card__routes-item--czech">Чехия</li>
                 </ul>
               </div>
-              <div class="card__transport-wrapper">
-                <p class="card__transport-description">транспорт:</p>
-                <ul class="card__transrort">
-                  <li class="card__transrort-item card__transrort-item--current card__transrort-item--fly">
-                    <span class="card__tooltip">Авиаперелет</span>
-                  </li>
-                  <li class="card__transrort-item card__transrort-item--current card__transrort-item--car">
-                    <span class="card__tooltip">Автотранспорт</span>
-                  </li>
-                  <li class="card__transrort-item card__transrort-item--bicycle">
-                    <span class="card__tooltip">Велосипед</span>
-                  </li>
-                  <li class="card__transrort-item card__transrort-item--current card__transrort-item--on-foot">
-                    <span class="card__tooltip">Пешком</span>
-                  </li>
-                </ul>
+              <div class="card__wrapper card__transport-level-wrapper">
+                <div class="card__transport-wrapper">
+                  <p class="card__description card__transport-description">транспорт:</p>
+                  <ul class="card__transport">
+                    <li class="card__transport-item card__transport-item--current card__transport-item--fly">
+                      <span class="card__tooltip">Авиаперелет</span>
+                    </li>
+                    <li class="card__transport-item card__transport-item--current card__transport-item--car">
+                      <span class="card__tooltip">Автотранспорт</span>
+                    </li>
+                    <li class="card__transport-item card__transport-item--bicycle">
+                      <span class="card__tooltip">Велосипед</span>
+                    </li>
+                    <li class="card__transport-item card__transport-item--current card__transport-item--on-foot">
+                      <span class="card__tooltip">Пешком</span>
+                    </li>
+                  </ul>
+                </div>
                 <div class="card__level-wrapper">
-                  <p class="card__level-description">левел:</p>
+                  <p class="card__description card__level-description">левел:</p>
                   <div class="card__level level">
-                    <p class="level__number">80<span class="level__text level__text--hidden">level</span></p>
+                    <div class="level__number">
+                      <span class="level__text level__text--bold">80</span>
+                      <span class="level__text level__text--hidden">level</span>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="card__add-wrapper">
-                <button class="card__add-button" type="button">Позвать!</button>
+                <a class="card__add-button" href="#">Позвать!</a>
                 <span class="card__like-counter">1500</span>
               </div>
             </li>
             <li class="catalog__item card">
               <div class="card__name-wrapper">
-                <h3 class="card__name">
-                  <a class="card__name-link card__status card__status--offline">Марк Смолов</a>
-                </h3>
                 <a class="card__link" href="#" aria-label="Посмотреть профиль">
-                  <img class="card__img" src="../source/img/smolov-min.jpg" width="70" height="70" alt="Марк Смолов - фото профиля">
+                  <img class="card__img" src="img/smolov-min.jpg" width="70" height="70" alt="Марк Смолов - фото профиля">
                 </a>
+                <h3 class="card__name">
+                  <a class="card__name-link card__status">Марк Смолов</a>
+                </h3>
                 <ul class="card__tags-list">
                   <li class="card__tags-item">
                     <a class="card__tags-link" href="#" aria-label="Найти попутчика по тегу">#рэп</a>
@@ -436,50 +454,55 @@
                   </li>
                 </ul>
               </div>
-              <div class="card__routes-wrapper">
-                <p class="card__routes-description">хочет посетить:</p>
+              <div class="card__wrapper card__routes-wrapper">
+                <p class="card__description card__routes-description">хочет посетить:</p>
                 <ul class="card__routes">
                   <li class="card__routes-item card__routes-item--usa">США</li>
                   <li class="card__routes-item card__routes-item--australia">Австралия</li>
                   <li class="card__routes-item card__routes-item--dominica">Доминика</li>
                 </ul>
               </div>
-              <div class="card__transport-wrapper">
-                <p class="card__transport-description">транспорт:</p>
-                <ul class="card__transrort">
-                  <li class="card__transrort-item card__transrort-item--current card__transrort-item--fly">
-                    <span class="card__tooltip">Авиаперелет</span>
-                  </li>
-                  <li class="card__transrort-item card__transrort-item--car">
-                    <span class="card__tooltip">Автотранспорт</span>
-                  </li>
-                  <li class="card__transrort-item card__transrort-item--current card__transrort-item--bicycle">
-                    <span class="card__tooltip">Велосипед</span>
-                  </li>
-                  <li class="card__transrort-item card__transrort-item--on-foot">
-                    <span class="card__tooltip">Пешком</span>
-                  </li>
-                </ul>
+              <div class="card__wrapper card__transport-level-wrapper">
+                <div class="card__transport-wrapper">
+                  <p class="card__description card__transport-description">транспорт:</p>
+                  <ul class="card__transport">
+                    <li class="card__transport-item card__transport-item--current card__transport-item--fly">
+                      <span class="card__tooltip">Авиаперелет</span>
+                    </li>
+                    <li class="card__transport-item card__transport-item--car">
+                      <span class="card__tooltip">Автотранспорт</span>
+                    </li>
+                    <li class="card__transport-item card__transport-item--current card__transport-item--bicycle">
+                      <span class="card__tooltip">Велосипед</span>
+                    </li>
+                    <li class="card__transport-item card__transport-item--on-foot">
+                      <span class="card__tooltip">Пешком</span>
+                    </li>
+                  </ul>
+                </div>
                 <div class="card__level-wrapper">
-                  <p class="card__level-description">левел:</p>
+                  <p class="card__description card__level-description">левел:</p>
                   <div class="card__level level">
-                    <p class="level__number">25<span class="level__text level__text--hidden">level</span></p>
+                    <div class="level__number">
+                      <span class="level__text level__text--bold">25</span>
+                      <span class="level__text level__text--hidden">level</span>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="card__add-wrapper">
-                <button class="card__add-button" type="button">Позвать!</button>
+                <a class="card__add-button" href="#">Позвать!</a>
                 <span class="card__like-counter">170</span>
               </div>
             </li>
             <li class="catalog__item card">
               <div class="card__name-wrapper">
+                <a class="card__link" href="#" aria-label="Посмотреть профиль">
+                  <img class="card__img" src="img/rogovaya-min.jpg" width="70" height="70" alt="Лариса Роговая - фото профиля">
+                </a>
                 <h3 class="card__name">
                   <a class="card__name-link card__status card__status--online">Лариса Роговая</a>
                 </h3>
-                <a class="card__link" href="#" aria-label="Посмотреть профиль">
-                  <img class="card__img" src="../source/img/rogovaya-min.jpg" width="70" height="70" alt="Лариса Роговая - фото профиля">
-                </a>
                 <ul class="card__tags-list">
                   <li class="card__tags-item">
                     <a class="card__tags-link" href="#" aria-label="Найти попутчика по тегу">#образование</a>
@@ -495,45 +518,49 @@
                   </li>
                 </ul>
               </div>
-              <div class="card__routes-wrapper">
-                <p class="card__routes-description">хочет посетить:</p>
+              <div class="card__wrapper card__routes-wrapper">
+                <p class="card__description card__routes-description">хочет посетить:</p>
                 <ul class="card__routes">
                   <li class="card__routes-item card__routes-item--uk">Великобритания</li>
                   <li class="card__routes-item card__routes-item--germany">Германия</li>
                 </ul>
               </div>
-              <div class="card__transport-wrapper">
-                <p class="card__transport-description">транспорт:</p>
-                <ul class="card__transrort">
-                  <li class="card__transrort-item card__transrort-item--current card__transrort-item--fly">
-                    <span class="card__tooltip">Авиаперелет</span>
-                  </li>
-                  <li class="card__transrort-item card__transrort-item--current card__transrort-item--car">
-                    <span class="card__tooltip">Автотранспорт</span>
-                  </li>
-                  <li class="card__transrort-item card__transrort-item--bicycle">
-                    <span class="card__tooltip">Велосипед</span>
-                  </li>
-                  <li class="card__transrort-item card__transrort-item--on-foot">
-                    <span class="card__tooltip">Пешком</span>
-                  </li>
-                </ul>
+              <div class="card__wrapper card__transport-level-wrapper">
+                <div class="card__transport-wrapper">
+                  <p class="card__description card__transport-description">транспорт:</p>
+                  <ul class="card__transport">
+                    <li class="card__transport-item card__transport-item--current card__transport-item--fly">
+                      <span class="card__tooltip">Авиаперелет</span>
+                    </li>
+                    <li class="card__transport-item card__transport-item--current card__transport-item--car">
+                      <span class="card__tooltip">Автотранспорт</span>
+                    </li>
+                    <li class="card__transport-item card__transport-item--bicycle">
+                      <span class="card__tooltip">Велосипед</span>
+                    </li>
+                    <li class="card__transport-item card__transport-item--on-foot">
+                      <span class="card__tooltip">Пешком</span>
+                    </li>
+                  </ul>
+                </div>
                 <div class="card__level-wrapper">
-                  <p class="card__level-description">левел:</p>
+                  <p class="card__description card__level-description">левел:</p>
                   <div class="card__level level">
-                    <p class="level__number">50<span class="level__text level__text--hidden">level</span></p>
+                    <div class="level__number">
+                      <span class="level__text level__text--bold">50</span>
+                      <span class="level__text level__text--hidden">level</span>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="card__add-wrapper">
-                <button class="card__add-button" type="button">Позвать!</button>
+                <a class="card__add-button" href="#">Позвать!</a>
                 <span class="card__like-counter">23</span>
               </div>
             </li>
           </ul>
           <button class="catalog__button-show-more" type="button">Показать еще</button>
           <div class="catalog__pagination pagination">
-            <button class="pagination__button pagination__button--back" type="button" aria-label="Назад"></button>
             <ul class="pagination__list pagination__list--hidden">
               <li class="pagination__item">
                 <a class="pagination__link pagination__link--current" href="#">1</a>
@@ -548,29 +575,32 @@
                 <a class="pagination__link" href="#">4</a>
               </li>
             </ul>
+            <button class="pagination__button pagination__button--back" type="button" aria-label="Назад"></button>
             <button class="pagination__button pagination__button--next" type="button" aria-label="Вперед"></button>
           </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <a href="../source/index.html" class="footer__logo logo" aria-label="Перейти на главную страницу">
-        <img class="logo__image" src="../source/img/logo_mobile.svg" width="95" height="15" alt="Логотип сервиса Погнали">
-      </a>
-      <ul class="footer__social social">
-        <li class="social__item">
-          <a class="social__link social__link--fb" href="#" aria-label="Наша страница на Facebook"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--inst" href="#" aria-label="Наша страница в Instagram"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--vk" href="#" aria-label="Наша страница в VK"></a>
-        </li>
-      </ul>
-      <div class="footer__producer producer">
-        <p class="producer__description">Разработано</p>
-        <a class="producer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML и CSS. Адаптивная вёрстка и автоматизация"></a>
+      <div class="footer__container container">
+        <a href="index.html" class="footer__logo logo" aria-label="Перейти на главную страницу">
+          <img class="logo__image" src="img/logo_mobile.svg" width="95" height="15" alt="Логотип сервиса Погнали">
+        </a>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--yellow social__link--fb" href="#" aria-label="Наша страница на Facebook"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--yellow social__link--inst" href="#" aria-label="Наша страница в Instagram"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--yellow social__link--vk" href="#" aria-label="Наша страница в VK"></a>
+          </li>
+        </ul>
+        <div class="footer__producer producer">
+          <p class="producer__description">Разработано</p>
+          <a class="producer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML и CSS. Адаптивная вёрстка и автоматизация"></a>
+        </div>
       </div>
     </footer>
   </body>

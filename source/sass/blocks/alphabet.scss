@@ -1,0 +1,44 @@
+.alphabet {
+  display: grid;
+  grid-template-columns: repeat(5, min-content);
+
+  &__item {
+    margin-bottom: -1px;
+    margin-right: -1px;
+    width: 45px;
+    height: 41px;
+    border: 1px solid $bg-blue-grey-color;
+  }
+
+  &__link {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $white-color;
+    color: $blue-text;
+  }
+
+  &__link--current {
+    background-color: $blue-text;
+    color: $white-color;
+  }
+
+  &__link--form {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__link--form-current {
+    background-color: $bg-grey-color;
+    color: $blue-text;
+  }
+}

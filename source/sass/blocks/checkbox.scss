@@ -1,0 +1,25 @@
+.checkbox {
+  &__label {
+    padding-left: 27px;
+    margin-bottom: 12px;
+    display: flex;
+    position: relative;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: $black-text;
+    cursor: pointer;
+  }
+
+  &__label::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    background-color: $white-color;
+  }
+ }

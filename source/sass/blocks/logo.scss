@@ -1,0 +1,9 @@
+.logo {
+  &__image {
+    z-index: 1;
+  }
+
+  .logo__image--deep {
+    display: none;
+  }
+}

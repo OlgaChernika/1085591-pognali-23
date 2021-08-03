@@ -1,0 +1,61 @@
+.map {
+  padding-top: 30px;
+  background-color: $light-yellow-color;
+  color: $blue-text;
+
+  &__container {
+    background-color: $light-yellow-color;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    z-index: 1;
+  }
+
+  &__route {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__route-address {
+    margin: 0;
+    margin-bottom: 32px;
+    padding-left: 60px;
+    padding-right: 25px;
+    position: relative;
+    text-transform: uppercase;
+  }
+
+  &__route-address::before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: $dark-bg-blue-color;
+  }
+
+  &__route-link {
+    margin-bottom: 30px;
+    padding: 22px;
+    width: 100%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    color: $blue-text;
+    border: 3px solid $deep-blue-color;
+    border-radius: 10px;
+  }
+
+  &__link {
+    width: 100%;
+    background-color: $light-grey-color;
+  }
+
+  &__image {
+  width: 100%;
+  }
+}

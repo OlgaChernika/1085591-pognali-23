@@ -1,0 +1,85 @@
+.user-profile {
+  padding-top: 20px;
+
+  &__image-level-wrapper {
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__add-image {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  &__add-image-label {
+    margin-bottom: 25px;
+    padding: 10px;
+    width: 100%;
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: $dark-text;
+    background-color: $special-blue-light-color;
+    border-radius: 20px;
+  }
+
+  &__title {
+    margin: 0 auto;
+    margin-bottom: -10px;
+    padding: 0 10px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $blue-text;
+    background-color: $bg-grey-color;
+  }
+
+  &__fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  &__tags {
+    padding: 25px 28px 25px 26px;
+    width: 100%;
+    border: 1px solid $border-input-color;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: $textarea-grey;
+    background-color: $transparent-bg;
+    border-radius: 10px;
+  }
+
+  &__tags-fieldset {
+    margin-bottom: 25px;
+  }
+
+  &__transport-fieldset {
+    margin-bottom: 35px;
+    border: 1px solid $border-input-color;
+    border-radius: 10px;
+  }
+
+  &__transport-checkbox {
+    @include list-reset;
+    padding: 16px 0;
+    margin: 0;
+    justify-content: center;
+  }
+}

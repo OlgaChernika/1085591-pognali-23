@@ -1,1 +1,52 @@
-// Начните писать стили здесь
+// global
+@import "../sass/global/fonts.scss";
+@import "../sass/global/normalize.scss";
+@import "../sass/global/variables.scss";
+@import "../sass/global/mixins.scss";
+@import "../sass/global/global.scss";
+// blocks
+@import "../sass/blocks/page.scss";
+@import "../sass/blocks/header.scss";
+@import "../sass/blocks/logo.scss";
+@import "../sass/blocks/nav.scss";
+@import "../sass/blocks/promo.scss";
+@import "../sass/blocks/communications.scss";
+@import "../sass/blocks/authorize-link.scss";
+@import "../sass/blocks/social.scss";
+@import "../sass/blocks/site-guide.scss";
+@import "../sass/blocks/service.scss";
+@import "../sass/blocks/routes.scss";
+@import "../sass/blocks/show-button.scss";
+@import "../sass/blocks/companions.scss";
+@import "../sass/blocks/profile.scss";
+@import "../sass/blocks/add-profile.scss";
+@import "../sass/blocks/tariff.scss";
+@import "../sass/blocks/authorize.scss";
+@import "../sass/blocks/map.scss";
+@import "../sass/blocks/footer.scss";
+@import "../sass/blocks/producer.scss";
+@import "../sass/blocks/for-business.scss";
+
+@import "../sass/blocks/inner-page.scss";
+@import "../sass/blocks/land-filter.scss";
+@import "../sass/blocks/alphabet.scss";
+@import "../sass/blocks/routes-by-letter.scss";
+@import "../sass/blocks/companions-filter.scss";
+@import "../sass/blocks/checkbox.scss";
+@import "../sass/blocks/transport.scss";
+@import "../sass/blocks/catalog.scss";
+@import "../sass/blocks/card.scss";
+@import "../sass/blocks/pagination.scss";
+
+@import "../sass/blocks/user-profile.scss";
+@import "../sass/blocks/user-plan.scss";
+@import "../sass/blocks/add-plan.scss";
+@import "../sass/blocks/step.scss";
+@import "../sass/blocks/breadcrumbs.scss";
+@import "../sass/blocks/calendar.scss";
+@import "../sass/blocks/alphabet.scss";
+
+body {
+  margin: 0;
+  font-family: $bloggersans-font;
+}

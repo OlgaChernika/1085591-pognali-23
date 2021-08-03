@@ -1,0 +1,96 @@
+.routes {
+  padding-top: 70px;
+  background-color: $bg-grey-color;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  z-index: 5;
+
+  &__title {
+    margin-bottom: 20px;
+    padding: 0 25px;
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 60px;
+    padding: 0 25px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: $grey-text;
+  }
+
+  &__list {
+    @include list-reset;
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-rows: min-content;
+    gap: 8px;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-rows: min-content;
+    z-index: 1;
+  }
+
+  &__land-description {
+    margin-top: -10px;
+    padding: 25px 67px 25px 25px;
+    position: relative;
+    order: 2;
+    background-color: $white-color;
+    border-radius: 10px;
+    z-index: 1;
+  }
+
+  &__land-title {
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    color: $black-color;
+  }
+
+  &__land-tagline {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: $grey-text;
+  }
+
+  &__counter {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: $dark-opacity-text;
+  }
+
+  &__counter::before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 12px;
+    top: 4px;
+    left: -20px;
+    background-image: url(../../img/counter-icon.svg);
+    opacity: 0.1;
+  }
+
+  &__image {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  &__link {
+    margin-bottom: 34px;
+  }
+}

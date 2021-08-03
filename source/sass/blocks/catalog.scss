@@ -1,0 +1,24 @@
+.catalog {
+  padding-top: 30px;
+
+  &__list {
+    @include list-reset;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 270px;
+  }
+
+  &__button-show-more {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0 25px;
+    width: 320px;
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $blue-text;
+  }
+}

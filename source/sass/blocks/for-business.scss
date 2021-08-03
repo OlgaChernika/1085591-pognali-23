@@ -1,0 +1,37 @@
+.for-business {
+  margin: 0 auto;
+  width: 270px;
+  box-shadow: 0px 2px 8px rgba(29, 46, 91, 0.14);
+  border-radius: 20px;
+
+  &__container {
+    padding: 0 25px;
+    padding-top: 35px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__tariff {
+    margin-bottom: 30px;
+    line-height: 22px;
+  }
+
+  &__button-close {
+    padding: 18px 0;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $blue-text;
+    background-color: $btn-grey-color;
+  }
+
+}

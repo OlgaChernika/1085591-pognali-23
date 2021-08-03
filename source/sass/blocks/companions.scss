@@ -1,0 +1,49 @@
+.companions {
+  padding-top: 68px;
+  background-color: $deep-blue-color;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  color: $white-color;
+
+  &__container {
+    display: grid;
+    grid-template-rows: min-content;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    padding: 0 25px;
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0 25px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__tagline {
+    margin: 0;
+    margin-bottom: 55px;
+    padding: 0 25px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__list {
+    @include list-reset;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-rows: min-content;
+    gap: 9px;
+  }
+
+  &__link {
+    margin-bottom: 30px;
+  }
+}

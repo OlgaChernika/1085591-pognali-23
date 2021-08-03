@@ -1,0 +1,24 @@
+.add-plan {
+  padding-top: 30px;
+  padding-bottom: 43px;
+  background-color: $special-blue-color;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    @include list-reset;
+    margin: 0;
+  }
+
+  &__item {
+    margin-bottom: 10px;
+  }
+}

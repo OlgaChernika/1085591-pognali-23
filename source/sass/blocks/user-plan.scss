@@ -1,0 +1,70 @@
+.user-plan {
+  padding-top: 28px;
+  background-color: $special-blue-light-color;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    @include list-reset;
+    padding-bottom: 30px;
+    margin: 0;
+    counter-reset: item;
+  }
+
+  &__item {
+    margin-bottom: 10px;
+    padding: 23px;
+    background-color: $white-color;
+    border-radius: 10px;
+  }
+
+  &__route {
+    margin: 0;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    color: $blue-text;
+  }
+
+  &__route::before {
+    content: counter(item)".";
+    padding-right: 5px;
+    counter-increment: item;
+  }
+
+  &__wrapper {
+    padding: 2px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+  }
+
+  &__info {
+    margin-bottom: 20px;
+    letter-spacing: 0.06em;
+    color: $blue-text;
+  }
+
+  &__companions {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  &__period {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  &__button {
+    letter-spacing: 0.03em;
+    color: $black-opacity-text;
+  }
+}

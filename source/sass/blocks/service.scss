@@ -1,0 +1,34 @@
+.service {
+  padding-top: 33px;
+  padding-bottom: 82px;
+  min-height: 353px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  background-color: $deep-blue-color;
+  background-image: url("../../img/service-bg.png");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  color: $white-color;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  z-index: 6;
+
+  &__title {
+    margin-bottom: 20px;
+    padding: 0 25px;
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0 25px;
+    font-weight: 300;
+  }
+
+  &__tagline {
+    margin: 0;
+    padding: 0 25px;
+    font-weight: bold;
+  }
+}

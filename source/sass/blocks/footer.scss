@@ -1,0 +1,33 @@
+.footer {
+  padding-top: 20px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background-color: $white-color;
+  z-index: 7;
+
+  &__container {
+    display: grid;
+    grid-template-rows: min-content;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-bottom: 20px;
+    padding: 20px 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  &__social {
+    margin: 0;
+    margin-bottom: 50px;
+    min-width: 135px;
+    justify-content: center;
+  }
+
+  &__producer {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr min-content;
+  }
+}

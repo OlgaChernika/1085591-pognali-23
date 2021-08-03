@@ -1,0 +1,105 @@
+.communications {
+  display: flex;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+
+  &__description {
+    margin: 0;
+    margin-bottom: 17px;
+    padding: 0 25px;
+  }
+
+  &__list {
+    @include list-reset;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__link {
+    padding: 22px 0;
+    padding-left: 86px;
+    color: $deep-blue-color;
+    text-transform: uppercase;
+  }
+
+  &__link--in-authorize {
+    padding-left: 70px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: $yellow-text;
+  }
+
+  &__link--email::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 12px;
+    top: 22px;
+    left: 13px;
+    background-image: url("/img/mail-icon.svg");
+    background-repeat: no-repeat;
+  }
+
+  &__link--phone::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 14px;
+    top: 21px;
+    left: 14px;
+    background-image: url("/img/tel-icon.svg");
+    background-repeat: no-repeat;
+  }
+
+  &__link::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    background-color: $dark-bg-blue-color;
+    border-radius: 50%;
+  }
+
+  &__link-promo {
+    padding: 0 20px;
+  }
+
+  &__link-promo::before {
+    padding: 20px;
+    width: 40px;
+    height: 40px;
+    top: 0;
+  }
+
+  &__link--promo-email::before {
+    background-color: $dark-yellow-color;
+  }
+
+  &__link--promo-phone::before {
+    background-color: $orange-color;
+  }
+
+  &__link--promo-email::after {
+    width: 16px;
+    height: 12px;
+    top: 0;
+    left: 0;
+    background-image: url("/img/mail-dark-icon.svg");
+  }
+
+  &__authorize {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}

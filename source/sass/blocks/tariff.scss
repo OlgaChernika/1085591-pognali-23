@@ -1,0 +1,70 @@
+.tariff {
+  @include list-reset;
+  counter-reset: item;
+
+  &__item {
+    position: relative;
+    border-top: 1px solid $grey-border-color;
+  }
+
+  &__item:last-child {
+    border-bottom: 1px solid $grey-border-color;
+  }
+
+  &__item-counter {
+    margin-left: 25px;
+    margin-right: 45px;
+  }
+
+  &__item-counter::after {
+    content: counter(item);
+    position: absolute;
+    counter-increment: item;
+    top: 50%;
+    right: -31px;
+    transform: translateY(-50%);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: $white-color;
+  }
+
+  &__item-counter::before {
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    top: 50%;
+    right: -44px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: $light-orange-color;
+  }
+
+  &__item--orange::before {
+    background-color: $orange-color;
+  }
+
+  &__item--light-orange::before {
+    background-color: $dark-yellow-color;
+  }
+
+  &__item--yellow::before {
+    background-color: $light-yellow-color;
+  }
+
+  &__advantage {
+    padding: 13px 0;
+    margin: 0;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    color: $grey-text;
+  }
+
+  &__price {
+    margin: 0;
+  }
+}

@@ -1,0 +1,137 @@
+.companions-filter {
+  margin: 0 auto;
+  padding: 0 25px;
+  padding-top: 26px;
+  width: 270px;
+  background: $light-yellow-color;
+  border-radius: 20px;
+
+  &__title {
+    margin-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 100px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: $blue-text;
+  }
+
+  &__fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  &__button {
+    padding: 0;
+    padding-top: 12px;
+    padding-bottom: 14px;
+    width: 100%;
+    background-color: inherit;
+    border-top: 1px solid $yellow-border-color;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: left;
+    text-transform: uppercase;
+    color: $blue-text;
+  }
+
+  &__checkbox {
+    @include list-reset;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  &__range {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__range-controls {
+    position: relative;
+  }
+
+  &__scale {
+    width: 100%;
+    height: 2px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: $deep-blue-range-color;
+  }
+
+  &__bar {
+    width: 60%;
+    height: 100%;
+    background-color: $blue-text;
+  }
+
+  &__toggle {
+    padding: 0;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: -4px;
+    background-color: $blue-text;
+    border-radius: 50%;
+  }
+
+  &__toggle--min {
+    left: 80px;
+  }
+
+  &__toggle--max {
+    right: 0;
+  }
+
+  &__levels {
+    margin-bottom: 20px;
+    order: -1;
+    display: grid;
+    grid-template-columns: 110px 110px;
+  }
+
+  &__input {
+    padding: 10px;
+    position: relative;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 13px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: $blue-text;
+    border: 1px solid $border-input-color;
+    border-radius: 4px;
+  }
+
+  &__input--min-level {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  &__input--max-level {
+    margin-left: -1px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  &__button-show {
+    margin-bottom: 22px;
+    padding: 12px;
+    width: 100%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $dark-text;
+    background-color: $white-color;
+    border-radius: 25px;
+  }
+}

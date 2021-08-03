@@ -1,0 +1,345 @@
+.step {
+  padding: 25px;
+  background-color: $white-color;
+  border-radius: 10px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 15px;
+    margin-right: auto;
+    width: fit-content;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    color: $blue-text;
+  }
+
+  &__number {
+    display: block;
+  }
+
+  &__breadcrumbs {
+    @include list-reset;
+    margin: 0;
+    display: none;
+  }
+
+  &__breadcrumbs--for-mobile {
+    position: absolute;
+    display: flex;
+    top: 2px;
+    right: 43px;
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: $grey-text;
+  }
+
+  &__fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: $blue-text;
+  }
+
+  &__wrapper {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr min-content;
+  }
+
+  &__label {
+    margin-bottom: 10px;
+  }
+
+  &__unit {
+    margin: 0;
+    margin-bottom: 10px;
+    color: $deep-blue-opacity-text;
+  }
+
+  &__input-wrapper {
+    height: 43px;
+    grid-column: 1/-1;
+    display: flex;
+    border: 1px solid $bg-blue-grey-color;
+    border-radius: 4px;
+  }
+
+  &__input {
+    padding: 5px 10px;
+    width: 140px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.86px;
+    line-height: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $blue-text;
+    border: none;
+    background-color: $white-color;
+  }
+
+  &__button-quantity {
+    padding: 0;
+    width: 40px;
+    background-color: $white-color;
+  }
+
+  &__checkbox-wrapper {
+    margin-bottom: 24px;
+  }
+
+  &__checkbox-label {
+    padding-top: 5px;
+    padding-left: 39px;
+    display: flex;
+    position: relative;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 15px;
+    text-transform: none;
+    color: $blue-text;
+  }
+
+  &__checkbox-label::before {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 0;
+    left: 0;
+    border: 1px solid $bg-blue-grey-color;
+    border-radius: 4px;
+  }
+
+  &__calendar-wrapper {
+    margin-bottom: 22px;
+  }
+
+  &__route-list {
+    @include list-reset;
+    margin: 0;
+  }
+
+  &__routes-item {
+    margin-bottom: 22px;
+    display: grid;
+    grid-template-columns: 1fr 52px;
+    position: relative;
+  }
+
+  &__routes-item--add-land {
+    display: block;
+  }
+
+  &__routes-item--add-land::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 50%;
+    right: 47px;
+    transform: translateY(-50%);
+    background-color: $transparent-bg;
+    border: 1px solid $bg-blue-grey-color;
+    border-radius: 50%;
+  }
+
+  &__route-wrapper {
+    width: 100%;
+    height: 42px;
+    display: flex;
+    border: 1px solid $bg-blue-grey-color;
+    border-radius: 4px;
+  }
+
+  &__selected-route {
+    width: 168px;
+  }
+
+  &__flag-wrapper {
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid $bg-blue-grey-color;
+    border-radius: 4px;
+  }
+
+  &__flag-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 50%;
+    left: -5px;
+    transform: translateY(-50%);
+    background-color: $blue-text;
+    border-radius: 50%;
+  }
+
+  &__route-flag {
+    width: 35px;
+    height: 24px;
+    background-color: tomato;
+  }
+
+  &__route {
+    margin: 0;
+    padding-left: 10px;
+    width: 168px;
+    display: inline-flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $blue-text;
+  }
+
+  &__choose-route {
+    margin: 0;
+    padding-left: 10px;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $blue-text;
+  }
+
+  &__choose-route-button {
+    padding: 0;
+    width: 58px;
+    background: linear-gradient(to right, $transparent-bg 0%, $transparent-bg 15%, $white-color 100%);
+  }
+
+  &__add-routes {
+    padding: 0;
+    padding-left: 10px;
+    width: 100%;
+    height: 42px;
+    background-color: $bg-grey-color;
+    border-radius: 4px;
+  }
+
+  &__close-route-button {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    top: -10px;
+    right: -10px;
+    background-color: $bg-grey-color;
+    border-radius: 50%;
+  }
+
+  &__alphabet-wrapper {
+    position: absolute;
+    display: none;
+    top: 40px;
+    left: 0;
+    z-index: 99;
+  }
+
+  &__alphabet {
+    @include list-reset;
+    margin: 0;
+    width: 220px;
+  }
+
+  &__routes-by-letter {
+    @include list-reset;
+    margin: 0;
+    padding: 20px;
+    width: 220px;
+    background-color: $white-color;
+    border: 1px solid $bg-blue-grey-color;
+    box-shadow: 0px 2px 16px rgba(212, 217, 235, 0.25);
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+
+  &__entertainment {
+    @include list-reset;
+    margin: 0;
+  }
+
+  &__entertainment-route {
+    padding-left: 10px;
+    margin: 0;
+    margin-bottom: 18px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: none;
+    color: $blue-text;
+  }
+
+  &__entertainment-comment {
+    margin-bottom: 27px;
+    padding: 10px 14px;
+    width: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: $grey-text;
+    border: 1px solid $bg-blue-grey-color;
+    border-radius: 4px;
+  }
+
+  &__entertainment-comment::placeholder {
+    color: $grey-opacity-text;
+  }
+
+  &__button {
+    padding: 5px 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $blue-text;
+  }
+
+  &__button--next {
+    margin-bottom: 13px;
+    background-color: $yellow-color;
+    border-radius: 20px;
+  }
+
+  &__button--send {
+    margin-bottom: 13px;
+    background-color: $yellow-color;
+    border-radius: 20px;
+  }
+
+
+}

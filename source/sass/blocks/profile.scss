@@ -1,0 +1,143 @@
+.profile {
+  position: relative;
+  background-color: $white-color;
+  border-radius: 10px;
+
+  &__image {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  &__wrapper {
+    padding: 27px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  &__name-link {
+    position: relative;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    color: $blue-text;
+  }
+
+  &__status::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 8px;
+    left: -20px;
+    border-radius: 50%;
+    background-color: $red-color;
+  }
+
+  &__status--online::before {
+    background-color: $green-color;
+  }
+
+  &__level {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__tags-list {
+    @include list-reset;
+    margin: 0 auto;
+    margin-bottom: 14px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__tags-item {
+    padding-left: 5px;
+  }
+
+  &__tags-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: $grey-text;
+  }
+
+  &__routes-list {
+    @include list-reset;
+    margin-top: -40px;
+    width: 100%;
+    order: -1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+  }
+
+  &__route {
+    margin-bottom: 10px;
+    display: block;
+    width: 35px;
+    height: 25px;
+  }
+
+  &__route--sri-lanka {
+    background-image: url("../../img/Sri-Lanka-flag-min.svg");
+    background-repeat: no-repeat;
+    object-fit: contain;
+  }
+
+  &__route--thailand {
+    background-image: url("../../img/thailand-flag-min.svg");
+    background-repeat: no-repeat;
+  }
+  &__route--seychelles {
+    background-image: url("../../img/Seychelles-flag-min.svg");
+    background-repeat: no-repeat;
+  }
+
+  &__route--belgium {
+    background-image: url("../../img/Belgium-flag-min.svg");
+    background-repeat: no-repeat;
+  }
+
+  &__route--czech {
+    background-image: url("../../img/Czech-flag-min.svg");
+    background-repeat: no-repeat;
+  }
+
+  &__tooltip {
+    padding: 20px;
+    display: none;
+    position: relative;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    background-color: $dark-blue-color;
+  }
+
+  &__transport-list {
+    @include list-reset;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__transport-item {
+    width: 23px;
+    height: 24px;
+    background-color: tomato;
+  }
+
+}
+

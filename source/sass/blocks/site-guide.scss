@@ -1,0 +1,45 @@
+.site-guide {
+  @include list-reset;
+  margin: 0;
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-rows: min-content;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: $dark-bg-blue-color;
+  counter-reset: item;
+
+  &__item {
+    padding: 22px 96px 22px 24px;
+    min-height: 80px;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: -15px;
+  }
+
+  &__item::after {
+    counter-increment: item;
+    content: counter(item);
+    position: absolute;
+    right: 20px;
+    color: $white-color;
+  }
+
+  &__item--orange {
+    background-color: $orange-color;
+  }
+
+  &__item--light-orange {
+    background-color: $light-orange-color;
+  }
+
+  &__item--yellow {
+    background-color: $dark-yellow-color;
+  }
+
+  &__item--light-yellow {
+    background-color: $light-yellow-color;
+  }
+}

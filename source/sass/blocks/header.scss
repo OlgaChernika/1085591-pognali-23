@@ -1,0 +1,83 @@
+.header {
+  min-height: 73px;
+  background-color: $dark-bg-blue-color;
+
+  &__top-wrapper {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    margin-bottom: -73px;
+    z-index: 99;
+  }
+
+  &__logo {
+    width: 100%;
+    z-index: 99;
+  }
+
+  &__toggle {
+    position: relative;
+    width: 19px;
+    height: 19px;
+    background-color: $transparent-bg;
+    z-index: 99;
+  }
+
+  &__toggle::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 2px;
+    top: 8px;
+    left: -2px;
+    background-color: $light-grey-color;
+    transform: rotate(-45deg);
+  }
+
+  &__toggle::after {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 2px;
+    top: 8px;
+    left: -2px;
+    background-color: $light-grey-color;
+    transform: rotate(45deg);
+  }
+
+  &__menu {
+    padding-top: 100px;
+    display: none;
+    position: absolute;
+    min-height: 500px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $white-color;
+    z-index: 98;
+  }
+
+&__nav {
+  margin-bottom: 50px;
+}
+
+  &__communications {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    flex-direction: column;
+  }
+
+  &__authorize {
+    margin-bottom: 50px;
+    padding: 10px;
+    order: -1;
+    line-height: 30px;
+  }
+
+  &__social {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 100px;
+  }
+}
