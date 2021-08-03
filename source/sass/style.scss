@@ -1,6 +1,5 @@
 // global
 @import "../sass/global/fonts.scss";
-@import "../sass/global/normalize.scss";
 @import "../sass/global/variables.scss";
 @import "../sass/global/mixins.scss";
 @import "../sass/global/global.scss";
@@ -26,7 +25,7 @@
 @import "../sass/blocks/footer.scss";
 @import "../sass/blocks/producer.scss";
 @import "../sass/blocks/for-business.scss";
-
+//catalog
 @import "../sass/blocks/inner-page.scss";
 @import "../sass/blocks/land-filter.scss";
 @import "../sass/blocks/alphabet.scss";
@@ -37,14 +36,13 @@
 @import "../sass/blocks/catalog.scss";
 @import "../sass/blocks/card.scss";
 @import "../sass/blocks/pagination.scss";
-
+//form
 @import "../sass/blocks/user-profile.scss";
 @import "../sass/blocks/user-plan.scss";
 @import "../sass/blocks/add-plan.scss";
 @import "../sass/blocks/step.scss";
 @import "../sass/blocks/breadcrumbs.scss";
 @import "../sass/blocks/calendar.scss";
-@import "../sass/blocks/alphabet.scss";
 
 body {
   margin: 0;

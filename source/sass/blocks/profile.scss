@@ -100,6 +100,7 @@
     background-image: url("../../img/thailand-flag-min.svg");
     background-repeat: no-repeat;
   }
+
   &__route--seychelles {
     background-image: url("../../img/Seychelles-flag-min.svg");
     background-repeat: no-repeat;
@@ -136,8 +137,6 @@
   &__transport-item {
     width: 23px;
     height: 24px;
-    background-color: tomato;
+    background-color: #f80000;
   }
-
 }
-

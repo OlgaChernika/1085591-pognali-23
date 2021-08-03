@@ -33,7 +33,7 @@
   }
 
   &__route::before {
-    content: counter(item)".";
+    content: counter(item) ".";
     padding-right: 5px;
     counter-increment: item;
   }

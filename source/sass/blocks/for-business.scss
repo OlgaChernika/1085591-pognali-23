@@ -1,7 +1,7 @@
 .for-business {
   margin: 0 auto;
   width: 270px;
-  box-shadow: 0px 2px 8px rgba(29, 46, 91, 0.14);
+  box-shadow: 0 2px 8px rgba(29, 46, 91, 0.14);
   border-radius: 20px;
 
   &__container {
@@ -33,5 +33,4 @@
     color: $blue-text;
     background-color: $btn-grey-color;
   }
-
 }
