@@ -1,70 +1,87 @@
 .tariff {
   @include list-reset;
+  
   counter-reset: item;
+}
 
-  &__item {
-    position: relative;
-    border-top: 1px solid $grey-border-color;
-  }
+.tariff__item {
+  position: relative;
 
-  &__item:last-child {
-    border-bottom: 1px solid $grey-border-color;
-  }
+  border-top: 1px solid $color-solitude-grey-mod;
+}
 
-  &__item-counter {
-    margin-left: 25px;
-    margin-right: 45px;
-  }
+.tariff__item:last-child {
+  border-bottom: 1px solid $color-solitude-grey-mod;
+}
 
-  &__item-counter::after {
+.tariff__item-counter {
+  margin: 0 45px 0 25px;
+}
+
+.tariff__item-counter {
+  &::after {
     content: counter(item);
     position: absolute;
-    counter-increment: item;
     top: 50%;
     right: -31px;
-    transform: translateY(-50%);
+
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 16px;
-    color: $white-color;
-  }
+    color: $color-white;
 
-  &__item-counter::before {
+    transform: translateY(-50%);
+
+    counter-increment: item;
+  }
+}
+
+.tariff__item-counter {
+  &::before {
     content: "";
     position: absolute;
-    width: 34px;
-    height: 34px;
     top: 50%;
     right: -44px;
-    transform: translateY(-50%);
+
+    width: 34px;
+    height: 34px;
+
+    background-color: $color-lightning-yellow;
     border-radius: 50%;
-    background-color: $light-orange-color;
+    transform: translateY(-50%);
   }
+}
 
-  &__item--orange::before {
-    background-color: $orange-color;
+.tariff__item--orange {
+  &::before {
+    background-color: $color-neon-carrot-orange;
   }
+}
 
-  &__item--light-orange::before {
-    background-color: $dark-yellow-color;
+.tariff__item--light-orange {
+  &::before {
+    background-color: $color-supernova-yellow;
   }
+}
 
-  &__item--yellow::before {
-    background-color: $light-yellow-color;
+.tariff__item--yellow {
+  &::before {
+    background-color: $color-energy-yellow;
   }
+}
 
-  &__advantage {
-    padding: 13px 0;
-    margin: 0;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 16px;
-    color: $grey-text;
-  }
+.tariff__advantage {
+  margin: 0;
+  padding: 13px 0;
 
-  &__price {
-    margin: 0;
-  }
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-charcoal-grey;
+}
+
+.tariff__price {
+  margin: 0;
 }

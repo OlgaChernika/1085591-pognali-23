@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Погнали</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body class="inner-page">
     <header class="inner-page__header header">
@@ -14,7 +15,7 @@
           <img class="logo__image logo__image--deep" src="img/logo_mobile.svg" width="95" height="15" alt="Логотип сервиса Погнали">
           <img class="logo__image logo__image--white" src="img/logo_mobile-white.svg" width="95" height="15" alt="Логотип сервиса Погнали">
         </a>
-        <button class="header__toggle" type="button" aria-label="Кнопка открытия/закрытия меню"></button>
+        <button class="header__toggle button" type="button" aria-label="Кнопка открытия/закрытия меню"></button>
       </div>
       <div class="header__menu">
         <nav class="header__nav nav">
@@ -187,106 +188,108 @@
               <a class="routes-by-letter__link" href="#">Афганистан</a>
             </li>
           </ul>
-          <button class="land-filter__close-button" type="button">Свернуть</button>
+          <button class="land-filter__close-button button" type="button">Свернуть</button>
         </div>
       </section>
       <section class="companions-filter">
-        <h2 class="companions-filter__title">Подберите идеального попутчика</h2>
-        <form class="companions-filter__form" action="https://echo.htmlacademy.ru" method="GET">
-          <fieldset class="companions-filter__fieldset">
-            <button class="companions-filter__button" type="button">Хобби:</button>
-            <ul class="companions-filter__checkbox checkbox">
-              <li class="checkbox__item">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="hobby" id="hobby-gym" value="gym">
-                <label class="checkbox__label" for="hobby-gym">Спортзал</label>
-              </li>
-              <li class="checkbox__item">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="hobby" id="hobby-hookah" value="hookah">
-                <label class="checkbox__label" for="hobby-hookah">Кальян</label>
-              </li>
-              <li class="checkbox__item">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="hobby" id="hobby-sofa" value="sofa">
-                <label class="checkbox__label" for="hobby-sofa">Диван</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="companions-filter__fieldset">
-            <button class="companions-filter__button" type="button">Музыка:</button>
-            <ul class="companions-filter__checkbox companions-filter__checkbox--opened checkbox">
-              <li class="checkbox__item">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="music" id="music-rock" value="rock">
-                <label class="checkbox__label" for="music-rock">Тяжелый рок</label>
-              </li>
-              <li class="checkbox__item">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="music" id="music-rap" value="rap">
-                <label class="checkbox__label" for="music-rap">Русский рэп</label>
-              </li>
-              <li class="checkbox__item">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="music" id="music-eurodance" value="eurodance">
-                <label class="checkbox__label" for="music-eurodance">Евроденс</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="companions-filter__fieldset">
-            <button class="companions-filter__button" type="button">Еда:</button>
-            <ul class="companions-filter__checkbox checkbox">
-              <li class="checkbox__item">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="food" id="food-meat" value="meat">
-                <label class="checkbox__label" for="food-meat">Мясоед</label>
-              </li>
-              <li class="checkbox__item">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="food" id="food-healthy" value="healthy">
-                <label class="checkbox__label" for="food-healthy">Сидит на ПП</label>
-              </li>
-              <li class="checkbox__item">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="food" id="food-vegan" value="vegan">
-                <label class="checkbox__label" for="food-vegan">Веган-сыроед</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="companions-filter__fieldset">
-            <button class="companions-filter__button" type="button">Транспорт:</button>
-            <ul class="companions-filter__checkbox companions-filter__checkbox--opened transport">
-              <li class="transport__item">
-                <input class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-fly" value="fly">
-                <label class="transport__label transport__label--fly" for="transport-fly">
-                  <span class="transport__tooltip">Авиаперелет</span>
-                </label>
-              </li>
-              <li class="transport__item">
-                <input class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-car" value="car">
-                <label class="transport__label transport__label--car" for="transport-car">
-                  <span class="transport__tooltip">Автотранспорт</span>
-                </label>
-              </li>
-              <li class="transport__item">
-                <input class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-bicycle" value="bicycle">
-                <label class="transport__label transport__label--bicycle" for="transport-bicycle"><span class="transport__tooltip">Велосипед</span></label>
-              </li>
-              <li class="transport__item">
-                <input class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-on-foot" value="on-foot">
-                <label class="transport__label transport__label--on-foot" for="transport-on-foot"><span class="transport__tooltip">Пешком</span></label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="companions-filter__fieldset">
-            <button class="companions-filter__button" type="button">Левел:</button>
-            <div class="companions-filter__range companions-filter__checkbox companions-filter__checkbox--opened">
-              <div class="companions-filter__range-controls">
-                <div class="companions-filter__scale">
-                  <div class="companions-filter__bar"></div>
+        <div class="companions-filter__container">
+          <h2 class="companions-filter__title">Подберите идеального попутчика</h2>
+          <form class="companions-filter__form" action="https://echo.htmlacademy.ru" method="GET">
+            <fieldset class="companions-filter__fieldset">
+              <button class="companions-filter__button button" type="button">Хобби:</button>
+              <ul class="companions-filter__checkbox checkbox">
+                <li class="checkbox__item">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="hobby" id="hobby-gym" value="gym">
+                  <label class="checkbox__label" for="hobby-gym">Спортзал</label>
+                </li>
+                <li class="checkbox__item">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="hobby" id="hobby-hookah" value="hookah">
+                  <label class="checkbox__label" for="hobby-hookah">Кальян</label>
+                </li>
+                <li class="checkbox__item">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="hobby" id="hobby-sofa" value="sofa">
+                  <label class="checkbox__label" for="hobby-sofa">Диван</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="companions-filter__fieldset">
+              <button class="companions-filter__button button" type="button">Музыка:</button>
+              <ul class="companions-filter__checkbox companions-filter__checkbox--opened checkbox">
+                <li class="checkbox__item">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="music" id="music-rock" value="rock">
+                  <label class="checkbox__label" for="music-rock">Тяжелый рок</label>
+                </li>
+                <li class="checkbox__item">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="music" id="music-rap" value="rap">
+                  <label class="checkbox__label" for="music-rap">Русский рэп</label>
+                </li>
+                <li class="checkbox__item">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="music" id="music-eurodance" value="eurodance">
+                  <label class="checkbox__label" for="music-eurodance">Евроденс</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="companions-filter__fieldset">
+              <button class="companions-filter__button button" type="button">Еда:</button>
+              <ul class="companions-filter__checkbox checkbox">
+                <li class="checkbox__item">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="food" id="food-meat" value="meat">
+                  <label class="checkbox__label" for="food-meat">Мясоед</label>
+                </li>
+                <li class="checkbox__item">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="food" id="food-healthy" value="healthy">
+                  <label class="checkbox__label" for="food-healthy">Сидит на ПП</label>
+                </li>
+                <li class="checkbox__item">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="food" id="food-vegan" value="vegan">
+                  <label class="checkbox__label" for="food-vegan">Веган-сыроед</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="companions-filter__fieldset">
+              <button class="companions-filter__button button" type="button">Транспорт:</button>
+              <ul class="companions-filter__checkbox companions-filter__checkbox--opened transport">
+                <li class="transport__item">
+                  <input class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-fly" value="fly">
+                  <label class="transport__label transport__label--fly" for="transport-fly">
+                    <span class="transport__tooltip">Авиаперелет</span>
+                  </label>
+                </li>
+                <li class="transport__item">
+                  <input class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-car" value="car">
+                  <label class="transport__label transport__label--car" for="transport-car">
+                    <span class="transport__tooltip">Автотранспорт</span>
+                  </label>
+                </li>
+                <li class="transport__item">
+                  <input class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-bicycle" value="bicycle">
+                  <label class="transport__label transport__label--bicycle" for="transport-bicycle"><span class="transport__tooltip">Велосипед</span></label>
+                </li>
+                <li class="transport__item">
+                  <input class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-on-foot" value="on-foot">
+                  <label class="transport__label transport__label--on-foot" for="transport-on-foot"><span class="transport__tooltip">Пешком</span></label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="companions-filter__fieldset">
+              <button class="companions-filter__button button" type="button">Левел:</button>
+              <div class="companions-filter__range companions-filter__checkbox companions-filter__checkbox--opened">
+                <div class="companions-filter__range-controls">
+                  <div class="companions-filter__scale">
+                    <div class="companions-filter__bar"></div>
+                  </div>
+                  <button class="companions-filter__toggle companions-filter__toggle--min button" type="button" aria-label="Настроить минимальный уровень"></button>
+                  <button class="companions-filter__toggle companions-filter__toggle--max button" type="button" aria-label="Настроить максимальный уровень"></button>
                 </div>
-                <button class="companions-filter__toggle companions-filter__toggle--min" type="button" aria-label="Настроить минимальный уровень"></button>
-                <button class="companions-filter__toggle companions-filter__toggle--max" type="button" aria-label="Настроить максимальный уровень"></button>
+                <div class="companions-filter__levels">
+                  <input class="companions-filter__input companions-filter__input--min-level" type="text" name="min-vevel" value="30"></input>
+                  <input class="companions-filter__input companions-filter__input--max-level" type="text" name="max-level" value="100"></input>
+                </div>
               </div>
-              <div class="companions-filter__levels">
-                <input class="companions-filter__input companions-filter__input--min-level" type="text" name="min-vevel" value="30"></input>
-                <input class="companions-filter__input companions-filter__input--max-level" type="text" name="max-level" value="100"></input>
-              </div>
-            </div>
-          </fieldset>
-          <button class="companions-filter__button-show" type="submit">Показать</button>
-        </form>
+            </fieldset>
+            <button class="companions-filter__button-show button" type="submit">Показать</button>
+          </form>
+        </div>
       </section>
       <section class="catalog">
         <div class="catalog__wrapper">
@@ -559,7 +562,7 @@
               </div>
             </li>
           </ul>
-          <button class="catalog__button-show-more" type="button">Показать еще</button>
+          <button class="catalog__button-show-more button" type="button">Показать еще</button>
           <div class="catalog__pagination pagination">
             <ul class="pagination__list pagination__list--hidden">
               <li class="pagination__item">
@@ -575,8 +578,8 @@
                 <a class="pagination__link" href="#">4</a>
               </li>
             </ul>
-            <button class="pagination__button pagination__button--back" type="button" aria-label="Назад"></button>
-            <button class="pagination__button pagination__button--next" type="button" aria-label="Вперед"></button>
+            <button class="pagination__button pagination__button--back button" type="button" aria-label="Назад"></button>
+            <button class="pagination__button pagination__button--next button" type="button" aria-label="Вперед"></button>
           </div>
         </div>
       </section>

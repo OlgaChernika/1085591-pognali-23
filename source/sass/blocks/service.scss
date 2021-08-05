@@ -1,34 +1,37 @@
 .service {
-  padding-top: 33px;
-  padding-bottom: 82px;
+  z-index: 6;
+
   min-height: 353px;
+  padding: 33px 0 82px 0;
+
   font-style: normal;
   font-size: 16px;
   line-height: 22px;
-  background-color: $deep-blue-color;
-  background-image: url("../../img/service-bg.png");
+  color: $color-white;
+
+  background-color: $color-midnight-express;
+  background-image: url("../img/service-bg.png");
   background-repeat: no-repeat;
   background-position-x: 50%;
-  color: $white-color;
-  border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
-  z-index: 6;
+  border-bottom-left-radius: 25px;
+}
 
-  &__title {
-    margin-bottom: 20px;
-    padding: 0 25px;
-  }
+.service__title {
+  margin-bottom: 20px;
+  padding: 0 25px;
+}
 
-  &__description {
-    margin: 0;
-    margin-bottom: 20px;
-    padding: 0 25px;
-    font-weight: 300;
-  }
+.service__description {
+  margin: 0 0 20px 0;
+  padding: 0 25px;
 
-  &__tagline {
-    margin: 0;
-    padding: 0 25px;
-    font-weight: bold;
-  }
+  font-weight: 300;
+}
+
+.service__tagline {
+  margin: 0;
+  padding: 0 25px;
+
+  font-weight: bold;
 }

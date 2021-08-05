@@ -1,68 +1,74 @@
 .land-filter {
-  border-bottom-left-radius: 25px;
+  background-color: $color-lavender;
   border-bottom-right-radius: 25px;
-  background-color: $land-filter-grey-color;
+  border-bottom-left-radius: 25px;
+}
 
-  &__title {
-    margin: 0;
-    margin-bottom: 20px;
-    padding: 20px 0 15px 25px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: $deep-blue-color;
-  }
+.land-filter__title {
+  margin: 0 0 20px 0;
+  padding: 20px 0 15px 25px;
 
-  &__route {
-    @include list-reset;
-    margin: 0;
-    margin-bottom: 10px;
-    padding: 0 25px;
-  }
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-midnight-express;
+  text-transform: uppercase;
+}
 
-  &__route-link {
-    padding: 5px 0;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: $dark-blue-opacity-text;
-  }
+.land-filter__route {
+  @include list-reset;
 
-  &__route-link--current {
-    color: $dark-blue-color;
-  }
+  margin: 0 0 10px 0;
+  padding: 0 25px;
+}
 
-  &__alphabet {
-    @include list-reset;
-    margin: 0;
-    margin-bottom: 15px;
-    padding: 0 25px;
-  }
+.land-filter__route-link {
+  padding: 5px 0;
 
-  &__routes-by-letter {
-    @include list-reset;
-    margin: 0;
-    margin-bottom: 30px;
-    padding: 0 25px;
-  }
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba($color-midnight-express-mod-3, 0.3);
+  text-transform: uppercase;
+}
 
-  &__close-button {
-    margin-bottom: 30px;
-    padding: 10px;
-    width: 100%;
-    background-color: $grey-color;
-    border-radius: 20px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    text-align: center;
-    color: $dark-blue-text;
+.land-filter__route-link {
+  &--current {
+    color: $color-midnight-express-mod;
   }
+}
+
+.land-filter__alphabet {
+  @include list-reset;
+
+  margin: 0 0 15px 0;
+  padding: 0 25px;
+}
+
+.land-filter__routes-by-letter {
+  @include list-reset;
+
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0 25px;
+}
+
+.land-filter__close-button {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 10px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $color-midnight-express-mod-3;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  background-color: $color-hawkes-blue;
+  border-radius: 20px;
 }

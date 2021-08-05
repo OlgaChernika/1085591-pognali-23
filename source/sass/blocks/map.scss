@@ -1,61 +1,74 @@
 .map {
   padding-top: 30px;
-  background-color: $light-yellow-color;
-  color: $blue-text;
 
-  &__container {
-    background-color: $light-yellow-color;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    z-index: 1;
-  }
+  color: $color-catalina-blue;
 
-  &__route {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 22px;
-  }
+  background-color: $color-energy-yellow;
+}
 
-  &__route-address {
-    margin: 0;
-    margin-bottom: 32px;
-    padding-left: 60px;
-    padding-right: 25px;
-    position: relative;
-    text-transform: uppercase;
-  }
+.map__container {
+  z-index: 1;
 
-  &__route-address::before {
+  background-color: $color-energy-yellow;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.map__route {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.map__route-address {
+  position: relative;
+
+  margin: 0 25px 32px 0;
+  padding-left: 60px;
+
+  text-transform: uppercase;
+}
+
+.map__route-address {
+  &::before {
     content: "";
     position: absolute;
-    width: 45px;
-    height: 45px;
     top: 0;
     left: 0;
+
+    width: 45px;
+    height: 45px;
+
+    background-color: $color-midnight-express-mod-2;
     border-radius: 50%;
-    background-color: $dark-bg-blue-color;
   }
+}
 
-  &__route-link {
-    margin-bottom: 30px;
-    padding: 22px;
-    width: 100%;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 18px;
-    color: $blue-text;
-    border: 3px solid $deep-blue-color;
-    border-radius: 10px;
-  }
+.map__route-link {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 22px;
 
-  &__link {
-    width: 100%;
-    background-color: $light-grey-color;
-  }
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: $color-catalina-blue;
 
-  &__image {
-    width: 100%;
-  }
+  border: 3px solid $color-midnight-express;
+  border-radius: 10px;
+}
+
+.map__link {
+  width: 100%;
+
+  background-color: $color-very-light-grey;
+}
+
+.map__image {
+  width: 100%;
+  max-height: 422px;
+
+  object-fit: contain;
 }

@@ -1,15 +1,14 @@
-.nav {
-  &__list {
-    @include list-reset;
-    text-align: center;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 35px;
-  }
+.nav__list {
+  @include list-reset;
+  
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+}
 
-  &__link {
-    color: $deep-blue-color;
-    text-transform: uppercase;
-  }
+.nav__link {
+  color: $color-midnight-express;
+  text-transform: uppercase;
 }

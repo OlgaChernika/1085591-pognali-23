@@ -1,45 +1,63 @@
 .site-guide {
   @include list-reset;
+
+  display: grid;
   margin: 0;
   padding-bottom: 40px;
-  display: grid;
-  grid-template-rows: min-content;
+
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
-  color: $dark-bg-blue-color;
+  color: $color-midnight-express-mod-2;
+
   counter-reset: item;
 
-  &__item {
-    padding: 22px 96px 22px 24px;
-    min-height: 80px;
-    position: relative;
-    border-radius: 10px;
-    margin-bottom: -15px;
-  }
+  grid-template-rows: min-content;
+}
 
-  &__item::after {
-    counter-increment: item;
+.site-guide__item {
+  position: relative;
+
+  min-height: 80px;
+  margin-bottom: -15px;
+  padding: 22px 96px 22px 24px;
+
+  border-radius: 10px;
+}
+
+.site-guide__item {
+  &::after {
     content: counter(item);
     position: absolute;
     right: 20px;
-    color: $white-color;
-  }
 
-  &__item--orange {
-    background-color: $orange-color;
-  }
+    color: $color-white;
 
-  &__item--light-orange {
-    background-color: $light-orange-color;
+    counter-increment: item;
   }
+}
 
-  &__item--yellow {
-    background-color: $dark-yellow-color;
+.site-guide__item {
+  &--orange {
+    background-color: $color-neon-carrot-orange;
   }
+}
 
-  &__item--light-yellow {
-    background-color: $light-yellow-color;
+.site-guide__item {
+  &--light-orange {
+    background-color: $color-lightning-yellow;
+  }
+}
+
+.site-guide__item {
+  &--yellow {
+    background-color: $color-supernova-yellow;
+  }
+}
+
+.site-guide__item {
+  &--light-yellow {
+    background-color: $color-energy-yellow;
   }
 }

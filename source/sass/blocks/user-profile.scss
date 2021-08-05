@@ -1,85 +1,96 @@
 .user-profile {
   padding-top: 20px;
+}
 
-  &__image-level-wrapper {
-    padding: 0 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+.user-profile__image-level-wrapper {
+  display: grid;
+  padding: 0 20px;
 
-  &__add-image {
-    margin: 0;
-    padding: 0;
-    border: none;
-  }
+  grid-template-columns: 1fr 1fr;
+}
 
-  &__add-image-label {
-    margin-bottom: 25px;
-    padding: 10px;
-    width: 100%;
-    display: block;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 18px;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    color: $dark-text;
-    background-color: $special-blue-light-color;
-    border-radius: 20px;
-  }
+.user-profile__add-image {
+  margin: 0;
+  padding: 0;
 
-  &__title {
-    margin: 0 auto;
-    margin-bottom: -10px;
-    padding: 0 10px;
-    width: fit-content;
-    display: flex;
-    justify-content: center;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 18px;
-    text-align: center;
-    text-transform: uppercase;
-    color: $blue-text;
-    background-color: $bg-grey-color;
-  }
+  border: none;
+}
 
-  &__fieldset {
-    margin: 0;
-    padding: 0;
-    border: none;
-  }
+.user-profile__add-image-label {
+  display: block;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 10px;
 
-  &__tags {
-    padding: 25px 28px 25px 26px;
-    width: 100%;
-    border: 1px solid $border-input-color;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 18px;
-    color: $textarea-grey;
-    background-color: $transparent-bg;
-    border-radius: 10px;
-  }
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 18px;
+  text-align: center;
+  color: $color-midnight-express-mod-2;
+  text-transform: uppercase;
 
-  &__tags-fieldset {
-    margin-bottom: 25px;
-  }
+  background-color: $color-hawkes-blue-mod;
+  border-radius: 20px;
+}
 
-  &__transport-fieldset {
-    margin-bottom: 35px;
-    border: 1px solid $border-input-color;
-    border-radius: 10px;
-  }
+.user-profile__title {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto -10px auto;
+  padding: 0 10px;
 
-  &__transport-checkbox {
-    @include list-reset;
-    padding: 16px 0;
-    margin: 0;
-    justify-content: center;
-  }
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: $color-catalina-blue;
+  text-transform: uppercase;
+
+  background-color: $color-solitude-grey-mod-2;
+}
+
+.user-profile__fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.user-profile__tags {
+  width: 100%;
+  padding: 25px 28px 25px 26px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $font-family-blogger-sans;
+  color: rgba($color-charcoal-grey, 0.6);
+
+  background-color: $color-transparent;
+  border: 1px solid $color-link-water-grey;
+  border-radius: 10px;
+}
+
+.user-profile__tags-fieldset {
+  margin-bottom: 25px;
+}
+
+.user-profile__transport-fieldset {
+  margin-bottom: 35px;
+
+  border: 1px solid $color-link-water-grey;
+  border-radius: 10px;
+}
+
+.user-profile__transport-checkbox {
+  @include list-reset;
+  
+  justify-content: center;
+  margin: 0;
+  padding: 16px 0;
 }

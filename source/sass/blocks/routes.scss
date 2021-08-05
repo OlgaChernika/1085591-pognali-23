@@ -1,96 +1,112 @@
 .routes {
-  padding-top: 70px;
-  background-color: $bg-grey-color;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
   z-index: 5;
 
-  &__title {
-    margin-bottom: 20px;
-    padding: 0 25px;
-  }
+  padding-top: 70px;
 
-  &__description {
-    margin: 0;
-    margin-bottom: 60px;
-    padding: 0 25px;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 22px;
-    color: $grey-text;
-  }
+  background-color: $color-solitude-grey-mod-2;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
 
-  &__list {
-    @include list-reset;
-    margin-bottom: 25px;
-    display: grid;
-    grid-template-rows: min-content;
-    gap: 8px;
-  }
+.routes__title {
+  margin-bottom: 20px;
+  padding: 0 25px;
+}
 
-  &__item {
-    display: grid;
-    grid-template-rows: min-content;
-    z-index: 1;
-  }
+.routes__description {
+  margin: 0 0 60px 0;
+  padding: 0 25px;
 
-  &__land-description {
-    margin-top: -10px;
-    padding: 25px 67px 25px 25px;
-    position: relative;
-    order: 2;
-    background-color: $white-color;
-    border-radius: 10px;
-    z-index: 1;
-  }
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-charcoal-grey;
+}
 
-  &__land-title {
-    margin: 0;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 21px;
-    color: $black-color;
-  }
+.routes__list {
+  @include list-reset;
 
-  &__land-tagline {
-    margin: 0;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 18px;
-    color: $grey-text;
-  }
+  display: grid;
+  margin-bottom: 25px;
 
-  &__counter {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    color: $dark-opacity-text;
-  }
+  gap: 8px;
+  grid-template-rows: min-content;
+}
 
-  &__counter::before {
+.routes__item {
+  z-index: 1;
+
+  display: grid;
+
+  grid-template-rows: min-content;
+}
+
+.routes__land-description {
+  position: relative;
+  z-index: 1;
+
+  order: 2;
+  margin-top: -10px;
+  padding: 25px 67px 25px 25px;
+
+  background-color: $color-white;
+  border-radius: 10px;
+}
+
+.routes__land-title {
+  margin: 0;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: $color-black;
+}
+
+.routes__land-tagline {
+  margin: 0;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-charcoal-grey;
+}
+
+.routes__counter {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba($color-midnight-express-mod-4, 0.3);
+}
+
+.routes__counter {
+  &::before {
     content: "";
     position: absolute;
-    width: 11px;
-    height: 12px;
     top: 4px;
     left: -20px;
-    background-image: url("../../img/counter-icon.svg");
+
+    width: 11px;
+    height: 12px;
+
+    background-image: url("../img/counter-icon.svg");
     opacity: 0.1;
   }
+}
 
-  &__image {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
+.routes__image {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
 
-  &__link {
-    margin-bottom: 34px;
-  }
+.routes__link {
+  margin-bottom: 34px;
 }

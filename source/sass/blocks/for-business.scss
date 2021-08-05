@@ -1,36 +1,40 @@
 .for-business {
-  margin: 0 auto;
   width: 270px;
-  box-shadow: 0 2px 8px rgba(29, 46, 91, 0.14);
+  margin: 0 auto;
+
   border-radius: 20px;
+  box-shadow: 0 2px 8px rgba($color-catalina-blue, 0.14);
+}
 
-  &__container {
-    padding: 0 25px;
-    padding-top: 35px;
-  }
+.for-business__container {
+  padding: 35px 25px 0 25px;
+}
 
-  &__title {
-    margin-bottom: 30px;
-    text-align: center;
-  }
+.for-business__title {
+  margin-bottom: 30px;
 
-  &__tariff {
-    margin-bottom: 30px;
-    line-height: 22px;
-  }
+  text-align: center;
+}
 
-  &__button-close {
-    padding: 18px 0;
-    width: 100%;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    text-transform: uppercase;
-    color: $blue-text;
-    background-color: $btn-grey-color;
-  }
+.for-business__tariff {
+  margin-bottom: 30px;
+
+  line-height: 22px;
+}
+
+.for-business__button-close {
+  width: 100%;
+  padding: 18px 0;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $color-catalina-blue;
+  text-transform: uppercase;
+
+  background-color: $color-ghost-white;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }

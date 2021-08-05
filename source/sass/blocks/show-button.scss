@@ -1,12 +1,14 @@
 .show-button {
-  padding: 23px;
   width: 100%;
   min-height: 62px;
+  padding: 23px;
+
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
-  color: $blue-text;
-  background-color: $light-yellow-color;
+  color: $color-catalina-blue;
+
+  background-color: $color-energy-yellow;
   border-radius: 10px;
 }

@@ -1,11 +1,13 @@
 .authorize-link {
+  justify-content: center;
+
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
   text-align: center;
+  color: $color-midnight-express;
   text-transform: uppercase;
-  justify-content: center;
-  color: $deep-blue-color;
-  background-color: $yellow-color;
+
+  background-color: $color-energy-yellow;
   border-radius: 25px;
 }

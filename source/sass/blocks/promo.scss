@@ -1,69 +1,75 @@
 .promo {
-  //background-color: $dark-bg-blue-color;
-  background: linear-gradient(to top, $deep-blue-color 0%, $deep-blue-color 20%, $dark-bg-blue-color 20%, $dark-bg-blue-color 100%);
-  //background: url("../../img/globe-back-mobile.png");
-  background-position: top;
-  background-repeat: no-repeat;
-  color: $white-color;
+  color: $color-white;
+  //background-color: $color-midnight-express-mod-2;
 
-  &__tagline::before {
+  background: url("../img/globe-back-mobile.png"),
+  linear-gradient(to top, $color-midnight-express 0%, $color-midnight-express 20%, $color-midnight-express-mod-2 20%, $color-midnight-express-mod-2 100%);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+
+.promo__tagline {
+  &::before {
     content: "";
     position: absolute;
-    width: 192px;
-    height: 255px;
     top: 235px;
     right: 23px;
-    background-image: url("../../img/traveller-illustration-mobile.svg");
+
+    width: 192px;
+    height: 255px;
+
+    background-image: url("../img/traveller-illustration-mobile.svg");
     background-repeat: no-repeat;
   }
+}
 
-  &__tagline {
-    margin: 0;
-    padding: 0 15px;
-    padding-bottom: 245px;
-    padding-top: 100px;
-    position: relative;
-    //background-image: url("/img/globe-back-mobile.png");
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 40px;
-    text-align: center;
-  }
+.promo__tagline {
+  position: relative;
 
-  &__communications {
-    margin: 0 auto;
-    margin-bottom: 30px;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    z-index: 1;
-  }
+  margin: 0;
+  padding: 100px 15px 245px 15px;
 
-  &__authorize {
-    padding: 10px;
-    min-width: 190px;
-    line-height: 20px;
-    z-index: 1;
-  }
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+}
 
-  &__review {
-    margin: 0;
-    margin-bottom: 30px;
-    padding-left: 25px;
-    padding-right: 85px;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 22px;
-  }
+.promo__communications {
+  z-index: 1;
 
-  &__review-quote {
-    margin: 0;
-    margin-bottom: 20px;
-    font-weight: 300;
-  }
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0 auto 30px auto;
+}
 
-  &__review-author {
-    font-weight: bold;
-  }
+.promo__authorize {
+  z-index: 1;
+
+  min-width: 190px;
+  padding: 10px;
+
+  line-height: 20px;
+}
+
+.promo__review {
+  margin: 0 0 30px 0;
+  padding: 0 85px 0 25px;
+
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.promo__review-quote {
+  margin: 0 0 20px 0;
+
+  font-weight: 300;
+}
+
+.promo__review-author {
+  font-weight: bold;
 }

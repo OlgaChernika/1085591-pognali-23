@@ -1,34 +1,40 @@
 .inner-page {
-  background-color: $bg-grey-color;
+  background-color: $color-solitude-grey-mod-2;
+}
 
-  &__header {
-    background-color: $deep-blue-color;
-  }
+.inner-page__header {
+  background-color: $color-midnight-express;
+}
 
-  &__wrapper-title {
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    background-color: $deep-blue-color;
-  }
+.inner-page__wrapper-title {
+  background-color: $color-midnight-express;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
 
-  &__title {
-    padding-bottom: 11px;
-    position: relative;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 36px;
-    color: $white-color;
-  }
+.inner-page__title {
+  position: relative;
 
-  &__title::before {
+  padding-bottom: 11px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-white;
+}
+
+.inner-page__title {
+  &::before {
     content: "";
     position: absolute;
-    width: 173px;
-    height: 5px;
     bottom: -2px;
     left: 25px;
-    background-color: $orange-color;
+
+    width: 173px;
+    height: 5px;
+
+    background-color: $color-neon-carrot-orange;
     border-radius: 4px;
   }
 }

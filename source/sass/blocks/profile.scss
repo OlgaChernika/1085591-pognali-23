@@ -1,142 +1,165 @@
 .profile {
   position: relative;
-  background-color: $white-color;
+
+  background-color: $color-white;
   border-radius: 10px;
+}
 
-  &__image {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
+.profile__link {
+  width: 100%;
+}
 
-  &__wrapper {
-    padding: 27px 0 20px 0;
-    display: flex;
-    flex-direction: column;
-  }
+.profile__image {
+  width: 100%;
+  max-height: 360px;
 
-  &__name {
-    margin: 0;
-    margin-bottom: 15px;
-    text-align: center;
-  }
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 
-  &__name-link {
-    position: relative;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 21px;
-    color: $blue-text;
-  }
+  object-fit: cover;
+}
 
-  &__status::before {
+.profile__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 27px 0 20px 0;
+}
+
+.profile__name {
+  margin: 0 0 15px 0;
+
+  text-align: center;
+}
+
+.profile__name-link {
+  position: relative;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: $color-catalina-blue;
+}
+
+.profile__status {
+  &::before {
     content: "";
     position: absolute;
-    width: 6px;
-    height: 6px;
     top: 8px;
     left: -20px;
+
+    width: 6px;
+    height: 6px;
+
+    background-color: $color-salmon;
     border-radius: 50%;
-    background-color: $red-color;
   }
+}
 
-  &__status--online::before {
-    background-color: $green-color;
+.profile__status--online {
+  &::before {
+    background-color: $color-lawn-green;
   }
+}
 
-  &__level {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+.profile__level {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
-  &__tags-list {
-    @include list-reset;
-    margin: 0 auto;
-    margin-bottom: 14px;
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+.profile__tags-list {
+  @include list-reset;
 
-  &__tags-item {
-    padding-left: 5px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 14px;
+}
 
-  &__tags-link {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 18px;
-    color: $grey-text;
-  }
+.profile__tags-item {
+  padding-left: 5px;
+}
 
-  &__routes-list {
-    @include list-reset;
-    margin-top: -40px;
-    width: 100%;
-    order: -1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 20px;
-  }
+.profile__tags-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-charcoal-grey;
+}
 
-  &__route {
-    margin-bottom: 10px;
-    display: block;
-    width: 35px;
-    height: 25px;
-  }
+.profile__routes-list {
+  @include list-reset;
 
-  &__route--sri-lanka {
-    background-image: url("../../img/Sri-Lanka-flag-min.svg");
-    background-repeat: no-repeat;
-    object-fit: contain;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  order: -1;
+  width: 100%;
+  margin-top: -40px;
 
-  &__route--thailand {
-    background-image: url("../../img/thailand-flag-min.svg");
-    background-repeat: no-repeat;
-  }
+  column-gap: 20px;
+}
 
-  &__route--seychelles {
-    background-image: url("../../img/Seychelles-flag-min.svg");
-    background-repeat: no-repeat;
-  }
+.profile__route {
+  display: block;
+  width: 35px;
+  height: 25px;
+  margin-bottom: 10px;
 
-  &__route--belgium {
-    background-image: url("../../img/Belgium-flag-min.svg");
-    background-repeat: no-repeat;
-  }
+  background-repeat: no-repeat;
 
-  &__route--czech {
-    background-image: url("../../img/Czech-flag-min.svg");
-    background-repeat: no-repeat;
-  }
+  object-fit: contain;
+}
 
-  &__tooltip {
-    padding: 20px;
-    display: none;
-    position: relative;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 20px;
-    text-align: center;
-    background-color: $dark-blue-color;
-  }
+.profile__route--sri-lanka {
+  background-image: url("../img/sri-lanka-flag-min.svg");
+}
 
-  &__transport-list {
-    @include list-reset;
-    display: flex;
-    justify-content: center;
-  }
+.profile__route--thailand {
+  background-image: url("../img/thailand-flag-min.svg");
+}
 
-  &__transport-item {
-    width: 23px;
-    height: 24px;
-    background-color: #f80000;
-  }
+.profile__route--seychelles {
+  background-image: url("../img/seychelles-flag-min.svg");
+}
+
+.profile__route--belgium {
+  background-image: url("../img/belgium-flag-min.svg");
+}
+
+.profile__route--czech {
+  background-image: url("../img/czech-flag-min.svg");
+}
+
+.profile__tooltip {
+  position: relative;
+
+  display: none;
+  padding: 20px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+
+  background-color: $color-midnight-express-mod;
+}
+
+.profile__transport-list {
+  @include list-reset;
+
+  display: flex;
+  justify-content: center;
+}
+
+.profile__transport-item {
+  width: 23px;
+  height: 24px;
+
+  background-color: #f80000;
 }

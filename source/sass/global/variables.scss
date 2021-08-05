@@ -1,43 +1,39 @@
-$bloggersans-font: "Blogger Sans", "Arial", sans-serif;
-$deep-blue-color: #182044;
-$dark-blue-color: #101d41;
-$dark-bg-blue-color: #161c35;
-$white-color: #ffffff;
-$black-color: #000000;
-$transparent-bg: rgba(225, 225, 225, 0);
-$yellow-color: #ffd74b;
-$light-grey-color: #cccccc;
-$bg-light-grey-color:#e6e8f1;
-$bg-blue-grey-color: #cbced9;
-$grey-border-color: #e1e3e9;
-$bg-grey-color: #edeff6;
-$btn-grey-color: #f3f4f8;
-$grey-color: #d6daed;
-$land-filter-grey-color: #e2e5f2;
-$special-blue-light-color: #dfe3f0;
-$special-blue-color: #d4d9eb;
-$green-color: #81e31e;
-$red-color: #f97676;
-$yellow-border-color: #f3c72b;
-$dark-yellow-color: #ffbd30;
-$orange-color: #ff8d30;
-$light-orange-color: #ffa530;
-$light-yellow-color: #ffd74b;
-$border-input-color: #cbced9;
-$border-calendar-color: #d6d9e6;
-$black-text: rgba(0, 0, 0, 1);
-$black-opacity-text: rgba(0, 0, 0, 0.3);
-$black-crumbs-text: rgba(0, 0, 0, 0.6);
-$textarea-grey: rgba(68, 68, 68, 0.6);
-$dark-blue-text: rgba(25, 33, 68, 1);
-$dark-blue-opacity-text: rgba(25, 33, 68, 0.3);
-$light-blue-text: rgba(19, 37, 118, 1);
-$dark-opacity-text: rgba(22, 28, 53, 0.3);
-$dark-text: rgba(22, 28, 53, 1);
-$deep-blue-opacity-text: rgba(29, 46, 91, 0.3);
-$deep-blue-range-color: rgba(29, 46, 91, 0.2);
-$blue-text: rgba(29, 46, 91, 1);
-$grey-text: rgba(68, 68, 68, 1);
-$grey-opacity-text: rgba(68, 68, 68, 0.3);
-$yellow-text: rgba(255, 215, 75, 1);
-$orange-text: rgba(255, 92, 35, 1);
+//fonts
+$font-family-blogger-sans:         "Blogger Sans", "Arial", sans-serif;
+//colors
+$color-white:                    #ffffff;
+$color-black:                    #000000;
+$color-charcoal-grey:            #444444;
+$color-transparent:              rgba(225, 225, 225, 0);
+//blue-colors
+$color-catalina-blue:            #1d2e5b;
+$color-midnight-blue:            #132576;
+$color-midnight-express:         #182044;
+$color-midnight-express-mod:     #101d41;
+$color-midnight-express-mod-2:   #161c35;
+$color-midnight-express-mod-3:   #192144;
+$color-midnight-express-mod-4:   #171d36;
+//light-grey-colors
+$color-very-light-grey:          #cccccc;
+$color-solitude-grey:            #e6e8f1;
+$color-solitude-grey-mod:        #e1e3e9;
+$color-solitude-grey-mod-2:      #edeff6;
+$color-link-water-grey:          #cbced9;
+$color-ghost-white:              #f3f4f8;
+$color-hawkes-blue:              #d6daed;
+$color-hawkes-blue-mod:          #dfe3f0;
+$color-hawkes-blue-mod-2:        #d4d9eb;
+$color-hawkes-blue-mod-3:        #d6d9e6;
+$color-lavender:                 #e2e5f2;
+$color-white-smoke:              #f2f2f2;
+//yellow-colors
+$color-energy-yellow:            #ffd74b;
+$color-golden-dream-yellow:      #f3c72b;
+$color-supernova-yellow:         #ffbd30;
+$color-lightning-yellow:         #ffa530;
+//orange-colors
+$color-neon-carrot-orange:       #ff8d30;
+$color-outrageous-orange:        #ff5c23;
+//other-colors
+$color-salmon:                   #f97676;
+$color-lawn-green:               #81e31e;

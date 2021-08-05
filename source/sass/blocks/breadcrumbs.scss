@@ -1,38 +1,46 @@
 .breadcrumbs {
-  width: 50px;
   justify-content: space-between;
+  width: 50px;
+}
 
-  &__link {
-    position: relative;
-    padding: 11px;
-    width: 5px;
-    height: 5px;
-  }
+.breadcrumbs__link {
+  position: relative;
 
-  &__link::before {
+  width: 5px;
+  height: 5px;
+  padding: 11px;
+}
+
+.breadcrumbs__link {
+  &::before {
     content: "";
     position: absolute;
-    width: 5px;
-    height: 5px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%);
+
+    width: 5px;
+    height: 5px;
+
+    background-color: rgba($color-catalina-blue, 0.3);
     border-radius: 50%;
-    background-color: $deep-blue-opacity-text;
+    transform: translate(-50%);
   }
+}
 
-  &__link--current::before {
-    background-color: $blue-text;
+.breadcrumbs__link--current {
+  &::before {
+    background-color: $color-catalina-blue;
   }
+}
 
-  &__link-text {
-    display: none;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0.11em;
-    text-transform: uppercase;
-    color: $black-crumbs-text;
-  }
+.breadcrumbs__link-text {
+  display: none;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba($color-black, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
 }

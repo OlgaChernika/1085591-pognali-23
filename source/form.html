@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Погнали</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body class="inner-page">
     <header class="inner-page__header header">
@@ -14,7 +15,7 @@
           <img class="logo__image logo__image--deep" src="img/logo_mobile.svg" width="95" height="15" alt="Логотип сервиса Погнали">
           <img class="logo__image logo__image--white" src="img/logo_mobile-white.svg" width="95" height="15" alt="Логотип сервиса Погнали">
         </a>
-        <button class="header__toggle" type="button" aria-label="Кнопка открытия/закрытия меню"></button>
+        <button class="header__toggle button" type="button" aria-label="Кнопка открытия/закрытия меню"></button>
       </div>
       <div class="header__menu">
         <nav class="header__nav nav">
@@ -170,18 +171,18 @@
                     <label class="step__label" for="companions-quantity">Ищу попутчиков:</label>
                     <p class="step__unit">чел.</p>
                     <div class="step__input-wrapper">
-                      <button class="step__button-quantity step__button-quantity--less" type="button" aria-label="Уменьшить количество"></button>
+                      <button class="step__button-quantity step__button-quantity--less button" type="button" aria-label="Уменьшить количество"></button>
                       <input class="step__input" type="text" id="companions-quantity" name="companions-quantity" value="2">
-                      <button class="step__button-quantity step__button-quantity--more" type="button" aria-label="Увеличить количество"></button>
+                      <button class="step__button-quantity step__button-quantity--more button" type="button" aria-label="Увеличить количество"></button>
                     </div>
                   </div>
                   <div class="step__wrapper">
                     <label class="step__label" for="days-quantity">Длительность:</label>
                     <p class="step__unit">дн.</p>
                     <div class="step__input-wrapper">
-                      <button class="step__button-quantity step__button-quantity--less" type="button" aria-label="Уменьшить количество"></button>
+                      <button class="step__button-quantity step__button-quantity--less button" type="button" aria-label="Уменьшить количество"></button>
                       <input class="step__input" type="text" id="days-quantity" name="days-quantity" value="3">
-                      <button class="step__button-quantity step__button-quantity--more" type="button" aria-label="Увеличить количество"></button>
+                      <button class="step__button-quantity step__button-quantity--more button" type="button" aria-label="Увеличить количество"></button>
                     </div>
                   </div>
                   <div class="step__checkbox-wrapper">
@@ -191,9 +192,9 @@
                 </fieldset>
                 <div class="step__calendar-wrapper calendar">
                   <div class="calendar__month-wrapper">
-                    <button class="calendar__arrow calendar__arrow--back" type="button" aria-label="Предыдущий месяц"></button>
+                    <button class="calendar__arrow calendar__arrow--back button" type="button" aria-label="Предыдущий месяц"></button>
                     <p class="calendar__month">Март 2019</p>
-                    <button class="calendar__arrow calendar__arrow--back" type="button" aria-label="Следующий месяц"></button>
+                    <button class="calendar__arrow calendar__arrow--back button" type="button" aria-label="Следующий месяц"></button>
                   </div>
                   <ul class="calendar__week">
                     <li class="calendar__week-item">
@@ -304,28 +305,28 @@
                   <li class="step__routes-item">
                     <div class="step__route-wrapper step__selected-route">
                       <p class="step__route">Босния и Герцеговина</p>
-                      <button class="step__choose-route-button" type="button" aria-label="Выберите страну"></button>
+                      <button class="step__choose-route-button button" type="button" aria-label="Выберите страну"></button>
                     </div>
                     <div class="step__flag-wrapper">
                       <span class="step__route-flag"></span>
-                      <button class="step__close-route-button" type="button" aria-label="Удалить страну"></button>
+                      <button class="step__close-route-button button" type="button" aria-label="Удалить страну"></button>
                     </div>
                   </li>
                   <li class="step__routes-item">
                     <div class="step__route-wrapper step__selected-route">
                       <p class="step__route">Чехия</p>
-                      <button class="step__choose-route-button" type="button" aria-label="Выберите страну"></button>
+                      <button class="step__choose-route-button button" type="button" aria-label="Выберите страну"></button>
                     </div>
                     <div class="step__flag-wrapper">
                       <span class="step__route-flag"></span>
                     </div>
-                    <button class="step__close-route-button" type="button" aria-label="Удалить страну"></button>
+                    <button class="step__close-route-button button" type="button" aria-label="Удалить страну"></button>
                   </li>
                   <li class="step__routes-item step__routes-item--add-land">
                     <div class="step__route-wrapper">
                       <p class="step__choose-route">Выберите страну</p>
-                      <button class="step__choose-route-button" type="button" aria-label="Выберите страну"></button>
-                      <button class="step__close-route-button" type="button" aria-label="Удалить страну"></button>
+                      <button class="step__choose-route-button button" type="button" aria-label="Выберите страну"></button>
+                      <button class="step__close-route-button button" type="button" aria-label="Удалить страну"></button>
                     </div>
                     <div class="step__alphabet-wrapper">
                       <ul class="step__alphabet alphabet">
@@ -443,11 +444,11 @@
                     </div>
                   </li>
                   <li class="step__routes-item step__routes-item--add-land">
-                    <button class="step__choose-route step__add-routes" type="button">Добавить страну</button>
+                    <button class="step__choose-route step__add-routes button" type="button">Добавить страну</button>
                   </li>
                 </ul>
-                <a class="step__button step__button--next" href="#step-second">Следующий шаг</a>
-                <a class="step__button step__button--back" href="#step-first">На шаг назад</a>
+                <a class="step__button step__button--next button" href="#step-second">Следующий шаг</a>
+                <a class="step__button step__button--back button" href="#step-first">На шаг назад</a>
               </li>
               <li class="add-plan__item step step-third" id="step-third">
                 <div class="step__title-wrapper">
@@ -479,7 +480,7 @@
                     </li>
                   </ul>
                 </fieldset>
-                <button class="step__button step__button--send" type="submit">Отправить</button>
+                <button class="step__button step__button--send button" type="submit">Отправить</button>
                 <a class="step__button step__button--back" href="#step-second">На шаг назад</a>
               </li>
             </ul>

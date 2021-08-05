@@ -1,43 +1,53 @@
 .social {
   @include list-reset;
+  
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  background-color: $white-color;
+  justify-content: space-between;
 
-  &__link {
-    width: 20px;
-    height: 20px;
-  }
+  background-color: $color-white;
+}
 
-  &__link--fb {
+.social__link {
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social__link {
+  &--fb {
     width: 11px;
     height: 21px;
-    background-image: url("/img/fb-icon.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
 
-  &__link--vk {
+    background-image: url("../img/fb-icon.svg");
+  }
+}
+
+.social__link {
+  &--vk {
     width: 23px;
     height: 12px;
-    background-image: url("/img/vk-icon.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
 
-  &__link--inst {
+    background-image: url("../img/vk-icon.svg");
+  }
+}
+
+.social__link {
+  &--inst {
     width: 18px;
     height: 18px;
-    background-image: url("/img/insta-icon.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
 
-  &__link--yellow {
+    background-image: url("../img/insta-icon.svg");
+  }
+}
+
+.social__link {
+  &--yellow {
     width: 45px;
     height: 45px;
+
+    background-color: $color-energy-yellow;
     border-radius: 50%;
-    background-color: $light-yellow-color;
   }
 }

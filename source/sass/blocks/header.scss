@@ -1,83 +1,98 @@
 .header {
   min-height: 73px;
-  background-color: $dark-bg-blue-color;
 
-  &__top-wrapper {
-    padding-top: 20px;
-    display: grid;
-    grid-template-columns: 1fr min-content;
-    margin-bottom: -73px;
-    z-index: 99;
-  }
+  background-color: $color-midnight-express-mod-2;
+}
 
-  &__logo {
-    width: 100%;
-    z-index: 99;
-  }
+.header__top-wrapper {
+  z-index: 99;
 
-  &__toggle {
-    position: relative;
-    width: 19px;
-    height: 19px;
-    background-color: $transparent-bg;
-    z-index: 99;
-  }
+  display: grid;
+  margin-bottom: -73px;
+  padding-top: 20px;
 
-  &__toggle::before {
+  grid-template-columns: 1fr min-content;
+}
+
+.header__logo {
+  z-index: 99;
+
+  width: 100%;
+}
+
+.header__toggle {
+  position: relative;
+  z-index: 99;
+
+  width: 19px;
+  height: 19px;
+
+  background-color: $color-transparent;
+}
+
+.header__toggle {
+  &::before {
     content: "";
     position: absolute;
-    width: 23px;
-    height: 2px;
     top: 8px;
     left: -2px;
-    background-color: $light-grey-color;
+
+    width: 23px;
+    height: 2px;
+
+    background-color: $color-very-light-grey;
     transform: rotate(-45deg);
   }
+}
 
-  &__toggle::after {
+.header__toggle {
+  &::after {
     content: "";
     position: absolute;
-    width: 23px;
-    height: 2px;
     top: 8px;
     left: -2px;
-    background-color: $light-grey-color;
+
+    width: 23px;
+    height: 2px;
+
+    background-color: $color-very-light-grey;
     transform: rotate(45deg);
   }
+}
 
-  &__menu {
-    padding-top: 100px;
-    display: none;
-    position: absolute;
-    min-height: 500px;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: $white-color;
-    z-index: 98;
-  }
+.header__menu {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 98;
 
-  &__nav {
-    margin-bottom: 50px;
-  }
+  display: none;
+  min-height: 500px;
+  padding-top: 100px;
 
-  &__communications {
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    flex-direction: column;
-  }
+  background-color: $color-white;
+  transform: translateX(-50%);
+}
 
-  &__authorize {
-    margin-bottom: 50px;
-    padding: 10px;
-    order: -1;
-    line-height: 30px;
-  }
+.header__nav {
+  margin-bottom: 50px;
+}
 
-  &__social {
-    margin: 0 auto;
-    margin-bottom: 40px;
-    width: 100px;
-  }
+.header__communications {
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto 50px auto;
+}
+
+.header__authorize {
+  order: -1;
+  margin-bottom: 50px;
+  padding: 10px;
+
+  line-height: 30px;
+}
+
+.header__social {
+  width: 100px;
+  margin: 0 auto 40px auto;
 }

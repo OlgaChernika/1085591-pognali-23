@@ -1,70 +1,78 @@
 .user-plan {
   padding-top: 28px;
-  background-color: $special-blue-light-color;
+
+  background-color: $color-hawkes-blue-mod;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+}
 
-  &__title {
-    margin-bottom: 30px;
-  }
+.user-plan__title {
+  margin-bottom: 30px;
+}
 
-  &__list {
-    @include list-reset;
-    padding-bottom: 30px;
-    margin: 0;
-    counter-reset: item;
-  }
+.user-plan__list {
+  @include list-reset;
+  
+  margin: 0;
+  padding-bottom: 30px;
 
-  &__item {
-    margin-bottom: 10px;
-    padding: 23px;
-    background-color: $white-color;
-    border-radius: 10px;
-  }
+  counter-reset: item;
+}
 
-  &__route {
-    margin: 0;
-    margin-bottom: 20px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 16px;
-    color: $blue-text;
-  }
+.user-plan__item {
+  margin-bottom: 10px;
+  padding: 23px;
 
-  &__route::before {
+  background-color: $color-white;
+  border-radius: 10px;
+}
+
+.user-plan__route {
+  margin: 0 0 20px 0;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-catalina-blue;
+}
+
+.user-plan__route {
+  &::before {
     content: counter(item) ".";
+
     padding-right: 5px;
+
     counter-increment: item;
   }
+}
 
-  &__wrapper {
-    padding: 2px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 14px;
-    text-transform: uppercase;
-  }
+.user-plan__wrapper {
+  padding: 2px;
 
-  &__info {
-    margin-bottom: 20px;
-    letter-spacing: 0.06em;
-    color: $blue-text;
-  }
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
 
-  &__companions {
-    margin: 0;
-    margin-bottom: 5px;
-  }
+.user-plan__info {
+  margin-bottom: 20px;
 
-  &__period {
-    margin: 0;
-    margin-bottom: 5px;
-  }
+  color: $color-catalina-blue;
+  letter-spacing: 0.06em;
+}
 
-  &__button {
-    letter-spacing: 0.03em;
-    color: $black-opacity-text;
-  }
+.user-plan__companions {
+  margin: 0 0 5px 0;
+}
+
+.user-plan__period {
+  margin: 0 0 5px 0;
+}
+
+.user-plan__button {
+  color: rgba($color-black, 0.3);
+  letter-spacing: 0.03em;
 }

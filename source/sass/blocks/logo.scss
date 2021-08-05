@@ -1,9 +1,9 @@
-.logo {
-  &__image {
+.logo__image {
     z-index: 1;
-  }
+}
 
-  .logo__image--deep {
+.logo__image {
+  &--deep {
     display: none;
   }
 }
