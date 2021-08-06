@@ -28,9 +28,7 @@
   height: 19px;
 
   background-color: $color-transparent;
-}
 
-.header__toggle {
   &::before {
     content: "";
     position: absolute;
@@ -43,9 +41,7 @@
     background-color: $color-very-light-grey;
     transform: rotate(-45deg);
   }
-}
 
-.header__toggle {
   &::after {
     content: "";
     position: absolute;

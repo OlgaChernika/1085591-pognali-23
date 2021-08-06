@@ -12,9 +12,7 @@
   color: $color-black;
 
   cursor: pointer;
-}
 
-.checkbox__label {
   &::before {
     content: "";
     position: absolute;
@@ -23,7 +21,7 @@
 
     width: 18px;
     height: 18px;
-    
+
     background-color: $color-white;
     border-radius: 4px;
   }

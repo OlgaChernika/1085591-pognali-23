@@ -87,15 +87,11 @@
 
   background-color: $color-catalina-blue;
   border-radius: 50%;
-}
 
-.companions-filter__toggle {
   &--min {
     left: 40%;
   }
-}
 
-.companions-filter__toggle {
   &--max {
     right: 0%;
   }
@@ -112,6 +108,7 @@
 .companions-filter__input {
   position: relative;
 
+  width: 100%;
   padding: 10px;
 
   font-style: normal;
@@ -124,16 +121,12 @@
 
   border: 1px solid $color-link-water-grey;
   border-radius: 4px;
-}
 
-.companions-filter__input {
   &--min-level {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
-}
 
-.companions-filter__input {
   &--max-level {
     margin-left: -1px;
 

@@ -25,9 +25,7 @@
 
   display: none;
   margin: 0;
-}
 
-.step__breadcrumbs {
   &--for-mobile {
     position: absolute;
     top: 2px;
@@ -130,9 +128,7 @@
   line-height: 15px;
   color: $color-catalina-blue;
   text-transform: none;
-}
 
-.step__checkbox-label {
   &::before {
     content: "";
     position: absolute;
@@ -164,28 +160,24 @@
   margin-bottom: 22px;
 
   grid-template-columns: 1fr 52px;
-}
 
-.step__routes-item {
   &--add-land {
     display: block;
-  }
-}
 
-.step__routes-item--add-land {
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 47px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 47px;
 
-    width: 8px;
-    height: 8px;
+      width: 8px;
+      height: 8px;
 
-    background-color: $color-transparent;
-    border: 1px solid $color-link-water-grey;
-    border-radius: 50%;
-    transform: translateY(-50%);
+      background-color: $color-transparent;
+      border: 1px solid $color-link-water-grey;
+      border-radius: 50%;
+      transform: translateY(-50%);
+    }
   }
 }
 
@@ -198,10 +190,6 @@
   border-radius: 4px;
 }
 
-// .step__selected-route {
-//   width: calc(100%-52px);
-// }
-
 .step__flag-wrapper {
   position: relative;
 
@@ -213,20 +201,20 @@
 
   border: 1px solid $color-link-water-grey;
   border-radius: 4px;
-}
 
-.step__flag-wrapper::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -5px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -5px;
 
-  width: 8px;
-  height: 8px;
+    width: 8px;
+    height: 8px;
 
-  background-color: $color-catalina-blue;
-  border-radius: 50%;
-  transform: translateY(-50%);
+    background-color: $color-catalina-blue;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .step__route-flag {
@@ -240,7 +228,6 @@
   display: inline-flex;
   flex-grow: 2;
   align-items: center;
-  //width: 168px;
   margin: 0;
   padding-left: 10px;
 
@@ -362,12 +349,12 @@
 
   border: 1px solid $color-link-water-grey;
   border-radius: 4px;
-}
 
-.step__entertainment-comment::placeholder {
-  line-height: 22px;
-  font-family: $font-family-blogger-sans;
-  color: rgba($color-charcoal-grey, 0.3);
+  &::placeholder {
+    line-height: 22px;
+    font-family: $font-family-blogger-sans;
+    color: rgba($color-charcoal-grey, 0.3);
+  }
 }
 
 .step__button {
@@ -383,18 +370,14 @@
   text-align: center;
   color: $color-catalina-blue;
   text-transform: uppercase;
-}
 
-.step__button {
   &--next {
     margin-bottom: 13px;
 
     background-color: $color-energy-yellow;
     border-radius: 20px;
   }
-}
 
-.step__button {
   &--send {
     margin-bottom: 13px;
 

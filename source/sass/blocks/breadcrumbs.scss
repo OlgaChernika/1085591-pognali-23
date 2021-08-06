@@ -9,9 +9,7 @@
   width: 5px;
   height: 5px;
   padding: 11px;
-}
 
-.breadcrumbs__link {
   &::before {
     content: "";
     position: absolute;
@@ -25,11 +23,11 @@
     border-radius: 50%;
     transform: translate(-50%);
   }
-}
 
-.breadcrumbs__link--current {
-  &::before {
-    background-color: $color-catalina-blue;
+  &--current {
+    &::before {
+      background-color: $color-catalina-blue;
+    }
   }
 }
 

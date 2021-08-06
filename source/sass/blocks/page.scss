@@ -4,12 +4,12 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 24px;
-}
 
-.page__title--orange {
-  color: $color-neon-carrot-orange;
-}
+  &--orange {
+    color: $color-neon-carrot-orange;
+  }
 
-.page__title--blue {
-  color: $color-catalina-blue;
+  &--blue {
+    color: $color-catalina-blue;
+  }
 }

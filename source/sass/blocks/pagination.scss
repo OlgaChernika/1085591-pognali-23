@@ -19,16 +19,12 @@
 
   background-color: $color-white;
   border-radius: 20px;
-}
 
-.pagination__button {
   &--back {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
-}
 
-.pagination__button {
   &--next {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;

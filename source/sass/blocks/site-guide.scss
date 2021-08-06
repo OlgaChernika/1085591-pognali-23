@@ -24,9 +24,7 @@
   padding: 22px 96px 22px 24px;
 
   border-radius: 10px;
-}
 
-.site-guide__item {
   &::after {
     content: counter(item);
     position: absolute;
@@ -36,27 +34,19 @@
 
     counter-increment: item;
   }
-}
 
-.site-guide__item {
   &--orange {
     background-color: $color-neon-carrot-orange;
   }
-}
 
-.site-guide__item {
   &--light-orange {
     background-color: $color-lightning-yellow;
   }
-}
 
-.site-guide__item {
   &--yellow {
     background-color: $color-supernova-yellow;
   }
-}
 
-.site-guide__item {
   &--light-yellow {
     background-color: $color-energy-yellow;
   }

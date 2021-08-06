@@ -71,7 +71,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: $color-charcoal-grey;
+  color: rgba($color-charcoal-grey, 0.3);
 }
 
 .routes__counter {
@@ -84,9 +84,7 @@
   font-size: 16px;
   line-height: 20px;
   color: rgba($color-midnight-express-mod-4, 0.3);
-}
 
-.routes__counter {
   &::before {
     content: "";
     position: absolute;

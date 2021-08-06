@@ -22,9 +22,7 @@
   font-size: 36px;
   line-height: 36px;
   color: $color-white;
-}
 
-.inner-page__title {
   &::before {
     content: "";
     position: absolute;

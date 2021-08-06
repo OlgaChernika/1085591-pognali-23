@@ -50,14 +50,14 @@
   background-color: $color-white;
   border: none;
   border-radius: 10px;
-}
 
-.authorize__email-input::placeholder {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
-  color: rgba($color-charcoal-grey, 0.3);
+  &::placeholder {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    color: rgba($color-charcoal-grey, 0.3);
+  }
 }
 
 .authorize__button {

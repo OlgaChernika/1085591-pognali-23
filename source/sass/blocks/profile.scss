@@ -54,11 +54,11 @@
     background-color: $color-salmon;
     border-radius: 50%;
   }
-}
 
-.profile__status--online {
-  &::before {
-    background-color: $color-lawn-green;
+  &--online {
+    &::before {
+      background-color: $color-lawn-green;
+    }
   }
 }
 
@@ -113,26 +113,26 @@
   background-repeat: no-repeat;
 
   object-fit: contain;
-}
 
-.profile__route--sri-lanka {
-  background-image: url("../img/sri-lanka-flag-min.svg");
-}
+  &--sri-lanka {
+    background-image: url("../img/sri-lanka-flag-min.svg");
+  }
 
-.profile__route--thailand {
-  background-image: url("../img/thailand-flag-min.svg");
-}
+  &--thailand {
+    background-image: url("../img/thailand-flag-min.svg");
+  }
 
-.profile__route--seychelles {
-  background-image: url("../img/seychelles-flag-min.svg");
-}
+  &--seychelles {
+    background-image: url("../img/seychelles-flag-min.svg");
+  }
 
-.profile__route--belgium {
-  background-image: url("../img/belgium-flag-min.svg");
-}
+  &--belgium {
+    background-image: url("../img/belgium-flag-min.svg");
+  }
 
-.profile__route--czech {
-  background-image: url("../img/czech-flag-min.svg");
+  &--czech {
+    background-image: url("../img/czech-flag-min.svg");
+  }
 }
 
 .profile__tooltip {

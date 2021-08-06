@@ -46,15 +46,11 @@
   line-height: 18px;
   text-align: center;
   color: $color-charcoal-grey;
-}
 
-.calendar__week-day {
   &--short {
     display: block;
   }
-}
 
-.calendar__week-day {
   &--weekend {
     color: $color-outrageous-orange;
   }
@@ -87,37 +83,33 @@
 
   background-color: $color-solitude-grey-mod-2;
   border: 1px solid $color-link-water-grey;
-}
 
-.calendar__item {
   &--disabled {
     font-weight: normal;
     color: rgba($color-charcoal-grey, 0.3);
 
     background-color: $color-white;
   }
-}
 
-.calendar__item {
   &--current {
     color: $color-white;
 
     background-color: $color-catalina-blue;
   }
-}
 
-.calendar__item--selected {
-  &::before {
-    content: "";
-    position: absolute;
-    top: -2px;
-    left: -1px;
-    z-index: 1;
+  &--selected {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -1px;
+      z-index: 1;
 
-    width: calc(100% + 2px);
-    min-height: 32px;
+      width: calc(100% + 2px);
+      min-height: 32px;
 
-    border: 2px solid $color-outrageous-orange;
+      border: 2px solid $color-outrageous-orange;
+    }
   }
 }
 

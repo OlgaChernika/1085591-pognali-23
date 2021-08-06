@@ -33,21 +33,25 @@
   color: $color-catalina-blue;
 }
 
-.card__status::before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  right: 0;
+.card__status {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 0;
 
-  width: 6px;
-  height: 6px;
+    width: 6px;
+    height: 6px;
 
-  background-color: $color-salmon;
-  border-radius: 50%;
-}
+    background-color: $color-salmon;
+    border-radius: 50%;
+  }
 
-.card__status--online::before {
-  background-color: $color-lawn-green;
+  &--online {
+    &::before {
+      background-color: $color-lawn-green;
+    }
+  }
 }
 
 .card__link {

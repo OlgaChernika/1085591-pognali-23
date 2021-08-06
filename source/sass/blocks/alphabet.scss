@@ -27,26 +27,20 @@
   text-transform: uppercase;
 
   background-color: $color-white;
-}
 
-.alphabet__link {
   &--current {
     color: $color-white;
 
     background-color: $color-catalina-blue;
   }
-}
 
-.alphabet__link {
   &--form {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
   }
-}
 
-.alphabet__link {
   &--form-current {
     color: $color-catalina-blue;
 
