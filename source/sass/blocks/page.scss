@@ -1,0 +1,15 @@
+.page__title {
+  margin: 0;
+
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+
+  &--orange {
+    color: $color-neon-carrot-orange;
+  }
+
+  &--blue {
+    color: $color-catalina-blue;
+  }
+}

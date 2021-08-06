@@ -1,0 +1,38 @@
+.inner-page {
+  background-color: $color-solitude-grey-mod-2;
+}
+
+.inner-page__header {
+  background-color: $color-midnight-express;
+}
+
+.inner-page__wrapper-title {
+  background-color: $color-midnight-express;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.inner-page__title {
+  position: relative;
+
+  padding-bottom: 11px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 25px;
+
+    width: 173px;
+    height: 5px;
+
+    background-color: $color-neon-carrot-orange;
+    border-radius: 4px;
+  }
+}

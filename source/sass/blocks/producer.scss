@@ -1,0 +1,24 @@
+.producer {
+  padding-top: 13px;
+
+  border-top: 1px solid $color-white-smoke;
+}
+
+.producer__description {
+  margin: 0;
+  padding: 10px 0;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-charcoal-grey;
+}
+
+.producer__link {
+  width: 27px;
+  height: 34px;
+
+  background-image: url("../img/logo_html.svg");
+  background-repeat: no-repeat;
+}

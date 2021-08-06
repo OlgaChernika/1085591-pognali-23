@@ -1,0 +1,32 @@
+.pagination {
+  display: flex;
+  margin: 0 auto 46px auto;
+}
+
+.pagination__list {
+  @include list-reset;
+
+  display: none;
+  margin: 0;
+}
+
+.pagination__button {
+  display: block;
+  flex-grow: 1;
+  min-width: 135px;
+  height: 50px;
+  padding: 0;
+
+  background-color: $color-white;
+  border-radius: 20px;
+
+  &--back {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &--next {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}

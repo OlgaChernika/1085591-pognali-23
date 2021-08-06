@@ -1,0 +1,53 @@
+.site-guide {
+  @include list-reset;
+
+  display: grid;
+  margin: 0;
+  padding-bottom: 40px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: $color-midnight-express-mod-2;
+
+  counter-reset: item;
+
+  grid-template-rows: min-content;
+}
+
+.site-guide__item {
+  position: relative;
+
+  min-height: 80px;
+  margin-bottom: -15px;
+  padding: 22px 96px 22px 24px;
+
+  border-radius: 10px;
+
+  &::after {
+    content: counter(item);
+    position: absolute;
+    right: 20px;
+
+    color: $color-white;
+
+    counter-increment: item;
+  }
+
+  &--orange {
+    background-color: $color-neon-carrot-orange;
+  }
+
+  &--light-orange {
+    background-color: $color-lightning-yellow;
+  }
+
+  &--yellow {
+    background-color: $color-supernova-yellow;
+  }
+
+  &--light-yellow {
+    background-color: $color-energy-yellow;
+  }
+}

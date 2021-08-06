@@ -1,1 +1,53 @@
-// Начните писать стили здесь
+// global
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/mixins.scss";
+@import "global/utils.scss";
+@import "global/global.scss";
+@import "global/normalize.scss";
+// blocks
+@import "blocks/button.scss";
+@import "blocks/page.scss";
+@import "blocks/header.scss";
+@import "blocks/logo.scss";
+@import "blocks/nav.scss";
+@import "blocks/promo.scss";
+@import "blocks/communications.scss";
+@import "blocks/authorize-link.scss";
+@import "blocks/social.scss";
+@import "blocks/site-guide.scss";
+@import "blocks/service.scss";
+@import "blocks/routes.scss";
+@import "blocks/show-button.scss";
+@import "blocks/companions.scss";
+@import "blocks/profile.scss";
+@import "blocks/add-profile.scss";
+@import "blocks/tariff.scss";
+@import "blocks/authorize.scss";
+@import "blocks/map.scss";
+@import "blocks/footer.scss";
+@import "blocks/producer.scss";
+@import "blocks/for-business.scss";
+//catalog
+@import "blocks/inner-page.scss";
+@import "blocks/land-filter.scss";
+@import "blocks/alphabet.scss";
+@import "blocks/routes-by-letter.scss";
+@import "blocks/companions-filter.scss";
+@import "blocks/checkbox.scss";
+@import "blocks/transport.scss";
+@import "blocks/catalog.scss";
+@import "blocks/card.scss";
+@import "blocks/pagination.scss";
+//form
+@import "blocks/user-profile.scss";
+@import "blocks/user-plan.scss";
+@import "blocks/add-plan.scss";
+@import "blocks/step.scss";
+@import "blocks/breadcrumbs.scss";
+@import "blocks/calendar.scss";
+
+body {
+  margin: 0;
+  font-family: $font-family-blogger-sans;
+}

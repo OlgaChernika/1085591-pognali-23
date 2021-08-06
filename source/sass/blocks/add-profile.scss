@@ -1,0 +1,36 @@
+.add-profile {
+  padding-top: 38px;
+
+  background-color: $color-solitude-grey;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.add-profile__wrapper-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding-left: 25px;
+}
+
+.add-profile__title {
+  padding: 16px 30px 0 0;
+}
+
+.add-profile__tariff {
+  margin: 0 0 20px 0;
+}
+
+.add-profile__link {
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 10px 0;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: $color-midnight-blue;
+}

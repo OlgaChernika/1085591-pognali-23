@@ -1,0 +1,26 @@
+.add-plan {
+  padding-top: 30px;
+  padding-bottom: 43px;
+
+  background-color: $color-hawkes-blue-mod-2;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.add-plan__container {
+  position: relative;
+}
+
+.add-plan__title {
+  margin-bottom: 30px;
+}
+
+.add-plan__list {
+  @include list-reset;
+
+  margin: 0;
+}
+
+.add-plan__item {
+  margin-bottom: 10px;
+}

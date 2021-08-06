@@ -1,0 +1,83 @@
+.tariff {
+  @include list-reset;
+
+  counter-reset: item;
+}
+
+.tariff__item {
+  position: relative;
+
+  border-top: 1px solid $color-solitude-grey-mod;
+
+  &:last-child {
+    border-bottom: 1px solid $color-solitude-grey-mod;
+  }
+
+  &--orange {
+    &::before {
+      background-color: $color-neon-carrot-orange;
+    }
+  }
+
+  &--light-orange {
+    &::before {
+      background-color: $color-supernova-yellow;
+    }
+  }
+
+  &--yellow {
+    &::before {
+      background-color: $color-energy-yellow;
+    }
+  }
+}
+
+.tariff__item-counter {
+  margin: 0 45px 0 25px;
+
+  &::after {
+    content: counter(item);
+    position: absolute;
+    top: 50%;
+    right: -31px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: $color-white;
+
+    transform: translateY(-50%);
+
+    counter-increment: item;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -44px;
+
+    width: 34px;
+    height: 34px;
+
+    background-color: $color-lightning-yellow;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.tariff__advantage {
+  margin: 0;
+  padding: 13px 0;
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-charcoal-grey;
+}
+
+.tariff__price {
+  margin: 0;
+}

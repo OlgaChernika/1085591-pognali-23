@@ -1,0 +1,44 @@
+.breadcrumbs {
+  justify-content: space-between;
+  width: 50px;
+}
+
+.breadcrumbs__link {
+  position: relative;
+
+  width: 5px;
+  height: 5px;
+  padding: 11px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 5px;
+    height: 5px;
+
+    background-color: rgba($color-catalina-blue, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%);
+  }
+
+  &--current {
+    &::before {
+      background-color: $color-catalina-blue;
+    }
+  }
+}
+
+.breadcrumbs__link-text {
+  display: none;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba($color-black, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+}

@@ -1,0 +1,72 @@
+.map {
+  padding-top: 30px;
+
+  color: $color-catalina-blue;
+
+  background-color: $color-energy-yellow;
+}
+
+.map__container {
+  z-index: 1;
+
+  background-color: $color-energy-yellow;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.map__route {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.map__route-address {
+  position: relative;
+
+  margin: 0 25px 32px 0;
+  padding-left: 60px;
+
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 45px;
+    height: 45px;
+
+    background-color: $color-midnight-express-mod-2;
+    border-radius: 50%;
+  }
+}
+
+.map__route-link {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 22px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: $color-catalina-blue;
+
+  border: 3px solid $color-midnight-express;
+  border-radius: 10px;
+}
+
+.map__link {
+  width: 100%;
+
+  background-color: $color-very-light-grey;
+}
+
+.map__image {
+  width: 100%;
+  max-height: 422px;
+
+  object-fit: contain;
+}

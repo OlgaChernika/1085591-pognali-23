@@ -1,0 +1,124 @@
+.communications {
+  display: flex;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.communications__description {
+  margin: 0 0 17px 0;
+  padding: 0 25px;
+}
+
+.communications__list {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.communications__item {
+  position: relative;
+}
+
+.communications__link {
+  padding: 22px 0 22px 86px;
+
+  color: $color-midnight-express;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0;
+
+    width: 45px;
+    height: 45px;
+
+    background-color: $color-midnight-express-mod-2;
+    border-radius: 50%;
+  }
+
+  &--in-authorize {
+    padding-left: 70px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-energy-yellow;
+  }
+
+  &--email {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: 13px;
+
+      width: 18px;
+      height: 12px;
+
+      background-image: url("../img/mail-icon.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--phone {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 21px;
+      left: 14px;
+
+      width: 16px;
+      height: 14px;
+
+      background-image: url("../img/tel-icon.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.communications__link-promo {
+  padding: 0 20px;
+
+  &::before {
+    top: 0;
+
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+  }
+
+  &--promo-email {
+    &::before {
+      background-color: $color-supernova-yellow;
+    }
+
+    &::after {
+      top: 0;
+      left: 0;
+
+      width: 16px;
+      height: 12px;
+
+      background-image: url("../img/mail-dark-icon.svg");
+    }
+  }
+
+  &--promo-phone {
+    &::before {
+      background-color: $color-neon-carrot-orange;
+    }
+  }
+}
+
+.communications__authorize {
+  width: 100%;
+  margin-bottom: 50px;
+}

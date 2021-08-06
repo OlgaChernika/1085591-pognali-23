@@ -1,0 +1,186 @@
+.card {
+  position: relative;
+
+  margin-bottom: 10px;
+  padding-top: 15px;
+
+  background-color: $color-white;
+  border-radius: 25px;
+}
+
+.card__name-wrapper {
+  display: grid;
+  margin-bottom: 22px;
+  padding: 0 22px 0 18px;
+
+  column-gap: 16px;
+
+  grid-template-columns: 1fr 1fr;
+}
+
+.card__name {
+  position: relative;
+
+  width: 143px;
+  min-height: 70px;
+  margin: 0 auto 0 0;
+  padding-right: 66px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  color: $color-catalina-blue;
+}
+
+.card__status {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 0;
+
+    width: 6px;
+    height: 6px;
+
+    background-color: $color-salmon;
+    border-radius: 50%;
+  }
+
+  &--online {
+    &::before {
+      background-color: $color-lawn-green;
+    }
+  }
+}
+
+.card__link {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 12px;
+}
+
+.card__img {
+  border-radius: 50%;
+}
+
+.card__tags-list {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0 46px 0 7px;
+
+  grid-column: 1/-1;
+}
+
+.card__tags-link {
+  padding-left: 5px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: $color-charcoal-grey;
+}
+
+.card__description {
+  display: inline-flex;
+  min-width: 96px;
+  margin: -22px auto 3px 15px;
+  padding: 0 10px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  vertical-align: middle;
+
+  background-color: $color-white;
+}
+
+.card__wrapper {
+  margin-bottom: 22px;
+
+  border-top: 1px solid $color-solitude-grey-mod-2;
+}
+
+.card__routes {
+  @include list-reset;
+
+  margin: 0;
+  padding: 0 25px;
+}
+
+.card__routes-item {
+  margin-bottom: 10px;
+  padding-left: 40px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  color: $color-catalina-blue;
+  text-transform: uppercase;
+}
+
+.card__transport-level-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.card__transport {
+  @include list-reset;
+
+  display: flex;
+  margin: 0;
+}
+
+.card__transport-item {
+  width: 32px;
+  height: 32px;
+
+  background-color: $color-solitude-grey-mod-2;
+  border-radius: 50%;
+}
+
+.card__tooltip {
+  display: none;
+}
+
+.card__add-wrapper {
+  padding: 0 25px;
+}
+
+.card__add-button {
+  justify-content: center;
+  width: 100%;
+  margin: 0 0 23px 0;
+  padding: 12px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 17px;
+  text-align: center;
+  color: $color-midnight-express-mod-2;
+  text-transform: uppercase;
+
+  background-color: $color-energy-yellow;
+  border-radius: 25px;
+}
+
+.card__like-counter {
+  position: absolute;
+  top: 63px;
+  left: 104px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-midnight-express-mod-2;
+  text-transform: uppercase;
+}

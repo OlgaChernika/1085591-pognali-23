@@ -1,0 +1,165 @@
+.profile {
+  position: relative;
+
+  background-color: $color-white;
+  border-radius: 10px;
+}
+
+.profile__link {
+  width: 100%;
+}
+
+.profile__image {
+  width: 100%;
+  max-height: 360px;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  object-fit: cover;
+}
+
+.profile__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 27px 0 20px 0;
+}
+
+.profile__name {
+  margin: 0 0 15px 0;
+
+  text-align: center;
+}
+
+.profile__name-link {
+  position: relative;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: $color-catalina-blue;
+}
+
+.profile__status {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -20px;
+
+    width: 6px;
+    height: 6px;
+
+    background-color: $color-salmon;
+    border-radius: 50%;
+  }
+
+  &--online {
+    &::before {
+      background-color: $color-lawn-green;
+    }
+  }
+}
+
+.profile__level {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.profile__tags-list {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 14px;
+}
+
+.profile__tags-item {
+  padding-left: 5px;
+}
+
+.profile__tags-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-charcoal-grey;
+}
+
+.profile__routes-list {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  order: -1;
+  width: 100%;
+  margin-top: -40px;
+
+  column-gap: 20px;
+}
+
+.profile__route {
+  display: block;
+  width: 35px;
+  height: 25px;
+  margin-bottom: 10px;
+
+  background-repeat: no-repeat;
+
+  object-fit: contain;
+
+  &--sri-lanka {
+    background-image: url("../img/sri-lanka-flag-min.svg");
+  }
+
+  &--thailand {
+    background-image: url("../img/thailand-flag-min.svg");
+  }
+
+  &--seychelles {
+    background-image: url("../img/seychelles-flag-min.svg");
+  }
+
+  &--belgium {
+    background-image: url("../img/belgium-flag-min.svg");
+  }
+
+  &--czech {
+    background-image: url("../img/czech-flag-min.svg");
+  }
+}
+
+.profile__tooltip {
+  position: relative;
+
+  display: none;
+  padding: 20px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+
+  background-color: $color-midnight-express-mod;
+}
+
+.profile__transport-list {
+  @include list-reset;
+
+  display: flex;
+  justify-content: center;
+}
+
+.profile__transport-item {
+  width: 23px;
+  height: 24px;
+
+  background-color: #f80000;
+}
