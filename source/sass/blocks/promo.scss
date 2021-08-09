@@ -6,12 +6,37 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/globe-back-tablet.png"),
+      $color-midnight-express;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 75%;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    min-height: 730px;
+    padding-top: 100px;
+  }
+}
+
+.promo__container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 264px;
+  }
 }
 
 .promo__tagline {
   position: relative;
 
-  margin: 0;
+  max-width: 400px;
+  margin: 0 auto;
   padding: 100px 15px 245px 15px;
 
   font-style: normal;
@@ -19,6 +44,21 @@
   font-size: 36px;
   line-height: 40px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 0 450px 0;
+
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1000px;
+    margin: 0 auto 0 0;
+    padding: 0 450px 100px 70px;
+
+    text-align: left;
+  }
 
   &::before {
     content: "";
@@ -31,16 +71,42 @@
 
     background-image: url("../img/traveller-illustration-mobile.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 255px;
+      right: -43px;
+
+      width: 372px;
+      height: 451px;
+
+      background-image: url("../img/traveller-illustration-tablet.png");
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -102px;
+      right: 0;
+
+      width: 431px;
+      height: 640px;
+
+      background-image: url("../img/traveller-illustration-desktop.png");
+    }
   }
 }
 
 .promo__communications {
   z-index: 1;
 
+  display: flex;
   flex-direction: row;
   justify-content: flex-end;
   width: 100%;
   margin: 0 auto 30px auto;
+
+  @media (min-width: $desktop-width) {
+    min-width: 288px;
+    margin: 0;
+  }
 }
 
 .promo__authorize {
@@ -50,23 +116,115 @@
   padding: 10px;
 
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+
+    padding: 15px;
+
+    top: 52px;
+    right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    top: unset;
+    right: unset;
+  }
 }
 
 .promo__review {
+  order: 1;
   margin: 0 0 30px 0;
   padding: 0 85px 0 25px;
 
   font-style: normal;
   font-size: 16px;
   line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 264px;
+    min-height: 155px;
+    margin: -408px auto 200px 0;
+    padding: 0 0 0 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 264px;
+    margin: 0 25px 0 0;
+    padding: 0;
+  }
 }
 
 .promo__review-quote {
   margin: 0 0 20px 0;
 
   font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 45px 0;
+    font-size: 28px;
+    line-height: 32px;
+  }
 }
 
 .promo__review-author {
   font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 24px;
+  }
+}
+
+.promo__menu-wrapper {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    z-index: 98;
+    order: 3;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
+    grid-column: 1/-1;
+
+    background-color: $color-white;
+  }
+}
+
+.promo__menu {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    min-height: 90px;
+    grid-template-columns: 200px 1fr min-content;
+    align-content: center;
+  }
+}
+
+.promo__nav {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    height: 100%;
+    margin-left: 145px;
+  }
+}
+
+.promo__site-guide {
+  order: 2;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+  }
 }

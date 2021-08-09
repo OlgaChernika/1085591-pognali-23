@@ -5,6 +5,11 @@
   font-size: 24px;
   line-height: 24px;
 
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
   &--orange {
     color: $color-neon-carrot-orange;
   }

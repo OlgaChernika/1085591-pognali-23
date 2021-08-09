@@ -14,6 +14,18 @@
   counter-reset: item;
 
   grid-template-rows: min-content;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 30px;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .site-guide__item {
@@ -25,6 +37,19 @@
 
   border-radius: 10px;
 
+  @media (min-width: $tablet-width) {
+    min-height: 140px;
+    margin: 0;
+    padding: 31px 100px 31px 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 107px;
+    min-width: 25%;
+    margin: 0 0 0 -30px;
+    padding: 30px 75px 30px 34px;
+  }
+
   &::after {
     content: counter(item);
     position: absolute;
@@ -33,21 +58,93 @@
     color: $color-white;
 
     counter-increment: item;
+
+    @media (min-width: $tablet-width) {
+      top: unset;
+      right: unset;
+      bottom: 18px;
+      left: 33px;
+
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 30px;
+      right: 53px;
+      bottom: unset;
+      left: unset;
+
+      font-size: 24px;
+      line-height: 24px;
+    }
   }
 
   &--orange {
     background-color: $color-neon-carrot-orange;
+
+    @media (min-width: $tablet-width) {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-radius: 10px;
+    }
   }
 
   &--light-orange {
     background-color: $color-lightning-yellow;
+
+    @media (min-width: $tablet-width) {
+      width: calc(100% + 10px);
+      margin-left: -10px;
+
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: inherit;
+      margin-left: -30px;
+
+      border-radius: 10px;
+    }
   }
 
   &--yellow {
     background-color: $color-supernova-yellow;
+
+    @media (min-width: $tablet-width) {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-radius: 10px;
+    }
   }
 
   &--light-yellow {
     background-color: $color-energy-yellow;
+
+    @media (min-width: $tablet-width) {
+      width: calc(100% + 10px);
+      margin-left: -10px;
+
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: inherit;
+      margin-left: -30px;
+
+      border-radius: 10px;
+    }
   }
 }

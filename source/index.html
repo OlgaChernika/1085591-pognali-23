@@ -17,50 +17,52 @@
   </head>
   <body class="page">
     <header class="header">
-      <div class="header__container">
-        <div class="header__top-wrapper container">
-          <a href="#" class="header__logo logo" aria-label="Перейти на главную страницу">
-            <img class="logo__image logo__image--deep" src="img/logo_mobile.svg" width="95" height="15" alt="Логотип сервиса Погнали">
-            <img class="logo__image logo__image--white" src="img/logo_mobile-white.svg" width="95" height="15" alt="Логотип сервиса Погнали">
-          </a>
-          <button class="header__toggle button" type="button" aria-label="Кнопка открытия/закрытия меню"></button>
-        </div>
-        <div class="header__menu">
-          <nav class="header__nav nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link" href="#">О сервисе</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="form.html">Направления</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="catalog.html">Попутчики</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header__communications communications container">
-            <ul class="communications__list">
-              <li class="communications__item">
-                <a class="communications__link communications__link--phone" href="tel:88005558628" aria-label="Наш телефон">8 800 555-86-28</a>
-              </li>
-              <li class="communications__item">
-                <a class="communications__link communications__link--email" href="mailto:mail@htmlacademy.ru" aria-label="Наш email">mail@htmlacademy.ru</a>
-              </li>
-            </ul>
-            <a class="header__authorize authorize-link" href="#" aria-label="Перейти на страницу авторизации">Авторизация</a>
+      <div class="header__container container">
+        <div class="header__wrapper">
+          <div class="header__top-wrapper">
+            <a href="#" class="header__logo logo" aria-label="Перейти на главную страницу">
+              <img class="logo__image logo__image--deep" src="img/logo_mobile.svg" width="95" height="15" alt="Логотип сервиса Погнали">
+              <img class="logo__image logo__image--white" src="img/logo_mobile-white.svg" width="95" height="15" alt="Логотип сервиса Погнали">
+            </a>
+            <button class="header__toggle button" type="button" aria-label="Кнопка открытия/закрытия меню"></button>
           </div>
-          <ul class="header__social social">
-            <li class="social__item">
-              <a class="social__link social__link--fb" href="#" aria-label="Наша страница на Facebook"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--inst" href="#" aria-label="Наша страница в Instagram"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="#" aria-label="Наша страница в VK"></a>
-            </li>
-          </ul>
+          <div class="header__menu">
+            <nav class="header__nav nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="#">О&nbsp;сервисе</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="form.html">Направления</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="catalog.html">Попутчики</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__communications communications">
+              <ul class="header__communications-list communications__list">
+                <li class="communications__item">
+                  <a class="communications__link communications__link--phone communications__link--header-phone communications__link--hidden" href="tel:88005558628" aria-label="Наш телефон">8 800 555-86-28</a>
+                </li>
+                <li class="communications__item">
+                  <a class="communications__link  communications__link--header-email communications__link--hidden" href="mailto:mail@htmlacademy.ru" aria-label="Наш email">mail@htmlacademy.ru</a>
+                </li>
+              </ul>
+              <a class="header__authorize authorize-link" href="#" aria-label="Перейти на страницу авторизации">Авторизация</a>
+            </div>
+            <ul class="header__social social">
+              <li class="social__item">
+                <a class="social__link social__link--fb" href="#" aria-label="Наша страница на Facebook"></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--inst" href="#" aria-label="Наша страница в Instagram"></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--vk" href="#" aria-label="Наша страница в VK"></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -69,41 +71,66 @@
       <section class="promo">
         <div class="promo__container container">
           <p class="promo__tagline">В путешествие с крутыми попутчиками!</p>
-          <div class=" promo__communications communications">
-            <ul class="communications__list">
-              <li class="communications__item">
-                <a class="communications__link communications__link-promo communications__link--promo-phone" href="tel:88005558628" aria-label="Наш телефон"></a>
-              </li>
-              <li class="communications__item">
-                <a class="communications__link
-                communications__link-promo communications__link--promo-email" href="mailto:mail@htmlacademy.ru" aria-label="Наш email"></a>
-              </li>
-            </ul>
-            <a class="promo__authorize authorize-link" href="#" aria-label="Перейти на страницу авторизации">Авторизация</a>
-          </div>
           <blockquote class="promo__review">
             <p class="promo__review-quote">«Лучшее приложение, что я видел в жизни!»</p>
             <cite class="promo__review-author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
           </blockquote>
-          <ul class="promo__site-guide site-guide">
-            <li class="site-guide__item site-guide__item--orange">Выберите направление</li>
-            <li class="site-guide__item site-guide__item--light-orange">Изучите идеи путешественников</li>
-            <li class="site-guide__item site-guide__item--yellow">Находите тех, кто похож на вас</li>
-            <li class="site-guide__item site-guide__item--light-yellow">Путешествуйте вместе!</li>
-          </ul>
-        </div>
+          <div class="promo__menu-wrapper">
+            <div class="promo__menu container">
+              <a href="#" class="promo__logo logo" aria-label="Перейти на главную страницу">
+                <img class="logo__image" src="img/logo_mobile.svg" width="95" height="15" alt="Логотип сервиса Погнали">
+              </a>
+              <nav class="promo__nav nav">
+                <ul class="promo__nav-list nav__list">
+                  <li class="nav__item">
+                    <a class="nav__link nav__link--promo" href="#">О&nbsp;сервисе</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link nav__link--promo" href="form.html">Направления</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link nav__link--promo" href="catalog.html">Попутчики</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class=" promo__communications communications">
+                <ul class="communications__list communications__list--hidden">
+                  <li class="communications__item">
+                    <a class="communications__link communications__link-promo communications__link--promo-phone" href="tel:88005558628" aria-label="Наш телефон"></a>
+                  </li>
+                  <li class="communications__item">
+                    <a class="communications__link
+                    communications__link-promo communications__link--promo-email" href="mailto:mail@htmlacademy.ru" aria-label="Наш email"></a>
+                  </li>
+                </ul>
+                <a class="promo__authorize authorize-link" href="#" aria-label="Перейти на страницу авторизации">Авторизация</a>
+              </div>
+            </div>
+          </div>
+            <ul class="promo__site-guide site-guide">
+              <li class="site-guide__item site-guide__item--orange">Выберите направление</li>
+              <li class="site-guide__item site-guide__item--light-orange">Изучите идеи путешественников</li>
+              <li class="site-guide__item site-guide__item--yellow">Находите тех, кто&nbsp;похож на&nbsp;вас</li>
+              <li class="site-guide__item site-guide__item--light-yellow">Путешествуйте вместе!</li>
+            </ul>
+          </div>
       </section>
       <section class="service">
         <div class="service__container container">
-          <h2 class="service__title page__title page__title--orange">О сервисе</h2>
-          <p class="service__description">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
-          <p class="service__tagline">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+          <div class="service__wrapper">
+            <h2 class="service__title page__title page__title--orange">О сервисе</h2>
+            <p class="service__description">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+            <p class="service__tagline">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+            <a class="service__link show-button" href="#">Подробнее</a>
+          </div>
         </div>
       </section>
       <section class="routes">
         <div class="routes__container container">
-          <h2 class="routes__title page__title page__title--orange">Направления</h2>
-          <p class="routes__description">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+          <div class="routes__wrapper">
+            <h2 class="routes__title page__title page__title--orange">Направления</h2>
+            <p class="routes__description">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+          </div>
           <ul class="routes__list">
             <li class="routes__item routes__item--thailand">
               <div class="routes__land-description">
@@ -135,9 +162,11 @@
       </section>
       <section class="companions">
         <div class="companions__container container">
-          <h2 class="companions__title page__title page__title--orange">Попутчики</h2>
-          <p class="companions__description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-          <p class="companions__tagline">Теперь можно легко найти единомышленников!</p>
+          <div class="companions__wrapper">
+            <h2 class="companions__title page__title page__title--orange">Попутчики</h2>
+            <p class="companions__description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+            <p class="companions__tagline">Теперь можно легко найти единомышленников!</p>
+          </div>
           <ul class="companions__list">
             <li class="companions__item profile">
               <a class="profile__link" href="#" aria-label="Посмотреть профиль">
@@ -266,19 +295,19 @@
             <img class="add-profile__image" src="img/add-profile.png" width="100" height="100" alt="Добавьте ваше фото">
           </div>
           <ul class="add-profile__tariff tariff">
-            <li class="tariff__item tariff__item-counter tariff__item--orange">
+            <li class="tariff__item tariff__item-counter tariff__item-counter--orange">
               <dl class="tariff__advantage">
                 <dt class="tariff__power">Базовое размещение</dt>
                 <dd class="tariff__price">Бесплатно</dd>
               </dl>
             </li>
-            <li class="tariff__item tariff__item-counter tariff__item--light-orange">
+            <li class="tariff__item tariff__item-counter tariff__item-counter--light-orange">
               <dl class="tariff__advantage">
                 <dt class="tariff__power">Вывод на первых позициях</dt>
                 <dd class="tariff__price">99 руб./мес</dd>
               </dl>
             </li>
-            <li class="tariff__item tariff__item-counter tariff__item--yellow">
+            <li class="tariff__item tariff__item-counter tariff__item-counter--yellow">
               <dl class="tariff__advantage">
                 <dt class="tariff__power">Кастомный цвет карточки</dt>
                 <dd class="tariff__price">59 руб./мес</dd>
@@ -290,26 +319,28 @@
       </section>
       <section class="authorize">
         <div class="authorize__container container">
-          <h2 class="visually-hidden">Авторизация и обратная связь</h2>
-          <p class="authorize__tagline page__title page__title--orange">Заинтересовались?</p>
-          <p class="authorize__description">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="authorize__link" href="#" aria-label="Перейти на страницу авторизации">авторизуйтесь</a>.</p>
-          <form class="authorize__form" action="http://echo.htmlacademy.ru" method="POST">
-            <label class="authorize__label">
-              <input class="authorize__email-input" type="text" name="e-mail" placeholder="E-mail">
-            </label>
-          <button class="authorize__button button" type="submit" aria-label="Регистрация"></button>
-        </form>
-        <div class="authorize__communications communications">
-          <p class="communications__description">Остались вопросы? Мы с радостью на них ответим!</p>
-          <ul class="communications__list">
-            <li class="communications__item">
-              <a class="communications__link communications__link--phone communications__link--in-authorize" href="tel:88005558628" aria-label="Наш телефон">8 800 555-86-28</a>
-            </li>
-            <li class="communications__item">
-              <a class="communications__link communications__link--email communications__link--in-authorize" href="mailto:mail@htmlacademy.ru" aria-label="Наш email">mail@htmlacademy.ru</a>
-            </li>
-          </ul>
-        </div>
+          <div class="authorize__wrapper">
+            <h2 class="visually-hidden">Авторизация и обратная связь</h2>
+            <p class="authorize__tagline page__title page__title--orange">Заинтересовались?</p>
+            <p class="authorize__description">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="authorize__link" href="#" aria-label="Перейти на страницу авторизации">авторизуйтесь</a>.</p>
+            <form class="authorize__form" action="http://echo.htmlacademy.ru" method="POST">
+              <label class="authorize__label">
+                <input class="authorize__email-input" type="text" name="e-mail" placeholder="E-mail">
+              </label>
+              <button class="authorize__button button" type="submit" aria-label="Регистрация"><span class="authorize__button-text">Регистрация</span></button>
+            </form>
+            <div class="authorize__communications communications">
+              <p class="communications__description">Остались вопросы? Мы с радостью на них ответим!</p>
+              <ul class="communications__list communications__list--in-authorize">
+                <li class="communications__item">
+                  <a class="communications__link communications__link--phone communications__link--in-authorize" href="tel:88005558628" aria-label="Наш телефон">8 800 555-86-28</a>
+                </li>
+                <li class="communications__item">
+                  <a class="communications__link communications__link--email communications__link--in-authorize" href="mailto:mail@htmlacademy.ru" aria-label="Наш email">mail@htmlacademy.ru</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
       <section class="map">
@@ -339,10 +370,10 @@
             <a class="social__link social__link--yellow social__link--fb" href="#" aria-label="Наша страница на Facebook"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--yellow social__link--inst" href="#" aria-label="Наша страница в Instagram"></a>
+            <a class="social__link social__link--yellow social__link--vk" href="#" aria-label="Наша страница в VK"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--yellow social__link--vk" href="#" aria-label="Наша страница в VK"></a>
+            <a class="social__link social__link--yellow social__link--inst" href="#" aria-label="Наша страница в Instagram"></a>
           </li>
         </ul>
         <div class="footer__producer producer">

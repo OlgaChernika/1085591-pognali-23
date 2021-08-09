@@ -22,7 +22,11 @@
 .profile__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 27px 0 20px 0;
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 31px;
+  }
 }
 
 .profile__name {
@@ -39,6 +43,11 @@
   font-size: 21px;
   line-height: 21px;
   color: $color-catalina-blue;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 22px;
+  }
 }
 
 .profile__status {
@@ -53,6 +62,11 @@
 
     background-color: $color-salmon;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 8px;
+      height: 8px;
+    }
   }
 
   &--online {
@@ -74,9 +88,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 200px;
-  margin: 0 auto;
-  margin-bottom: 14px;
+  min-width: 200px;
+  padding: 0 51px;
+  margin: 0 auto 14px auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 24px auto;
+  }
 }
 
 .profile__tags-item {
@@ -89,6 +107,11 @@
   font-size: 16px;
   line-height: 18px;
   color: $color-charcoal-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 23px;
+  }
 }
 
 .profile__routes-list {
@@ -102,6 +125,10 @@
   margin-top: -40px;
 
   column-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -48px;
+  }
 }
 
 .profile__route {
@@ -153,8 +180,14 @@
 .profile__transport-list {
   @include list-reset;
 
+  margin-bottom: 20px;
+
   display: flex;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 27px;
+  }
 }
 
 .profile__transport-item {

@@ -17,6 +17,8 @@
 }
 
 .for-business__tariff {
+  @include list-reset;
+
   margin-bottom: 30px;
 
   line-height: 22px;
