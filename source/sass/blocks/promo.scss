@@ -206,11 +206,22 @@
 }
 
 .promo__menu {
+  padding: 0;
+
   @media (min-width: $desktop-width) {
     display: grid;
     min-height: 90px;
+    padding: 0 60px;
     grid-template-columns: 200px 1fr min-content;
     align-content: center;
+  }
+}
+
+.promo__logo {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 

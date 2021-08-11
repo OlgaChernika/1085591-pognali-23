@@ -58,10 +58,6 @@
     }
   }
 
-  &:last-child {
-    border-bottom: 1px solid $color-solitude-grey-mod;
-  }
-
   &--orange {
     &::before {
       background-color: $color-neon-carrot-orange;
@@ -81,6 +77,10 @@
   }
 }
 
+.tariff__item:last-child {
+  border-bottom: 1px solid $color-solitude-grey-mod;
+}
+
 .tariff__advantage {
   margin: 0;
   padding: 13px 0;
@@ -93,19 +93,24 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr min-content;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
 
     padding: 20px 0;
 
     font-size: 28px;
     line-height: 28px;
   }
+
+  &--for-business {
+    @media (min-width: $tablet-width) {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
 }
 
 .tariff__price {
   margin: 0;
-
-  @media (min-width: $tablet-width) {
-    min-width: 145px;
-  }
+  justify-self: end;
 }

@@ -1,6 +1,4 @@
 .social {
-  @include list-reset;
-
   flex-wrap: wrap;
   justify-content: space-between;
 
@@ -12,6 +10,11 @@
   height: 20px;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 30px;
+  }
 
   &--fb {
     background-image: url("../img/fb-icon.svg");

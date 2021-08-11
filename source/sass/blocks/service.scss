@@ -9,23 +9,32 @@
   color: $color-white;
 
   background-color: $color-midnight-express;
-  background-image: url("../img/service-bg.png");
-  background-repeat: no-repeat;
-  background-position-x: 50%;
+
   border-bottom-right-radius: 25px;
   border-bottom-left-radius: 25px;
 
   @media (min-width: $tablet-width) {
     font-size: 28px;
     line-height: 33px;
+  }
 
+  @media (min-width: $desktop-width) {
+    line-height: 34px;
+  }
+}
+
+.service__container {
+  min-height: 353px;
+  background-image: url("../img/service-bg.png");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+
+  @media (min-width: $tablet-width) {
     background-image: url("../img/service-bg-tablet.png");
     background-position: 100%;
   }
 
   @media (min-width: $desktop-width) {
-    line-height: 34px;
-
     background-image: url("../img/service-bg-desktop.png");
   }
 }
@@ -34,11 +43,11 @@
   padding: 33px 25px 82px 25px;
 
   @media (min-width: $tablet-width) {
-    padding: 137px 340px 89px 35px;
+    padding: 137px 50% 89px 35px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 42px 727px 131px 70px;
+    padding: 42px 50% 131px 70px;
   }
 }
 

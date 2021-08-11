@@ -3,6 +3,10 @@
 
   background-color: $color-white;
   border-radius: 10px;
+
+  @media (min-width: $desktop-width) {
+    min-width: 285px;
+  }
 }
 
 .profile__link {

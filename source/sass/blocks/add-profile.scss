@@ -1,6 +1,4 @@
 .add-profile {
-  position: relative;
-
   padding-top: 38px;
   padding-bottom: 20px;
 
@@ -18,6 +16,10 @@
     padding-top: 107px;
     padding-bottom: 150px;
   }
+}
+
+.add-profile__container {
+  position: relative;
 }
 
 .add-profile__wrapper-title {
@@ -55,7 +57,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 265px;
+    bottom: 131px;
     right: 133px;
 
     width: 198px;

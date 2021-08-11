@@ -46,7 +46,7 @@
                   <a class="communications__link communications__link--phone communications__link--header-phone communications__link--hidden" href="tel:88005558628" aria-label="Наш телефон">8 800 555-86-28</a>
                 </li>
                 <li class="communications__item">
-                  <a class="communications__link  communications__link--header-email communications__link--hidden" href="mailto:mail@htmlacademy.ru" aria-label="Наш email">mail@htmlacademy.ru</a>
+                  <a class="communications__link communications__link--email  communications__link--header-email communications__link--hidden" href="mailto:mail@htmlacademy.ru" aria-label="Наш email">mail@htmlacademy.ru</a>
                 </li>
               </ul>
               <a class="header__authorize authorize-link" href="#" aria-label="Перейти на страницу авторизации">Авторизация</a>
@@ -384,35 +384,41 @@
     </footer>
     <section class="for-business modal">
       <div class="for-business__container">
-        <h2 class="for-business__title page__title page__title--orange">Бизнес-тарифы</h2>
-        <ul class="for-business__tariff tariff">
-          <li class="tariff__item">
-            <dl class="tariff__advantage">
-              <dt class="tariff__power">Реклама у блоггера</dt>
-              <dd class="tariff__price">300 000 руб./пост</dd>
-            </dl>
-          </li>
-          <li class="tariff__item">
-            <dl class="tariff__advantage">
-              <dt class="tariff__power">Накрутка подписчиков</dt>
-              <dd class="tariff__price">от 1 руб./шт.</dd>
-            </dl>
-          </li>
-          <li class="tariff__item">
-            <dl class="tariff__advantage">
-              <dt class="tariff__power">Лайки от ботов</dt>
-              <dd class="tariff__price">от 20 коп./лайк</dd>
-            </dl>
-          </li>
-          <li class="tariff__item">
-            <dl class="tariff__advantage">
-              <dt class="tariff__power">Ваш продакт-плейсмент </dt>
-              <dd class="tariff__price">Индивидуально</dd>
-            </dl>
-          </li>
-        </ul>
+        <div class="for-business__overlay">
+          <div class="for-business__wrapper">
+            <div class="for-business__content-wrapper">
+              <h2 class="for-business__title page__title page__title--orange">Бизнес-тарифы</h2>
+              <ul class="for-business__tariff tariff">
+                <li class="tariff__item">
+                  <dl class="tariff__advantage tariff__advantage--for-business">
+                    <dt class="tariff__power">Реклама у блоггера</dt>
+                    <dd class="tariff__price tariff__price--for-business">300 000 руб./пост</dd>
+                  </dl>
+                </li>
+                <li class="tariff__item">
+                  <dl class="tariff__advantage tariff__advantage--for-business">
+                    <dt class="tariff__power">Накрутка подписчиков</dt>
+                    <dd class="tariff__price tariff__price--for-business">от 1 руб./шт.</dd>
+                  </dl>
+                </li>
+                <li class="tariff__item">
+                  <dl class="tariff__advantage tariff__advantage--for-business">
+                    <dt class="tariff__power">Лайки от ботов</dt>
+                    <dd class="tariff__price tariff__price--for-business">от 20 коп./лайк</dd>
+                  </dl>
+                </li>
+                <li class="tariff__item">
+                  <dl class="tariff__advantage tariff__advantage--for-business">
+                    <dt class="tariff__power">Ваш продакт-плейсмент </dt>
+                    <dd class="tariff__price tariff__price--for-business">Индивидуально</dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+            <button class="for-business__button-close button" type="button">Закрыть окно</button>
+          </div>
+        </div>
       </div>
-      <button class="for-business__button-close button" type="button">Закрыть окно</button>
     </section>
   </body>
 </html>

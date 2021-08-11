@@ -35,6 +35,8 @@
 }
 
 .footer__social {
+  @include list-reset;
+
   display: flex;
   justify-content: center;
   min-width: 135px;
