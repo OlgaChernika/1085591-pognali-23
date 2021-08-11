@@ -1,14 +1,52 @@
 .nav__list {
   @include list-reset;
 
+  margin: 0;
+
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
   line-height: 35px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 57px;
+    font-size: 60px;
+    line-height: 71px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    height: 100%;
+
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.nav__item {
+  @media (min-width: $desktop-width) {
+    height: 100%;
+  }
 }
 
 .nav__link {
   color: $color-midnight-express;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
+    height: 100%;
+    padding-right: 35px;
+
+    color: $color-white;
+  }
+
+  &--promo {
+    font-weight: 500;
+
+    color: $color-midnight-express-mod-3;
+  }
 }

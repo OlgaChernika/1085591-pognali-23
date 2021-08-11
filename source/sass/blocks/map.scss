@@ -4,6 +4,14 @@
   color: $color-catalina-blue;
 
   background-color: $color-energy-yellow;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+  }
 }
 
 .map__container {
@@ -19,6 +27,19 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 35px;
+
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 75px;
+  }
 }
 
 .map__route-address {
@@ -28,6 +49,15 @@
   padding-left: 60px;
 
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 62px 0;
+    padding-left: 130px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 276px;
+  }
 
   &::before {
     content: "";
@@ -40,6 +70,20 @@
 
     background-color: $color-midnight-express-mod-2;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      top: -20px;
+
+      width: 68px;
+      height: 68px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -30px;
+      left: 121px;
+      width: 90px;
+      height: 90px;
+    }
   }
 }
 
@@ -56,6 +100,19 @@
 
   border: 3px solid $color-midnight-express;
   border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 37px;
+    margin-bottom: 85px;
+
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 324px;
+    margin-bottom: 56px;
+  }
 }
 
 .map__link {
@@ -69,4 +126,12 @@
   max-height: 422px;
 
   object-fit: contain;
+
+  @media (min-width: $tablet-width) {
+    max-height: 581px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 581px;
+  }
 }

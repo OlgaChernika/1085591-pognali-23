@@ -1,5 +1,4 @@
 .authorize {
-  padding-top: 70px;
 
   color: $color-white;
 
@@ -8,11 +7,27 @@
   border-bottom-left-radius: 25px;
 }
 
+.authorize__wrapper {
+  padding-top: 70px;
+
+  @media (min-width: $tablet-width) {
+    padding: 76px 35px 60px 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 109px 75px 103px 75px;
+  }
+}
+
 .authorize__tagline {
   margin-bottom: 20px;
   padding: 0 25px;
 
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .authorize__description {
@@ -24,6 +39,16 @@
   font-size: 16px;
   line-height: 22px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 65px 0;
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 60px 0;
+  }
 }
 
 .authorize__link {
@@ -35,6 +60,14 @@
   position: relative;
 
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
 }
 
 .authorize__email-input {
@@ -51,17 +84,30 @@
   border: none;
   border-radius: 10px;
 
+  @media (min-width: $tablet-width) {
+    height: 80px;
+
+    font-size: 24px;
+    line-height: 24px;
+  }
+
   &::placeholder {
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 18px;
     color: rgba($color-charcoal-grey, 0.3);
+
+    @media (min-width: $tablet-width) {
+      font-size: 24px;
+      line-height: 24px;
+    }
   }
 }
 
 .authorize__button {
   position: absolute;
+  display: inline-flex;
   right: 0;
   bottom: 0;
 
@@ -70,10 +116,37 @@
 
   background-color: $color-energy-yellow;
   border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+
+    border-radius: 0 10px 10px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    align-items: center;
+    width: 330px;
+    padding: 0 42px;
+  }
+}
+
+.authorize__button-text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    color: $color-catalina-blue;
+  }
 }
 
 .authorize__communications {
-  flex-direction: column;
   margin-bottom: 0;
 
   font-style: normal;

@@ -1,9 +1,25 @@
 .add-profile {
   padding-top: 38px;
+  padding-bottom: 20px;
 
   background-color: $color-solitude-grey;
   border-bottom-right-radius: 25px;
   border-bottom-left-radius: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 50px;
+
+    background-color: $color-solitude-grey-mod-2;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 107px;
+    padding-bottom: 150px;
+  }
+}
+
+.add-profile__container {
+  position: relative;
 }
 
 .add-profile__wrapper-title {
@@ -11,20 +27,65 @@
   justify-content: space-between;
   margin-bottom: 30px;
   padding-left: 25px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+    margin: 0 auto 73px auto;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 134px auto;
+  }
 }
 
 .add-profile__title {
   padding: 16px 30px 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.add-profile__image {
+  @media (min-width: $tablet-width) {
+    z-index: 1;
+    position: absolute;
+
+    bottom: 45px;
+    right: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 131px;
+    right: 133px;
+
+    width: 198px;
+    height: 198px;
+  }
 }
 
 .add-profile__tariff {
+  @include list-reset;
   margin: 0 0 20px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 35px 0;
+    padding-left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 345px 35px 0;
+    padding-left: 165px;
+  }
 }
 
 .add-profile__link {
+  position: relative;
+
   justify-content: center;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   padding: 10px 0;
 
   font-style: normal;
@@ -33,4 +94,32 @@
   line-height: 16px;
   text-align: center;
   color: $color-midnight-blue;
+
+  @media (min-width: $tablet-width) {
+    justify-content: start;
+    margin-bottom: 15px;
+    padding: 24px 110px 24px 115px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 23px;
+      width: 68px;
+      height: 68px;
+      background-color: $color-lavender;
+      border-radius: 50%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 15px;
+    padding: 24px 110px 24px 194px;
+
+    &::before {
+      left: 97px;
+    }
+  }
 }

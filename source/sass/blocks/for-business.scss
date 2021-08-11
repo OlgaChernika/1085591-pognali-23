@@ -1,25 +1,92 @@
 .for-business {
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+  z-index: 999;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.for-business__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+}
+
+.for-business__overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba($color-black, 0.3);
+}
+
+.for-business__wrapper {
   width: 270px;
+  min-height: 443px;
   margin: 0 auto;
 
   border-radius: 20px;
   box-shadow: 0 2px 8px rgba($color-catalina-blue, 0.14);
+  background-color: $color-white;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 688px;
+    min-height: 526px;
+
+    box-shadow: 0 4px 22px rgba($color-catalina-blue, 0.18);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 750px;
+    min-height: 526px;
+  }
 }
 
-.for-business__container {
+.for-business__content-wrapper {
   padding: 35px 25px 0 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 54px 90px 0 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 54px 60px 0 60px;
+  }
 }
 
 .for-business__title {
   margin-bottom: 30px;
 
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+  }
 }
 
 .for-business__tariff {
+  @include list-reset;
+
   margin-bottom: 30px;
 
   line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .for-business__button-close {
@@ -37,4 +104,15 @@
   background-color: $color-ghost-white;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 41px 0;
+
+    font-size: 24px;
+    text-transform: unset;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 45px 0;
+  }
 }
