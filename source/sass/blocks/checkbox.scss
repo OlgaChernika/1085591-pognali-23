@@ -1,3 +1,18 @@
+.checkbox__item {
+  @media (min-width: $tablet-width) {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    min-width: 150px;
+    height: 100%;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 16px;
+  }
+}
+
 .checkbox__label {
   position: relative;
 
@@ -13,6 +28,14 @@
 
   cursor: pointer;
 
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-left: 36px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -24,5 +47,10 @@
 
     background-color: $color-white;
     border-radius: 4px;
+
+    @media (min-width: $tablet-width) {
+      width: 24px;
+      height: 24px;
+    }
   }
 }

@@ -93,13 +93,13 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-
     padding: 20px 0;
 
     font-size: 28px;
     line-height: 28px;
+    column-gap: 20px;
+
+    grid-template-columns: 1fr 1fr;
   }
 
   &--for-business {
@@ -112,5 +112,6 @@
 
 .tariff__price {
   margin: 0;
+
   justify-self: end;
 }

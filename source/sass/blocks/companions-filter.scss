@@ -1,6 +1,17 @@
 .companions-filter {
-  margin: 20px auto 0 auto;
-  padding: 0 25px;
+  margin: 20px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 43px 0 0 0;
+    padding: 40px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+    min-width: 285px;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .companions-filter__container {
@@ -8,6 +19,14 @@
 
   background: $color-energy-yellow;
   border-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 37px 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 46px 45px 48px 48px;
+  }
 }
 
 .companions-filter__title {
@@ -20,6 +39,32 @@
   line-height: 22px;
   color: $color-catalina-blue;
   letter-spacing: 0.02em;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 38px 0;
+
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 34px;
+    padding: 0;
+  }
+}
+
+.companions-filter__form {
+  @media (min-width: $tablet-width) {
+    padding-top: 34px;
+
+    border-top: 1px solid $color-golden-dream-yellow;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+
+    border: none;
+  }
 }
 
 .companions-filter__fieldset {
@@ -27,6 +72,40 @@
   padding: 0;
 
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+
+  &--transport {
+    @media (min-width: $tablet-width) {
+      margin: 20px 0 20px 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 0 32px 0;
+    }
+  }
+}
+
+.companions-filter__fieldset:last-of-type {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 35px;
+
+    border-bottom: 1px solid $color-golden-dream-yellow;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 38px;
+    padding: 0;
+
+    border: none;
+  }
 }
 
 .companions-filter__button {
@@ -43,22 +122,65 @@
 
   background-color: inherit;
   border-top: 1px solid $color-golden-dream-yellow;
+
+  @media (min-width: $tablet-width) {
+    width: fit-content;
+    min-width: 105px;
+    margin-right: 20px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin: 0;
+    padding: 0 0 20px 0;
+  }
 }
 
 .companions-filter__checkbox {
+  margin: 0 0 20px 0;
+
   @include list-reset;
 
-  margin: 0 0 20px 0;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .companions-filter__range {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .companions-filter__range-controls {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    min-width: 55%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .companions-filter__scale {
@@ -68,6 +190,10 @@
   height: 2px;
 
   background-color: rgba($color-catalina-blue, 0.2);
+
+  @media (min-width: $tablet-width) {
+    height: 3px;
+  }
 }
 
 .companions-filter__bar {
@@ -88,12 +214,17 @@
   background-color: $color-catalina-blue;
   border-radius: 50%;
 
+  @media (min-width: $tablet-width) {
+    width: 13px;
+    height: 13px;
+  }
+
   &--min {
     left: 40%;
   }
 
   &--max {
-    right: 0%;
+    right: 0;
   }
 }
 
@@ -103,6 +234,18 @@
   margin-bottom: 20px;
 
   grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    width: 29%;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: -1;
+    width: 100%;
+    margin-bottom: 31px;
+  }
 }
 
 .companions-filter__input {
@@ -121,6 +264,14 @@
 
   border: 1px solid $color-link-water-grey;
   border-radius: 4px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.06em;
+  }
 
   &--min-level {
     border-top-right-radius: 0;
@@ -150,4 +301,16 @@
 
   background-color: $color-white;
   border-radius: 25px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 50px;
+    margin: 35px 0 0 0;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }

@@ -1,5 +1,6 @@
 .transport {
   display: flex;
+  justify-content: flex-start;
 }
 
 .transport__label {
@@ -11,6 +12,11 @@
   background-color: $color-white;
   border-radius: 50%;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 44px;
+    height: 44px;
+  }
 }
 
 .transport__tooltip {

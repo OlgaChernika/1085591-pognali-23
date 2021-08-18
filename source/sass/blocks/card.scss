@@ -1,11 +1,48 @@
 .card {
   position: relative;
 
-  margin-bottom: 10px;
   padding-top: 15px;
 
   background-color: $color-white;
   border-radius: 25px;
+
+  @media (min-width: $tablet-width) {
+    z-index: 1;
+
+    display: grid;
+    padding: 35px 25px 25px 35px;
+
+    gap: 22px;
+    grid-template-columns: 1fr min-content;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 951px;
+    min-height: 286px;
+    padding: 0;
+
+    grid-template-areas: "name routes"
+      "name transport";
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      bottom: 82px;
+      left: 0;
+      z-index: -1;
+
+      width: 100%;
+      height: 1px;
+
+      background-color: $color-solitude-grey-mod-2;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
 }
 
 .card__name-wrapper {
@@ -16,6 +53,20 @@
   column-gap: 16px;
 
   grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+
+    gap: 15px 33px;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content min-content 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 20px 36px;
+    grid-area: name;
+  }
 }
 
 .card__name {
@@ -31,6 +82,21 @@
   font-size: 20px;
   line-height: 20px;
   color: $color-catalina-blue;
+
+  @media (min-width: $tablet-width) {
+    width: fit-content;
+    max-width: 100%;
+    height: fit-content;
+    min-height: auto;
+    padding-right: 30px;
+
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 46px 26px 0 26px;
+  }
 }
 
 .card__status {
@@ -45,6 +111,19 @@
 
     background-color: $color-salmon;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      top: 10px;
+
+      width: 8px;
+      height: 8px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 54px;
+      right: unset;
+      left: 0;
+    }
   }
 
   &--online {
@@ -58,10 +137,39 @@
   width: 70px;
   height: 70px;
   margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    width: 190px;
+    height: 190px;
+    margin: 0;
+
+    grid-row: 1/-1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+    height: 285px;
+  }
 }
 
 .card__img {
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 190px;
+    height: 190px;
+
+    border-radius: 20px;
+
+    object-fit: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+    height: 285px;
+
+    border-radius: 25px 0 0 25px;
+  }
 }
 
 .card__tags-list {
@@ -73,6 +181,19 @@
   padding: 0 46px 0 7px;
 
   grid-column: 1/-1;
+
+  @media (min-width: $tablet-width) {
+    width: 70%;
+    min-width: 230px;
+    margin-right: auto;
+    padding: 0;
+
+    grid-column: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 0 26px;
+  }
 }
 
 .card__tags-link {
@@ -83,6 +204,12 @@
   font-size: 15px;
   line-height: 18px;
   color: $color-charcoal-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 23px;
+    color: $color-black;
+  }
 }
 
 .card__description {
@@ -98,12 +225,66 @@
   vertical-align: middle;
 
   background-color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.card__transport-description {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.card__level-description {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.card__routes-description {
+  @media (min-width: $tablet-width) {
+    z-index: 1;
+
+    width: fit-content;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    padding: 0 10px;
+
+    background-color: $color-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .card__wrapper {
   margin-bottom: 22px;
 
   border-top: 1px solid $color-solitude-grey-mod-2;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+
+    border: none;
+  }
+}
+
+.card__routes-wrapper {
+  @media (min-width: $tablet-width) {
+    order: 3;
+
+    grid-column: 1/-1;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 232px;
+    padding: 33px 43px 0 0;
+
+    grid-area: routes;
+  }
 }
 
 .card__routes {
@@ -111,6 +292,15 @@
 
   margin: 0;
   padding: 0 25px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    padding: 0;
+  }
 }
 
 .card__routes-item {
@@ -123,19 +313,45 @@
   line-height: 16px;
   color: $color-catalina-blue;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .card__transport-level-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    padding: 0 43px 42px 0;
+
+    grid-area: transport;
+  }
 }
 
 .card__transport {
-  @include list-reset;
-
   display: flex;
   margin: 0;
+
+  @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .card__transport-item {
@@ -152,10 +368,25 @@
 
 .card__add-wrapper {
   padding: 0 25px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 38%;
+    left: 33%;
+
+    width: fit-content;
+    height: fit-content;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 16%;
+    left: 35%;
+  }
 }
 
 .card__add-button {
   justify-content: center;
+  align-items: center;
   width: 100%;
   margin: 0 0 23px 0;
   padding: 12px;
@@ -170,6 +401,15 @@
 
   background-color: $color-energy-yellow;
   border-radius: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 150px;
+    min-height: 50px;
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .card__like-counter {
@@ -183,4 +423,15 @@
   line-height: 16px;
   color: $color-midnight-express-mod-2;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: unset;
+    left: unset;
+
+    padding-left: 57px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

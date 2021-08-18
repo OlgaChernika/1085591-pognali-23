@@ -1,5 +1,4 @@
 .authorize {
-
   color: $color-white;
 
   background-color: $color-midnight-express;
@@ -42,6 +41,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 65px 0;
+
     font-size: 28px;
     line-height: 32px;
   }
@@ -107,10 +107,10 @@
 
 .authorize__button {
   position: absolute;
-  display: inline-flex;
   right: 0;
   bottom: 0;
 
+  display: inline-flex;
   width: 60px;
   height: 62px;
 

@@ -5,16 +5,21 @@
   font-size: 24px;
   line-height: 24px;
 
-  @media (min-width: $tablet-width) {
-    font-size: 45px;
-    line-height: 45px;
-  }
-
   &--orange {
     color: $color-neon-carrot-orange;
+
+    @media (min-width: $tablet-width) {
+      font-size: 45px;
+      line-height: 45px;
+    }
   }
 
   &--blue {
     color: $color-catalina-blue;
+
+    @media (min-width: $tablet-width) {
+      font-size: 36px;
+      line-height: 36px;
+    }
   }
 }
