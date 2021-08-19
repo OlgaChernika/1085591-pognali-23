@@ -93,8 +93,8 @@
   flex-wrap: wrap;
   justify-content: center;
   min-width: 200px;
-  padding: 0 51px;
   margin: 0 auto 14px auto;
+  padding: 0 51px;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto 24px auto;
@@ -119,8 +119,6 @@
 }
 
 .profile__routes-list {
-  @include list-reset;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -129,6 +127,8 @@
   margin-top: -40px;
 
   column-gap: 20px;
+
+  @include list-reset;
 
   @media (min-width: $tablet-width) {
     margin-top: -48px;
@@ -182,12 +182,11 @@
 }
 
 .profile__transport-list {
-  @include list-reset;
-
-  margin-bottom: 20px;
-
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
+
+  @include list-reset;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 27px;

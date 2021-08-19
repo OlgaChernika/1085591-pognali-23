@@ -10,6 +10,38 @@
   margin: 0 -1px -1px 0;
 
   border: 1px solid $color-link-water-grey;
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      min-width: 55px;
+      min-height: 70px;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-radius: 4px;
+    }
+  }
+
+  &--filter {
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      position: static;
+
+      width: fit-content;
+      margin: 0;
+
+      border: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: grid;
+      height: fit-content;
+
+      grid-template-rows: min-content min-content;
+      row-gap: 45px;
+    }
+  }
 }
 
 .alphabet__link {
@@ -39,11 +71,42 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 
   &--form-current {
     color: $color-catalina-blue;
 
     background-color: $color-solitude-grey-mod-2;
+
+    @media (min-width: $tablet-width) {
+      color: $color-white;
+
+      background-color: $color-catalina-blue;
+    }
+  }
+
+  &--filter {
+    @media (min-width: $tablet-width) {
+      align-items: center;
+      width: fit-content;
+
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 60px;
+      color: rgba($color-catalina-blue, 0.3);
+
+      background-color: $color-transparent;
+    }
+  }
+
+  &--filter-current {
+    @media (min-width: $tablet-width) {
+      color: $color-catalina-blue;
+    }
   }
 }

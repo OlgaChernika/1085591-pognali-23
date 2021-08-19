@@ -49,16 +49,15 @@
 
 .add-profile__image {
   @media (min-width: $tablet-width) {
-    z-index: 1;
     position: absolute;
-
-    bottom: 45px;
     right: 45px;
+    bottom: 45px;
+    z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 131px;
     right: 133px;
+    bottom: 131px;
 
     width: 198px;
     height: 198px;
@@ -66,8 +65,9 @@
 }
 
 .add-profile__tariff {
-  @include list-reset;
   margin: 0 0 20px 0;
+
+  @include list-reset;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 35px 0;
@@ -99,6 +99,7 @@
     justify-content: start;
     margin-bottom: 15px;
     padding: 24px 110px 24px 115px;
+
     font-size: 20px;
     line-height: 20px;
 
@@ -107,8 +108,10 @@
       position: absolute;
       top: 0;
       left: 23px;
+
       width: 68px;
       height: 68px;
+
       background-color: $color-lavender;
       border-radius: 50%;
     }

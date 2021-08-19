@@ -13,9 +13,12 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 60px;
+
     padding: 130px 60px 134px 60px;
+
+    column-gap: 60px;
+
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -72,13 +75,13 @@
 }
 
 .companions__list {
-  @include list-reset;
-
   display: grid;
   margin-bottom: 20px;
 
   gap: 9px;
   grid-template-rows: min-content;
+
+  @include list-reset;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
@@ -89,6 +92,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
+
     column-gap: 60px;
   }
 }
@@ -102,6 +106,7 @@
     position: absolute;
     bottom: 134px;
     left: 130px;
+
     width: 280px;
     margin-bottom: 0;
   }

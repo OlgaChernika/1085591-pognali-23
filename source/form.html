@@ -9,49 +9,54 @@
   </head>
   <body class="inner-page">
     <header class="inner-page__header header">
-      <div class="header__top-wrapper container">
-        <a href="index.html" class="header__logo logo" aria-label="Перейти на главную страницу">
-          <img class="logo__image logo__image--deep" src="img/logo_mobile.svg" width="95" height="15" alt="Логотип сервиса Погнали">
-          <img class="logo__image logo__image--white" src="img/logo_mobile-white.svg" width="95" height="15" alt="Логотип сервиса Погнали">
-        </a>
-        <button class="header__toggle button" type="button" aria-label="Кнопка открытия/закрытия меню"></button>
-      </div>
-      <div class="header__menu">
-        <nav class="header__nav nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="#">О сервисе</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="form.html">Направления</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="catalog.html">Попутчики</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__communications communications">
-          <ul class="communications__list">
-            <li class="communications__item">
-              <a class="communications__link communications__link--phone" href="tel:88005558628" aria-label="Наш телефон">8 800 555-86-28</a>
-            </li>
-            <li class="communications__item">
-              <a class="communications__link communications__link--email" href="mailto:mail@htmlacademy.ru" aria-label="Наш email">mail@htmlacademy.ru</a>
-            </li>
-          </ul>
-          <a class="communications__authorize authorize-link" href="#" aria-label="Перейти на страницу авторизации">Авторизация</a>
+      <div class="header__container container">
+        <div class="header__wrapper">
+          <div class="header__top-wrapper">
+            <a href="index.html" class="header__logo logo" aria-label="Перейти на главную страницу">
+              <img class="logo__image logo__image--deep" src="img/logo_mobile.svg" width="95" height="15" alt="Логотип сервиса Погнали">
+              <img class="logo__image logo__image--white" src="img/logo_mobile-white.svg" width="95" height="15" alt="Логотип сервиса Погнали">
+            </a>
+            <button class="header__toggle button" type="button" aria-label="Кнопка открытия/закрытия меню"></button>
+            <a class="header__authorize--top authorize-link" href="#" aria-label="Перейти на страницу авторизации">Авторизация</a>
+          </div>
+          <div class="header__menu">
+            <nav class="header__nav nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="#">О&nbsp;сервисе</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="form.html">Направления</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="catalog.html">Попутчики</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__communications communications">
+              <ul class="header__communications-list communications__list">
+                <li class="communications__item">
+                  <a class="communications__link communications__link--phone communications__link--header-phone communications__link--hidden" href="tel:88005558628" aria-label="Наш телефон">8 800 555-86-28</a>
+                </li>
+                <li class="communications__item">
+                  <a class="communications__link communications__link--email communications__link--header-email communications__link--hidden" href="mailto:mail@htmlacademy.ru" aria-label="Наш email">mail@htmlacademy.ru</a>
+                </li>
+              </ul>
+              <a class="header__authorize authorize-link" href="#" aria-label="Перейти на страницу авторизации">Авторизация</a>
+            </div>
+            <ul class="header__social social">
+              <li class="social__item">
+                <a class="social__link social__link--fb" href="#" aria-label="Наша страница на Facebook"></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--inst" href="#" aria-label="Наша страница в Instagram"></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--vk" href="#" aria-label="Наша страница в VK"></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <ul class="header__social social">
-          <li class="social__item">
-            <a class="social__link social__link--fb" href="#" aria-label="Наша страница на Facebook"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--inst" href="#" aria-label="Наша страница в Instagram"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--vk" href="#" aria-label="Наша страница в VK"></a>
-          </li>
-        </ul>
       </div>
     </header>
     <main class="inner-page__form">
@@ -61,7 +66,7 @@
       <section class="user-profile">
         <div class="user-profile__container container">
           <h2 class="visually-hidden">Мой профиль</h2>
-          <form action="https://echo.htmlacademy.ru" method="POST">
+          <form class="user-profile__form" action="https://echo.htmlacademy.ru" method="POST">
             <div class="user-profile__image-level-wrapper">
               <div class="user-profile__level level">
                 <div class="level__number">
@@ -75,12 +80,12 @@
             </div>
             <fieldset class="user-profile__add-image">
               <input class="visually-hidden" type="file" name="user-image" id="user-image">
-              <label class="user-profile__add-image-label" for="user-image"><span class="user-profile__add-image-text user-profile__add-image-text--hidden">Cменить</span> фото</label>
+              <label class="user-profile__add-image-label" for="user-image"><span class="user-profile__add-image-text user-profile__add-image-text--hidden">Cменить&nbsp;</span>фото</label>
             </fieldset>
             <div class="user-profile__tags-wrapper">
               <h3 class="user-profile__title user-profile__tags-title">Тэги</h3>
               <fieldset class="user-profile__fieldset  user-profile__tags-fieldset" >
-                <textarea class="user-profile__tags" name="user-tags" cols="30" rows="2" placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
+                <textarea class="user-profile__tags" name="user-tags" cols="30" rows="1" placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
               </fieldset>
             </div>
             <div class="user-profile__transport-wrapper">
@@ -166,8 +171,8 @@
                   Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку, и ее предполагаемую длительность.
                 </p>
                 <fieldset class="step__fieldset">
-                  <div class="step__wrapper">
-                    <label class="step__label" for="companions-quantity">Ищу попутчиков:</label>
+                  <div class="step__wrapper step__wrapper-companions">
+                    <label class="step__label" for="companions-quantity">Ищу&nbsp;попутчиков:</label>
                     <p class="step__unit">чел.</p>
                     <div class="step__input-wrapper">
                       <button class="step__button-quantity step__button-quantity--less button" type="button" aria-label="Уменьшить количество"></button>
@@ -175,7 +180,7 @@
                       <button class="step__button-quantity step__button-quantity--more button" type="button" aria-label="Увеличить количество"></button>
                     </div>
                   </div>
-                  <div class="step__wrapper">
+                  <div class="step__wrapper step__wrapper-days">
                     <label class="step__label" for="days-quantity">Длительность:</label>
                     <p class="step__unit">дн.</p>
                     <div class="step__input-wrapper">
@@ -321,7 +326,7 @@
                     </div>
                     <button class="step__close-route-button button" type="button" aria-label="Удалить страну"></button>
                   </li>
-                  <li class="step__routes-item step__routes-item--add-land">
+                  <li class="step__routes-item step__routes-item--add-land step__routes-item--alphabet">
                     <div class="step__route-wrapper">
                       <p class="step__choose-route">Выберите страну</p>
                       <button class="step__choose-route-button button" type="button" aria-label="Выберите страну"></button>
@@ -406,38 +411,38 @@
                         </li>
                       </ul>
                       <ul class="step__routes-by-letter routes-by-letter">
-                        <li class="routes-by-letter__item">
-                          <a class="routes-by-letter__link" href="#">Австралия</a>
+                        <li class="routes-by-letter__item routes-by-letter__item--form">
+                          <a class="routes-by-letter__link routes-by-letter__link--form" href="#">Австралия</a>
                         </li>
-                        <li class="routes-by-letter__item">
-                          <a class="routes-by-letter__link" href="#">Австрия</a>
+                        <li class="routes-by-letter__item routes-by-letter__item--form">
+                          <a class="routes-by-letter__link routes-by-letter__link--form" href="#">Австрия</a>
                         </li>
-                        <li class="routes-by-letter__item">
-                          <a class="routes-by-letter__link" href="#">Азербайджан</a>
+                        <li class="routes-by-letter__item routes-by-letter__item--form">
+                          <a class="routes-by-letter__link routes-by-letter__link--form" href="#">Азербайджан</a>
                         </li>
-                        <li class="routes-by-letter__item">
-                          <a class="routes-by-letter__link" href="#">Албания</a>
+                        <li class="routes-by-letter__item routes-by-letter__item--form">
+                          <a class="routes-by-letter__link routes-by-letter__link--form" href="#">Албания</a>
                         </li>
-                        <li class="routes-by-letter__item">
-                          <a class="routes-by-letter__link" href="#">Алжир</a>
+                        <li class="routes-by-letter__item routes-by-letter__item--form">
+                          <a class="routes-by-letter__link routes-by-letter__link--form" href="#">Алжир</a>
                         </li>
-                        <li class="routes-by-letter__item">
-                          <a class="routes-by-letter__link" href="#">Ангола</a>
+                        <li class="routes-by-letter__item routes-by-letter__item--form">
+                          <a class="routes-by-letter__link routes-by-letter__link--form" href="#">Ангола</a>
                         </li>
-                        <li class="routes-by-letter__item">
-                          <a class="routes-by-letter__link" href="#">Андорра</a>
+                        <li class="routes-by-letter__item routes-by-letter__item--form">
+                          <a class="routes-by-letter__link routes-by-letter__link--form" href="#">Андорра</a>
                         </li>
-                        <li class="routes-by-letter__item">
-                          <a class="routes-by-letter__link" href="#">Антигуа и Барбуда</a>
+                        <li class="routes-by-letter__item routes-by-letter__item--form">
+                          <a class="routes-by-letter__link routes-by-letter__link--form" href="#">Антигуа&nbsp;и&nbsp;Барбуда</a>
                         </li>
-                        <li class="routes-by-letter__item">
-                          <a class="routes-by-letter__link" href="#">Аргентина</a>
+                        <li class="routes-by-letter__item routes-by-letter__item--form">
+                          <a class="routes-by-letter__link routes-by-letter__link--form" href="#">Аргентина</a>
                         </li>
-                        <li class="routes-by-letter__item">
-                          <a class="routes-by-letter__link" href="#">Армения</a>
+                        <li class="routes-by-letter__item routes-by-letter__item--form">
+                          <a class="routes-by-letter__link routes-by-letter__link--form" href="#">Армения</a>
                         </li>
-                        <li class="routes-by-letter__item">
-                          <a class="routes-by-letter__link" href="#">Афганистан</a>
+                        <li class="routes-by-letter__item routes-by-letter__item--form">
+                          <a class="routes-by-letter__link routes-by-letter__link--form" href="#">Афганистан</a>
                         </li>
                       </ul>
                     </div>
@@ -446,8 +451,10 @@
                     <button class="step__choose-route step__add-routes button" type="button">Добавить страну</button>
                   </li>
                 </ul>
-                <a class="step__button step__button--next button" href="#step-second">Следующий шаг</a>
-                <a class="step__button step__button--back button" href="#step-first">На шаг назад</a>
+                <div class="step__button-wrapper">
+                  <a class="step__button step__button--next button" href="#step-second">Следующий шаг</a>
+                  <a class="step__button step__button--back button" href="#step-first">На&nbsp;шаг&nbsp;назад</a>
+                </div>
               </li>
               <li class="add-plan__item step step-third" id="step-third">
                 <div class="step__title-wrapper">
@@ -470,17 +477,19 @@
                 <fieldset class="step__fieldset">
                   <ul class="step__entertainment">
                     <li class="step__entertainment-item">
-                      <h3 class="step__entertainment-route">Босния и Герцеговина</h3>
-                      <textarea class="step__entertainment-comment" name="entertainment-comment" cols="25" rows="8" placeholder="План действий"></textarea>
+                      <h3 class="step__entertainment-route step__entertainment-route--bosnia-herzegovina">Босния и Герцеговина</h3>
+                      <textarea class="step__entertainment-comment" name="entertainment-comment" cols="25" rows="5" placeholder="План действий"></textarea>
                     </li>
                     <li class="step__entertainment-item">
-                      <h3 class="step__entertainment-route">Чехия</h3>
-                      <textarea class="step__entertainment-comment" name="entertainment-comment" cols="25" rows="8" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                      <h3 class="step__entertainment-route step__entertainment-route--czech">Чехия</h3>
+                      <textarea class="step__entertainment-comment" name="entertainment-comment" cols="25" rows="5" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                     </li>
                   </ul>
                 </fieldset>
-                <button class="step__button step__button--send button" type="submit">Отправить</button>
-                <a class="step__button step__button--back" href="#step-second">На шаг назад</a>
+                <div class="step__button-wrapper">
+                  <button class="step__button step__button--send button" type="submit">Отправить</button>
+                  <a class="step__button step__button--back" href="#step-second">На&nbsp;шаг&nbsp;назад</a>
+                </div>
               </li>
             </ul>
           </form>
@@ -497,10 +506,10 @@
             <a class="social__link social__link--yellow social__link--fb" href="#" aria-label="Наша страница на Facebook"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--yellow social__link--inst" href="#" aria-label="Наша страница в Instagram"></a>
+            <a class="social__link social__link--yellow social__link--vk" href="#" aria-label="Наша страница в VK"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--yellow social__link--vk" href="#" aria-label="Наша страница в VK"></a>
+            <a class="social__link social__link--yellow social__link--inst" href="#" aria-label="Наша страница в Instagram"></a>
           </li>
         </ul>
         <div class="footer__producer producer">

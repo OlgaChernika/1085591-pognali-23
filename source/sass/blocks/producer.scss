@@ -11,10 +11,9 @@
 }
 
 .producer__description {
+  align-self: center;
   margin: 0;
   padding: 10px 0;
-
-  align-self: center;
 
   font-style: normal;
   font-weight: normal;
@@ -24,6 +23,7 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 23px;
+
     font-size: 20px;
     line-height: 20px;
   }

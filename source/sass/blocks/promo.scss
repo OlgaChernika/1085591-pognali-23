@@ -18,10 +18,9 @@
   @media (min-width: $desktop-width) {
     position: relative;
 
-    overflow: hidden;
-
     min-height: 730px;
     padding-top: 100px;
+    overflow: hidden;
   }
 }
 
@@ -31,6 +30,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
+
     grid-template-columns: 1fr 264px;
   }
 }
@@ -122,16 +122,14 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-
-    padding: 15px;
-
     top: 52px;
     right: 40px;
+
+    padding: 15px;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
-
     top: unset;
     right: unset;
   }
@@ -172,6 +170,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 45px 0;
+
     font-size: 28px;
     line-height: 32px;
   }
@@ -193,15 +192,16 @@
 .promo__menu-wrapper {
   @media (min-width: $desktop-width) {
     position: absolute;
-    z-index: 98;
-    order: 3;
-    width: 100%;
     bottom: 0;
     left: 0;
+    z-index: 98;
 
-    grid-column: 1/-1;
+    order: 3;
+    width: 100%;
 
     background-color: $color-white;
+
+    grid-column: 1/-1;
   }
 }
 
@@ -210,10 +210,11 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
+    align-content: center;
     min-height: 90px;
     padding: 0 60px;
+
     grid-template-columns: 200px 1fr min-content;
-    align-content: center;
   }
 }
 
@@ -231,7 +232,7 @@
   @media (min-width: $desktop-width) {
     display: block;
     height: 100%;
-    margin-left: 145px;
+    margin: 0;
   }
 }
 

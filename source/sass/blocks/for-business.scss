@@ -1,12 +1,14 @@
 .for-business {
   position: fixed;
-  display: none;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  overflow-y: auto;
   z-index: 999;
+
+  display: none;
+  overflow-y: auto;
+
   -ms-overflow-style: none;
 
   &::-webkit-scrollbar {
@@ -16,9 +18,10 @@
 
 .for-business__container {
   position: relative;
+
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 100%;
   min-height: 100%;
 }
@@ -29,18 +32,20 @@
   right: 0;
   bottom: 0;
   left: 0;
+
   background-color: rgba($color-black, 0.3);
 }
 
 .for-business__wrapper {
+  z-index: 1;
+
   width: 270px;
   min-height: 443px;
   margin: 0 auto;
 
+  background-color: $color-white;
   border-radius: 20px;
   box-shadow: 0 2px 8px rgba($color-catalina-blue, 0.14);
-  background-color: $color-white;
-  z-index: 1;
 
   @media (min-width: $tablet-width) {
     width: 688px;
@@ -78,11 +83,11 @@
 }
 
 .for-business__tariff {
-  @include list-reset;
-
   margin-bottom: 30px;
 
   line-height: 22px;
+
+  @include list-reset;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 52px;

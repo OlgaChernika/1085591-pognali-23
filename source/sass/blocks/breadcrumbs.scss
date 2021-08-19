@@ -1,6 +1,10 @@
 .breadcrumbs {
   justify-content: space-between;
   width: 50px;
+
+  @media (min-width: $desktop-width) {
+    min-width: 181px;
+  }
 }
 
 .breadcrumbs__link {
@@ -9,6 +13,12 @@
   width: 5px;
   height: 5px;
   padding: 11px;
+
+  @media (min-width: $desktop-width) {
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+  }
 
   &::before {
     content: "";
@@ -22,6 +32,12 @@
     background-color: rgba($color-catalina-blue, 0.3);
     border-radius: 50%;
     transform: translate(-50%);
+
+    @media (min-width: $desktop-width) {
+      left: 0;
+
+      transform: translateX(0);
+    }
   }
 
   &--current {
@@ -41,4 +57,9 @@
   color: rgba($color-black, 0.6);
   text-transform: uppercase;
   letter-spacing: 0.11em;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+    padding-left: 42px;
+  }
 }

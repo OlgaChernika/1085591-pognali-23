@@ -1,26 +1,57 @@
 .add-plan {
-  padding-top: 30px;
-  padding-bottom: 43px;
+  padding: 30px 0 43px 0;
 
   background-color: $color-hawkes-blue-mod-2;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 53px 0 63px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 0 72px 0;
+  }
 }
 
 .add-plan__container {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 60px;
+  }
 }
 
 .add-plan__title {
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
+  }
 }
 
 .add-plan__list {
-  @include list-reset;
-
   margin: 0;
+
+  @include list-reset;
 }
 
 .add-plan__item {
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.add-plan__item:last-child {
+  margin-bottom: 0;
 }

@@ -1,7 +1,29 @@
+.routes-by-letter__item {
+  &--form {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
 .routes-by-letter__link {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   color: $color-charcoal-grey;
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  &--filter {
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
 }
