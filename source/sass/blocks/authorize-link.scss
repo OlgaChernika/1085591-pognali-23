@@ -15,3 +15,12 @@
     line-height: 20px;
   }
 }
+
+.authorize-link:hover,
+.authorize-link:focus {
+  background-color: $color-supernova-yellow;
+}
+
+.authorize-link:active {
+  color: rgba($color-midnight-express, 0.3);
+}

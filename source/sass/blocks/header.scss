@@ -20,7 +20,7 @@
 
   display: grid;
   min-height: 73px;
-  padding-top: 20px;
+  padding: 13px 0 33px 0;
 
   grid-template-columns: 1fr min-content;
 
@@ -54,6 +54,10 @@
 
   background-color: $color-transparent;
 
+  @media (min-width: $tablet-width) {
+    top: 45px;
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
@@ -61,14 +65,13 @@
   &::before {
     content: "";
     position: absolute;
-    top: 8px;
+    top: 4px;
     left: -2px;
 
     width: 23px;
     height: 2px;
 
     background-color: $color-very-light-grey;
-    transform: rotate(-45deg);
   }
 
   &::after {
@@ -81,11 +84,34 @@
     height: 2px;
 
     background-color: $color-very-light-grey;
-    transform: rotate(45deg);
   }
 
-  @media (min-width: $tablet-width) {
-    top: 45px;
+  &--close {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: -2px;
+
+      width: 23px;
+      height: 2px;
+
+      background-color: $color-very-light-grey;
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: -2px;
+
+      width: 23px;
+      height: 2px;
+
+      background-color: $color-very-light-grey;
+      transform: rotate(45deg);
+    }
   }
 }
 
@@ -118,6 +144,14 @@
 
     background-color: $color-midnight-express;
   }
+
+  &--closed {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+    }
+  }
 }
 
 .header__nav {
@@ -127,6 +161,7 @@
     height: 100%;
     width: 100%;
     margin: 0;
+    padding-left: 89px;
   }
 }
 

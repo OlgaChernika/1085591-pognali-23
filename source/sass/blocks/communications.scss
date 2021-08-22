@@ -11,7 +11,7 @@
 }
 
 .communications__description {
-  margin: 0 0 17px 0;
+  margin: 0 0 18px 0;
   padding: 0 25px;
 
   @media (min-width: $tablet-width) {
@@ -23,6 +23,10 @@
     font-size: 28px;
     line-height: 30px;
     letter-spacing: 0.01em;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 43px 0;
   }
 }
 
@@ -143,7 +147,7 @@
   &--in-authorize {
     align-items: center;
     min-height: 45px;
-    padding: 0 0 0 70px;
+    padding: 0 0 0 60px;
 
     font-style: normal;
     font-weight: bold;
@@ -152,15 +156,18 @@
     color: $color-energy-yellow;
 
     @media (min-width: $tablet-width) {
-      padding: 20px 0 20px 125px;
+      padding: 20px 0 20px 90px;
 
       font-size: 28px;
       line-height: 28px;
     }
 
     @media (min-width: $desktop-width) {
+      min-height: 90px;
+      padding: 20px 0 20px 123px;
+
       &::before {
-        top: -10px;
+        top: 0;
 
         width: 90px;
         height: 90px;
@@ -259,6 +266,41 @@
       line-height: 0;
     }
   }
+}
+
+.communications__link--header-email:hover,
+.communications__link--header-email:focus {
+  &::before {
+    background-color: $color-neon-carrot-orange;
+  }
+}
+
+.communications__link--header-email:active {
+  &::after {
+    opacity: 0.3;
+  }
+}
+
+.communications__link--header-phone:hover,
+.communications__link--header-phone:focus {
+  &::before {
+    background-color: $color-burnt-orange;
+  }
+}
+
+.communications__link--header-phone:active {
+  &::after {
+    opacity: 0.3;
+  }
+}
+
+.communications__link--in-authorize:hover,
+.communications__link--in-authorize:focus {
+  color: $color-supernova-yellow;
+}
+
+.communications__link--in-authorize:active {
+  color: rgba($color-energy-yellow, 0.3);
 }
 
 .communications__link-promo {

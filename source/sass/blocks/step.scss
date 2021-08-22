@@ -459,6 +459,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     max-width: 730px;
   }
 }
@@ -571,6 +572,7 @@
 
   @media (min-width: $desktop-width) {
     width: 74%;
+    max-width: 730px;
   }
 }
 
@@ -594,6 +596,12 @@
 
     border-radius: 0;
     transform: translateY(-50%);
+  }
+
+  &--right {
+    @media (min-width: $desktop-width) {
+      right: -37.2%;
+    }
   }
 }
 
@@ -622,8 +630,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    min-width: 100%;
     max-width: 730px;
-    padding: 32px 57px 36px 26px;
+    padding: 32px 7% 36px 3%;
+    column-gap: 10%;
   }
 
   &::before {
@@ -640,7 +650,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      right: 283px;
+      right: 39%;
     }
   }
 }
@@ -657,7 +667,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 361px;
+    max-width: 361px;
     height: 408px;
 
     gap: 16px;

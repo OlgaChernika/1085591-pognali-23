@@ -16,6 +16,8 @@
   grid-template-rows: min-content;
 
   @media (min-width: $tablet-width) {
+    margin-top: 11px;
+
     font-size: 24px;
     line-height: 24px;
 
@@ -23,7 +25,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 30px;
+    margin: 6px -19px 0 0;
 
     grid-template-columns: repeat(4, 1fr);
   }
@@ -32,7 +34,7 @@
 .site-guide__item {
   position: relative;
 
-  min-height: 80px;
+  min-height: 95px;
   margin-bottom: -15px;
   padding: 22px 96px 22px 24px;
 
@@ -41,19 +43,21 @@
   @media (min-width: $tablet-width) {
     min-height: 140px;
     margin: 0;
-    padding: 31px 100px 31px 32px;
+    padding: 29px 102px 31px 32px;
+    border-radius: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 25%;
+    min-width: auto;
     min-height: 107px;
-    margin: 0 0 0 -30px;
-    padding: 30px 75px 30px 34px;
+    margin: 0;
+    padding: 30px 27% 30px 34px;
   }
 
   &::after {
     content: counter(item);
     position: absolute;
+    top: 20px;
     right: 20px;
 
     color: $color-white;
@@ -63,7 +67,7 @@
     @media (min-width: $tablet-width) {
       top: unset;
       right: unset;
-      bottom: 18px;
+      bottom: 23px;
       left: 33px;
 
       font-style: normal;
@@ -74,9 +78,8 @@
 
     @media (min-width: $desktop-width) {
       top: 30px;
-      right: 53px;
       bottom: unset;
-      left: unset;
+      left: 80%;
 
       font-size: 24px;
       line-height: 24px;
@@ -87,13 +90,21 @@
     background-color: $color-neon-carrot-orange;
 
     @media (min-width: $tablet-width) {
+      width: calc(100% + 40px);
+
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
       border-bottom-left-radius: 0;
     }
 
     @media (min-width: $desktop-width) {
-      border-radius: 10px;
+      border-radius: 20px;
+    }
+
+    &::after {
+      @media (min-width: $desktop-width) {
+        left: 71%;
+      }
     }
   }
 
@@ -101,18 +112,17 @@
     background-color: $color-lightning-yellow;
 
     @media (min-width: $tablet-width) {
-      width: calc(100% + 10px);
-      margin-left: -10px;
+      width: 100%;
 
       border-bottom-right-radius: 0;
       border-bottom-left-radius: 0;
     }
 
     @media (min-width: $desktop-width) {
-      width: inherit;
-      margin-left: -30px;
+      width: calc(100% + 40px);
+      margin-left: -20px;
 
-      border-radius: 10px;
+      border-radius: 20px;
     }
   }
 
@@ -120,32 +130,41 @@
     background-color: $color-supernova-yellow;
 
     @media (min-width: $tablet-width) {
+      width: calc(100% + 40px);
+
       border-top-left-radius: 0;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }
 
     @media (min-width: $desktop-width) {
-      border-radius: 10px;
+      margin-left: -10px;
+
+      border-radius: 20px;
     }
   }
 
   &--light-yellow {
+    min-height: 80px;
     background-color: $color-energy-yellow;
 
     @media (min-width: $tablet-width) {
-      width: calc(100% + 10px);
-      margin-left: -10px;
+      width: 100%;
 
       border-top-left-radius: 0;
       border-top-right-radius: 0;
     }
 
     @media (min-width: $desktop-width) {
-      width: inherit;
-      margin-left: -30px;
+      max-width: 315px;
 
-      border-radius: 10px;
+      border-radius: 20px;
+    }
+
+    &::after {
+      @media (min-width: $desktop-width) {
+        left: 86%;
+      }
     }
   }
 }

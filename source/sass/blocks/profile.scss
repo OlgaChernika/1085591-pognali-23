@@ -4,9 +4,24 @@
   background-color: $color-white;
   border-radius: 10px;
 
+  @media (min-width: $tablet-width) {
+    border-radius: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     min-width: 285px;
   }
+}
+
+.profile:hover,
+.profile:focus {
+  box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+}
+
+.profile:hover .profile__image,
+.profile:focus .profile__image {
+  transform: scale(1.05) translateY(-7px);
 }
 
 .profile__link {
@@ -17,16 +32,19 @@
   width: 100%;
   max-height: 360px;
 
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px 10px 0 0;
 
   object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 20px 20px 0 0;
+  }
 }
 
 .profile__wrapper {
   display: flex;
   flex-direction: column;
-  padding-top: 27px;
+  padding-top: 26px;
 
   @media (min-width: $tablet-width) {
     padding-top: 31px;
@@ -37,6 +55,13 @@
   margin: 0 0 15px 0;
 
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 24px 0;
+    padding: 8px 30px 0 68px;
+
+    text-align: left;
+  }
 }
 
 .profile__name-link {
@@ -54,12 +79,21 @@
   }
 }
 
+.profile__name-link:hover,
+.profile__name-link:focus {
+  opacity: 0.7;
+}
+
+.profile__name-link:active {
+  opacity: 0.3;
+}
+
 .profile__status {
   &::before {
     content: "";
     position: absolute;
     top: 8px;
-    left: -20px;
+    left: -17px;
 
     width: 6px;
     height: 6px;
@@ -68,6 +102,8 @@
     border-radius: 50%;
 
     @media (min-width: $tablet-width) {
+      left: -23px;
+
       width: 8px;
       height: 8px;
     }
@@ -94,15 +130,16 @@
   justify-content: center;
   min-width: 200px;
   margin: 0 auto 14px auto;
-  padding: 0 51px;
+  padding: 0 43px;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto 24px auto;
+    padding: 0 20px;
   }
 }
 
 .profile__tags-item {
-  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .profile__tags-link {
@@ -119,6 +156,7 @@
 }
 
 .profile__routes-list {
+  z-index: 1;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -184,12 +222,12 @@
 .profile__transport-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 
   @include list-reset;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 27px;
+    margin-bottom: 28px;
   }
 }
 

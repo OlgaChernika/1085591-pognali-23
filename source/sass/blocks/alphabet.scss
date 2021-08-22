@@ -18,6 +18,8 @@
     }
 
     @media (min-width: $desktop-width) {
+      min-width: 45px;
+      max-width: 55px;
       border-radius: 4px;
     }
   }

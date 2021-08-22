@@ -6,7 +6,6 @@
   left: 0;
   z-index: 999;
 
-  display: none;
   overflow-y: auto;
 
   -ms-overflow-style: none;
@@ -94,7 +93,7 @@
   }
 }
 
-.for-business__button-close {
+.for-business__button {
   width: 100%;
   padding: 18px 0;
 

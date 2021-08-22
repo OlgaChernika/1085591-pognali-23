@@ -19,7 +19,8 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: left;
     height: 100%;
 
     font-weight: normal;
@@ -30,7 +31,8 @@
 
 .nav__item {
   @media (min-width: $desktop-width) {
-    height: 100%;
+    margin-right: 5px;
+    overflow: hidden;
   }
 }
 
@@ -40,14 +42,52 @@
 
   @media (min-width: $desktop-width) {
     align-items: center;
-    height: 100%;
-    padding-right: 35px;
+    padding-right: 34px;
 
     color: $color-white;
+    overflow: hidden;
+    outline: 0;
   }
 
-  &--promo {
-    font-weight: 500;
-    color: $color-midnight-express-mod-3;
+  // &--promo {
+  //   padding-right: 29px;
+  //   font-weight: 500;
+  //   color: $color-midnight-express-mod-3;
+  // }
+}
+
+.nav__link-animation {
+  display: inline-flex;
+  position: relative;
+  transition: transform 0.3s;
+
+  &::before {
+    @media (min-width: $desktop-width) {
+      content: attr(data-hover);
+      position: absolute;
+      top: 100%;
+      transform: translate3d(0, 0, 0);
+      color: $color-energy-yellow;
+    }
+  }
+}
+
+.nav__link:hover {
+  color: $color-energy-yellow;
+
+  @media (min-width: $desktop-width) {
+    color: $color-white;
+  }
+}
+
+.nav__link:hover .nav__link-animation {
+  @media (min-width: $desktop-width) {
+    transform: translateY(-100%);
+  }
+}
+
+.nav__link:active .nav__link-animation {
+  &::before {
+    color: rgba($color-energy-yellow, 0.3);
   }
 }
