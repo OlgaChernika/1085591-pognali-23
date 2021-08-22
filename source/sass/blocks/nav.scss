@@ -49,11 +49,10 @@
     outline: 0;
   }
 
-  // &--promo {
-  //   padding-right: 29px;
-  //   font-weight: 500;
-  //   color: $color-midnight-express-mod-3;
-  // }
+  &--scroll {
+    font-weight: 500;
+    color: $color-midnight-express-mod-3;
+  }
 }
 
 .nav__link-animation {

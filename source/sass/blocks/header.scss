@@ -4,6 +4,15 @@
   @media (min-width: $tablet-width) {
     background-color: $color-midnight-express;
   }
+
+  &--scroll {
+    z-index: 99;
+    position: fixed;
+
+    width: 100%;
+
+    background-color: $color-white;
+  }
 }
 
 .header__wrapper {
@@ -36,6 +45,10 @@
   @media (min-width: $desktop-width) {
     min-height: 100px;
     padding-top: 50px;
+  }
+
+  &--scroll {
+    background-color: $color-white;
   }
 }
 
@@ -84,6 +97,16 @@
     height: 2px;
 
     background-color: $color-very-light-grey;
+  }
+
+  &--scroll {
+    &::before {
+      background-color: $color-very-light-grey;
+    }
+
+    &::after {
+      color: $color-very-light-grey;
+    }
   }
 
   &--close {
@@ -143,6 +166,10 @@
     min-height: 100px;
 
     background-color: $color-midnight-express;
+  }
+
+  &--scroll {
+    background-color: $color-white;
   }
 
   &--closed {
