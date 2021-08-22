@@ -1,9 +1,21 @@
 .companions {
+  z-index: 4;
+  position: relative;
+
+  margin-bottom: -30px;
+  padding-top: 30px;
+
   color: $color-white;
 
   background-color: $color-midnight-express;
-  border-bottom-right-radius: 25px;
-  border-bottom-left-radius: 25px;
+  border-radius: 0 0 30px 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: -60px;
+    padding: 57px 0 56px 0;
+
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 .companions__container {
@@ -11,10 +23,14 @@
 
   grid-template-rows: min-content;
 
+  @media (min-width: $tablet-width) {
+    padding: 0 75px;
+  }
+
   @media (min-width: $desktop-width) {
     position: relative;
 
-    padding: 130px 60px 134px 60px;
+    padding: 130px 60px 85px 60px;
 
     column-gap: 60px;
 
@@ -23,19 +39,23 @@
 }
 
 .companions__wrapper {
-  padding: 68px 25px 0 25px;
+  padding: 65px 25px 0 25px;
 
   @media (min-width: $tablet-width) {
-    padding: 141px 30% 60px 33px;
+    padding: 141px 30% 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 20% 60px 70px;
+    padding: 0 19% 60px 70px;
   }
 }
 
 .companions__title {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 56px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 55px;
@@ -43,7 +63,7 @@
 }
 
 .companions__description {
-  margin: 0 0 25px 0;
+  margin: 0 0 24px 0;
 
   font-style: normal;
   font-weight: 300;
@@ -51,6 +71,8 @@
   line-height: 22px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 40px 0;
+
     font-size: 28px;
     line-height: 34px;
   }
@@ -61,7 +83,7 @@
 }
 
 .companions__tagline {
-  margin: 0 0 55px 0;
+  margin: 0 0 40px 0;
 
   font-style: normal;
   font-weight: bold;
@@ -69,6 +91,7 @@
   line-height: 22px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 62px 0;
     font-size: 21px;
     line-height: 24px;
   }
@@ -84,7 +107,7 @@
   @include list-reset;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 80px;
+    margin: 0 0 81px 0;
 
     gap: 50px;
     grid-template-columns: repeat(2, 1fr);
@@ -99,12 +122,11 @@
 
 .companions__link {
   width: 100%;
-  min-height: 62px;
   margin-bottom: 30px;
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    bottom: 134px;
+    bottom: 77px;
     left: 130px;
 
     width: 280px;

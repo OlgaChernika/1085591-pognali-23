@@ -1,20 +1,23 @@
 .add-profile {
-  padding-top: 38px;
-  padding-bottom: 20px;
+  z-index: 3;
+  position: relative;
+
+  margin-bottom: -30px;
+  padding: 65px 0 20px;
 
   background-color: $color-solitude-grey;
-  border-bottom-right-radius: 25px;
-  border-bottom-left-radius: 25px;
+  border-radius: 0 0 30px 30px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 50px;
+    margin-bottom: -60px;
+    padding: 130px 0 41px;
 
     background-color: $color-solitude-grey-mod-2;
+    border-radius: 0 0 60px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 107px;
-    padding-bottom: 150px;
+    padding: 164px 0 152px;
   }
 }
 
@@ -30,12 +33,12 @@
 
   @media (min-width: $tablet-width) {
     justify-content: center;
-    margin: 0 auto 73px auto;
+    margin: 0 auto 76px auto;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto 134px auto;
+    margin: 0 auto 136px auto;
   }
 }
 
@@ -50,14 +53,14 @@
 .add-profile__image {
   @media (min-width: $tablet-width) {
     position: absolute;
-    right: 45px;
-    bottom: 45px;
+    right: 85px;
+    bottom: -3px;
     z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
     right: 133px;
-    bottom: 131px;
+    bottom: 113px;
 
     width: 198px;
     height: 198px;
@@ -71,12 +74,12 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 35px 0;
-    padding-left: 90px;
+    padding-left: 65px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 345px 35px 0;
-    padding-left: 165px;
+    margin: 0 345px 31px 0;
+    padding-left: 135px;
   }
 }
 
@@ -98,7 +101,7 @@
   @media (min-width: $tablet-width) {
     justify-content: start;
     margin-bottom: 15px;
-    padding: 24px 110px 24px 115px;
+    padding: 20px 110px 24px 89px;
 
     font-size: 20px;
     line-height: 20px;
@@ -106,8 +109,8 @@
     &::before {
       content: "";
       position: absolute;
-      top: 0;
-      left: 23px;
+      top: -4px;
+      left: 0;
 
       width: 68px;
       height: 68px;
@@ -119,10 +122,28 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 15px;
-    padding: 24px 110px 24px 194px;
+    padding: 24px 110px 24px 160px;
 
     &::before {
-      left: 97px;
+      top: 0;
+      left: 70px;
     }
+  }
+}
+
+.add-profile__link:hover,
+.add-profile__link:focus {
+  color: rgba($color-midnight-blue, 0.7);
+
+  &::after {
+    opacity: 0.7;
+  }
+}
+
+.add-profile__link:active {
+  color: rgba($color-midnight-blue, 0.3);
+
+  &::after {
+    opacity: 0.3;
   }
 }

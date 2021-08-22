@@ -4,6 +4,7 @@
   border-top: 1px solid $color-white-smoke;
 
   @media (min-width: $tablet-width) {
+    margin-left: 10px;
     padding: 0;
 
     border: none;
@@ -13,7 +14,7 @@
 .producer__description {
   align-self: center;
   margin: 0;
-  padding: 10px 0;
+  padding: 9px 0;
 
   font-style: normal;
   font-weight: normal;
@@ -23,6 +24,7 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 23px;
+    padding-top: 0;
 
     font-size: 20px;
     line-height: 20px;

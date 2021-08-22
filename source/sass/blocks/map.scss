@@ -1,16 +1,18 @@
 .map {
-  padding-top: 30px;
+  z-index: 1;
+  position: relative;
+  padding-top: 60px;
 
   color: $color-catalina-blue;
 
   background-color: $color-energy-yellow;
 
   @media (min-width: $tablet-width) {
-    padding-top: 70px;
+    padding-top: 129px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 55px;
+    padding-top: 120px;
   }
 }
 
@@ -18,11 +20,19 @@
   z-index: 1;
 
   background-color: $color-energy-yellow;
-  border-bottom-right-radius: 25px;
-  border-bottom-left-radius: 25px;
+  border-radius: 0 0 30px 30px;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 .map__route {
+  z-index: 1;
+  position: relative;
+
+  margin-bottom: -30px;
+
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -38,25 +48,29 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    padding: 0 75px;
+    padding: 0 75px 51px;
   }
 }
 
 .map__route-address {
   position: relative;
 
-  margin: 0 25px 32px 0;
+  margin: 0 25px 34px 0;
   padding-left: 60px;
 
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 62px 0;
-    padding-left: 130px;
+    margin: 0 0 64px 0;
+    padding-left: 94px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 276px;
+    display: inline-flex;
+    align-items: center;
+    min-height: 90px;
+    margin: 0;
+    padding: 0 0 13px 269px;
   }
 
   &::before {
@@ -79,8 +93,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: -30px;
-      left: 121px;
+      top: -6px;
+      left: 148px;
 
       width: 90px;
       height: 90px;
@@ -90,8 +104,8 @@
 
 .map__route-link {
   width: 100%;
-  margin-bottom: 30px;
-  padding: 22px;
+  margin-bottom: 35px;
+  padding: 20px;
 
   font-style: normal;
   font-weight: bold;
@@ -99,21 +113,41 @@
   line-height: 18px;
   color: $color-catalina-blue;
 
-  border: 3px solid $color-midnight-express;
+  border: 3px solid $color-midnight-express-mod-3;
   border-radius: 10px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 85px;
-    padding: 30px 37px;
+    padding: 25px 37px;
+    border-radius: 20px;
 
     font-size: 24px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
+    align-self: start;
+    align-items: center;
     width: 324px;
-    margin-bottom: 56px;
+    min-height: 80px;
+    margin: 0;
+    padding: 0 34px;
   }
+}
+
+.map__route-link:hover,
+.map__route-link:focus {
+  background-color: $color-midnight-express-mod-3;
+  color: $color-white;
+}
+
+.map__route-link:active {
+  color: rgba($color-white, 0.3);
+}
+
+.map__wrapper {
+  position: relative;
+  z-index: -1;
 }
 
 .map__link {

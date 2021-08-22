@@ -1,4 +1,5 @@
 .show-button {
+  min-height: 62px;
   padding: 23px;
 
   font-style: normal;
@@ -11,11 +12,26 @@
   border-radius: 10px;
 
   @media (min-width: $tablet-width) {
+    align-items: center;
+    min-height: 82px;
+    padding: 0 30px;
+
     font-size: 24px;
     line-height: 24px;
+
+    border-radius: 20px;
   }
 
   @media (min-width: $desktop-width) {
     width: 275px;
   }
+}
+
+.show-button:hover,
+.show-button:focus {
+  background-color: $color-supernova-yellow;
+}
+
+.show-button:active {
+  color: rgba($color-catalina-blue, 0.3);
 }

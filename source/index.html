@@ -26,17 +26,23 @@
             </a>
             <button class="header__toggle button" type="button" aria-label="Кнопка открытия/закрытия меню"></button>
           </div>
-          <div class="header__menu">
+          <div class="header__menu header__menu--closed header__menu--no-js">
             <nav class="header__nav nav">
               <ul class="nav__list">
                 <li class="nav__item">
-                  <a class="nav__link" href="#">О&nbsp;сервисе</a>
+                  <a class="nav__link" href="#">
+                    <span class="nav__link-animation" data-hover="О&nbsp;сервисе">О&nbsp;сервисе</span>
+                  </a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link" href="form.html">Направления</a>
+                  <a class="nav__link" href="form.html">
+                    <span class="nav__link-animation" data-hover="Направления">Направления</span>
+                  </a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link" href="catalog.html">Попутчики</a>
+                  <a class="nav__link" href="catalog.html">
+                    <span class="nav__link-animation" data-hover="Попутчики">Попутчики</span>
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -70,12 +76,24 @@
       <h1 class="visually-hidden">Сервис для поиска попутчиков для путешествий</h1>
       <section class="promo">
         <div class="promo__container container">
-          <p class="promo__tagline">В&nbsp;путешествие с крутыми попутчиками!</p>
+          <p class="promo__tagline">В&nbsp;путешествие с&nbsp;крутыми попутчиками!</p>
           <blockquote class="promo__review">
             <p class="promo__review-quote">«Лучшее приложение, что я видел в жизни!»</p>
-            <cite class="promo__review-author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+            <cite class="promo__review-author">Мурат Эльтазин главный&nbsp;редактор газеты «гаджетлайф»</cite>
           </blockquote>
-          <div class="promo__menu-wrapper">
+          <div class=" promo__communications communications">
+            <ul class="communications__list communications__list--hidden">
+              <li class="communications__item">
+                <a class="communications__link communications__link-promo communications__link--promo-phone" href="tel:88005558628" aria-label="Наш телефон"></a>
+              </li>
+              <li class="communications__item">
+                <a class="communications__link
+                communications__link-promo communications__link--promo-email" href="mailto:mail@htmlacademy.ru" aria-label="Наш email"></a>
+              </li>
+            </ul>
+            <a class="promo__authorize authorize-link" href="#" aria-label="Перейти на страницу авторизации">Авторизация</a>
+          </div>
+          <!-- <div class="promo__menu-wrapper">
             <div class="promo__menu container">
               <a href="#" class="promo__logo logo" aria-label="Перейти на главную страницу">
                 <img class="logo__image" src="img/logo_mobile.svg" width="95" height="15" alt="Логотип сервиса Погнали">
@@ -93,20 +111,9 @@
                   </li>
                 </ul>
               </nav>
-              <div class=" promo__communications communications">
-                <ul class="communications__list communications__list--hidden">
-                  <li class="communications__item">
-                    <a class="communications__link communications__link-promo communications__link--promo-phone" href="tel:88005558628" aria-label="Наш телефон"></a>
-                  </li>
-                  <li class="communications__item">
-                    <a class="communications__link
-                    communications__link-promo communications__link--promo-email" href="mailto:mail@htmlacademy.ru" aria-label="Наш email"></a>
-                  </li>
-                </ul>
-                <a class="promo__authorize authorize-link" href="#" aria-label="Перейти на страницу авторизации">Авторизация</a>
-              </div>
+
             </div>
-          </div>
+          </div> -->
             <ul class="promo__site-guide site-guide">
               <li class="site-guide__item site-guide__item--orange">Выберите направление</li>
               <li class="site-guide__item site-guide__item--light-orange">Изучите идеи путешественников</li>
@@ -119,7 +126,7 @@
         <div class="service__container container">
           <div class="service__wrapper">
             <h2 class="service__title page__title page__title--orange">О сервисе</h2>
-            <p class="service__description">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+            <p class="service__description">Любое путешествие веселее с&nbsp;попутчиками, которые на одной волне с&nbsp;тобой! Делитесь своими идеями путешествий и черпайте вдохновение в&nbsp;чужих.</p>
             <p class="service__tagline">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
             <a class="service__link show-button" href="#">Подробнее</a>
           </div>
@@ -129,7 +136,7 @@
         <div class="routes__container container">
           <div class="routes__wrapper">
             <h2 class="routes__title page__title page__title--orange">Направления</h2>
-            <p class="routes__description">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+            <p class="routes__description">Мы не продаем туры и&nbsp;ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и&nbsp;чем можно там заняться.</p>
           </div>
           <ul class="routes__list">
             <li class="routes__item routes__item--thailand">
@@ -148,8 +155,8 @@
               </div>
               <img class="routes__image" src="img/france-mobile.jpg" width="270" height="110" alt="Бульвар Капуцинов">
             </li>
-            <li class="routes__item routes__item--czech-republiic">
-              <div class="routes__land-description">
+            <li class="routes__item routes__item--czech">
+              <div class="routes__land-description routes__land-description--czech">
                 <h3 class="routes__land-title">Чехия</h3>
                 <p class="routes__land-tagline">Закоулки старой Европы</p>
                 <span class="routes__counter">5326</span>
@@ -304,17 +311,17 @@
             <li class="tariff__item tariff__item-counter tariff__item-counter--light-orange">
               <dl class="tariff__advantage">
                 <dt class="tariff__power">Вывод на первых позициях</dt>
-                <dd class="tariff__price">99 руб./мес</dd>
+                <dd class="tariff__price">99&nbsp;руб./мес</dd>
               </dl>
             </li>
             <li class="tariff__item tariff__item-counter tariff__item-counter--yellow">
               <dl class="tariff__advantage">
                 <dt class="tariff__power">Кастомный цвет карточки</dt>
-                <dd class="tariff__price">59 руб./мес</dd>
+                <dd class="tariff__price">59&nbsp;руб./мес</dd>
               </dl>
             </li>
           </ul>
-          <a class="add-profile__link" href="#">Показать тарифы для бизнеса</a>
+          <a class="add-profile__link open-modal-link" href="#">Показать тарифы для бизнеса</a>
         </div>
       </section>
       <section class="authorize">
@@ -322,7 +329,7 @@
           <div class="authorize__wrapper">
             <h2 class="visually-hidden">Авторизация и обратная связь</h2>
             <p class="authorize__tagline page__title page__title--orange">Заинтересовались?</p>
-            <p class="authorize__description">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="authorize__link" href="#" aria-label="Перейти на страницу авторизации">авторизуйтесь</a>.</p>
+            <p class="authorize__description">Зарегистрируйтесь, это&nbsp;быстро&nbsp;и&nbsp;бесплатно! Уже&nbsp;зарегистрированы?&nbsp;Тогда скорее <a class="authorize__link" href="#" aria-label="Перейти на страницу авторизации">авторизуйтесь</a>.</p>
             <form class="authorize__form" action="http://echo.htmlacademy.ru" method="POST">
               <label class="authorize__label">
                 <input class="authorize__email-input" type="text" name="e-mail" placeholder="E-mail">
@@ -330,7 +337,7 @@
               <button class="authorize__button button" type="submit" aria-label="Регистрация"><span class="authorize__button-text">Регистрация</span></button>
             </form>
             <div class="authorize__communications communications">
-              <p class="communications__description">Остались вопросы? Мы с радостью на них ответим!</p>
+              <p class="communications__description">Остались вопросы? Мы&nbsp;с&nbsp;радостью на них ответим!</p>
               <ul class="communications__list communications__list--in-authorize">
                 <li class="communications__item">
                   <a class="communications__link communications__link--phone communications__link--in-authorize" href="tel:88005558628" aria-label="Наш телефон">8 800 555-86-28</a>
@@ -360,7 +367,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer footer--page">
       <div class="footer__container container">
         <a href="#" class="footer__logo logo" aria-label="Перейти на главную страницу">
             <img class="logo__image" src="img/logo_mobile.svg" width="95" height="15" alt="Логотип сервиса Погнали">
@@ -415,10 +422,11 @@
                 </li>
               </ul>
             </div>
-            <button class="for-business__button-close button" type="button">Закрыть окно</button>
+            <button class="for-business__button modal-close-button button" type="button">Закрыть окно</button>
           </div>
         </div>
       </div>
     </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
