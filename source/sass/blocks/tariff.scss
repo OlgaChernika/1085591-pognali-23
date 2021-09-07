@@ -135,4 +135,10 @@
 
     text-align: right;
   }
+
+  &--for-business {
+    @media (min-width: $desktop-width) {
+      min-width: 165px;
+    }
+  }
 }

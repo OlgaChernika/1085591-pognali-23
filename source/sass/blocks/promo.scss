@@ -9,12 +9,27 @@
   background-position: top;
   background-size: contain;
 
+  @media (min-resolution: 2dppx) {
+    background: url("../img/globe-back-mobile@2x.png"),
+      linear-gradient(to top, $color-midnight-express 0%, $color-midnight-express 20%, $color-midnight-express-mod-2 20%, $color-midnight-express-mod-2 100%);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
   @media (min-width: $tablet-width) {
+    padding: 0;
     background: url("../img/globe-back-tablet.png"),
       $color-midnight-express;
     background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100% 75%;
+    background-position: 0 382px;
+    background-size: 768px 612px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/globe-back-tablet@2x.png"),
+        $color-midnight-express;
+      background-repeat: no-repeat;
+      background-size: 768px 612px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -23,10 +38,24 @@
 
     min-height: 730px;
     margin-bottom: -60px;
-    padding-top: 95px;
+    padding: 95px 0 84px 0;
     overflow: hidden;
 
+    background: url("../img/globe-back-desktop.png"),
+      $color-midnight-express-mod-2;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: 1440px 750px;
+
     border-radius: 0 0 60px 60px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/globe-back-desktop@2x.png"),
+        $color-midnight-express-mod-2;
+      background-repeat: no-repeat;
+      background-position: center 0;
+      background-size: 1440px 750px;
+    }
   }
 }
 
@@ -34,8 +63,14 @@
   display: flex;
   flex-direction: column;
 
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
+
+    padding-top: 0;
 
     grid-template-columns: 1fr 287px;
   }
@@ -72,23 +107,35 @@
   &::before {
     content: "";
     position: absolute;
-    top: 149px;
+    bottom: -21px;
     right: 23px;
 
     width: 192px;
     height: 255px;
 
-    background-image: url("../img/traveller-illustration-mobile.svg");
+    background-image: url("../img/traveller-illustration-mobile.png");
     background-repeat: no-repeat;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/traveller-illustration-mobile@2x.png");
+      background-repeat: no-repeat;
+      background-size: 192px auto;
+    }
+
     @media (min-width: $tablet-width) {
-      top: 272px;
+      bottom: -12px;
       right: -73px;
 
       width: 372px;
       height: 451px;
 
       background-image: url("../img/traveller-illustration-tablet.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/traveller-illustration-tablet@2x.png");
+        background-repeat: no-repeat;
+        background-size: 372px auto;
+      }
     }
 
     @media (min-width: $desktop-width) {
@@ -99,6 +146,12 @@
       height: 640px;
 
       background-image: url("../img/traveller-illustration-desktop.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/traveller-illustration-desktop@2x.png");
+        background-repeat: no-repeat;
+        background-size: 431px auto;
+      }
     }
   }
 }
@@ -112,10 +165,13 @@
   width: 100%;
   margin: 0 auto 25px auto;
 
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
     min-width: 288px;
-    margin: 0;
   }
 }
 
@@ -160,7 +216,7 @@
 
   @media (min-width: $desktop-width) {
     width: 264px;
-    margin: 13px 0 0 0;
+    margin: 13px 0 100px 0;
     padding: 0;
   }
 }
@@ -196,60 +252,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
+
     line-height: 24px;
-  }
-}
-
-.promo__menu-wrapper {
-  @media (min-width: $tablet-width) {
-    width: 0;
-    height: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 98;
-
-    order: 3;
-    width: 100%;
-    height: auto;
-
-    background-color: $color-white;
-
-    grid-column: 1/-1;
-  }
-}
-
-.promo__menu {
-  padding: 0;
-
-  @media (min-width: $desktop-width) {
-    display: grid;
-    align-content: center;
-    min-height: 90px;
-    padding: 0 60px;
-
-    grid-template-columns: 200px 1fr min-content;
-  }
-}
-
-.promo__logo {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: block;
-  }
-}
-
-.promo__nav {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: block;
-    height: 100%;
-    margin: 0 0 0 87px;
   }
 }
 

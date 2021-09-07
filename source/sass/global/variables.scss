@@ -1,4 +1,5 @@
 // viewports
+$only-mobile-width: 767px;
 $tablet-width: 768px;
 $desktop-width: 1200px;
 
@@ -19,19 +20,31 @@ $color-midnight-express-mod-2:   #161c35;
 $color-midnight-express-mod-3:   #192144;
 $color-midnight-express-mod-4:   #171d36;
 $color-midnight-express-mod-5:   #121936;
+$color-midnight-express-mod-6:   #141b3b;
 //light-grey-colors
 $color-very-light-grey:          #cccccc;
 $color-solitude-grey:            #e6e8f1;
 $color-solitude-grey-mod:        #e1e3e9;
 $color-solitude-grey-mod-2:      #edeff6;
 $color-link-water-grey:          #cbced9;
+$color-link-water-grey-mod:      #c2c4c9;
 $color-ghost-white:              #f3f4f8;
 $color-hawkes-blue:              #d6daed;
 $color-hawkes-blue-mod:          #dfe3f0;
 $color-hawkes-blue-mod-2:        #d4d9eb;
 $color-hawkes-blue-mod-3:        #d6d9e6;
+$color-hawkes-blue-mod-4:        #d1d7e9;
 $color-lavender:                 #e2e5f2;
+$color-atlantis:                 #e2e5f1;
 $color-white-smoke:              #f2f2f2;
+$color-whisper-grey:             #e5e5e5;
+$color-periwinkle:               #c8cee8;
+$color-silver:                   #c4c4c4;
+$color-rock-blue:                #959bb2;
+$color-echo-blue:                #aeb4cb;
+$color-nobel-grey:               #999999;
+$color-gainsboro-grey:           #d9d9d9;
+$color-pink-swan-grey:           #b2b2b2;
 //yellow-colors
 $color-energy-yellow:            #ffd74b;
 $color-golden-dream-yellow:      #f3c72b;
@@ -42,6 +55,10 @@ $color-neon-carrot-orange:       #ff8d30;
 $color-outrageous-orange:        #ff5c23;
 $color-burnt-orange:             #f26926;
 //other-colors
+$color-white-smoke-pink:         #ffefef;
+$color-tutu-pink:                #f9eaea;
+$color-remy-pink:                #f9d8d8;
+$color-light-coral:              #f47e7e;
 $color-salmon:                   #f97676;
 $color-lawn-green:               #81e31e;
 $color-red:                      #ff0000;

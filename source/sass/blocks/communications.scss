@@ -15,7 +15,7 @@
   padding: 0 25px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 40px 0;
+    margin: 0 0 43px 0;
     padding: 0;
 
     font-style: normal;
@@ -31,11 +31,12 @@
 }
 
 .communications__list {
-  display: flex;
-  flex-wrap: wrap;
   margin: 0;
 
   &--hidden {
+    display: flex;
+    flex-wrap: wrap;
+
     @include list-reset;
 
     @media (min-width: $tablet-width) {
@@ -56,20 +57,19 @@
     }
 
     @media (min-width: $desktop-width) {
-      flex-direction: row;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
       width: 868px;
       margin: 0 auto;
+
+      column-gap: 30px;
     }
   }
 }
 
 .communications__item {
   flex-grow: 1;
-
-  @media (min-width: $desktop-width) {
-    width: 50%;
-  }
 }
 
 .communications__link {
@@ -112,38 +112,6 @@
     }
   }
 
-  &--phone {
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 14px;
-
-      width: 16px;
-      height: 14px;
-
-      background-image: url("../img/tel-icon.svg");
-      background-repeat: no-repeat;
-      transform: translateY(-50%);
-    }
-  }
-
-  &--email {
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 13px;
-
-      width: 18px;
-      height: 12px;
-
-      background-image: url("../img/mail-icon.svg");
-      background-repeat: no-repeat;
-      transform: translateY(-50%);
-    }
-  }
-
   &--in-authorize {
     align-items: center;
     min-height: 45px;
@@ -164,10 +132,10 @@
 
     @media (min-width: $desktop-width) {
       min-height: 90px;
-      padding: 20px 0 20px 123px;
+      padding: 24px 0 20px 122px;
 
       &::before {
-        top: 0;
+        top: 2px;
 
         width: 90px;
         height: 90px;
@@ -184,9 +152,16 @@
 
     &::after {
       @media (min-width: $desktop-width) {
+        content: "";
+        position: absolute;
         top: 50%;
+        left: 17px;
+
+        width: 16px;
+        height: 14px;
 
         background-image: url("../img/mail-dark-icon.svg");
+        background-size: 16px 14px;
         transform: translateY(-50%);
       }
     }
@@ -201,9 +176,16 @@
 
     &::after {
       @media (min-width: $desktop-width) {
+        content: "";
+        position: absolute;
         top: 50%;
+        left: 15px;
+
+        width: 18px;
+        height: 18px;
 
         background-image: url("../img/tel-dark-icon.svg");
+        background-size: 18px 18px;
         transform: translateY(-50%);
       }
     }
@@ -218,12 +200,13 @@
       content: "";
       position: absolute;
       top: 50%;
-      left: 50%;
+      left: 47%;
 
       width: 16px;
       height: 12px;
 
       background-image: url("../img/mail-dark-icon.svg");
+      background-size: 16px 12px;
       transform: translate(-50%, -50%);
     }
   }
@@ -237,12 +220,13 @@
       content: "";
       position: absolute;
       top: 50%;
-      left: 50%;
+      left: 47%;
 
       width: 18px;
       height: 18px;
 
       background-image: url("../img/tel-dark-icon.svg");
+      background-size: 18px 18px;
       transform: translate(-50%, -50%);
     }
   }
@@ -264,34 +248,126 @@
 
       font-size: 0;
       line-height: 0;
+
+      .communications__icon {
+        display: none;
+      }
     }
   }
 }
 
-.communications__link--header-email:hover,
-.communications__link--header-email:focus {
+.communications__icon {
+  position: absolute;
+
+  left: 13px;
+
+  fill: $color-energy-yellow;
+
+  @media (min-width: $tablet-width) {
+    left: 21px;
+  }
+
+  &--phone {
+    top: 15px;
+
+    width: 18px;
+    height: 17px;
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+
+      width: 27px;
+      height: 26px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 31px;
+      left: 26px;
+
+      width: 36px;
+      height: 34px;
+    }
+  }
+
+  &--email {
+    top: 17px;
+
+    width: 18px;
+    height: 12px;
+
+    @media (min-width: $tablet-width) {
+      top: 24px;
+
+      width: 28px;
+      height: 19px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 36px;
+      left: 28px;
+
+      width: 36px;
+      height: 25px;
+    }
+  }
+}
+
+.communications__link--promo-email:hover,
+.communications__link--promo-email:focus {
   &::before {
     background-color: $color-neon-carrot-orange;
   }
 }
 
-.communications__link--header-email:active {
-  &::after {
-    opacity: 0.3;
-  }
-}
-
-.communications__link--header-phone:hover,
-.communications__link--header-phone:focus {
+.communications__link--promo-phone:hover,
+.communications__link--promo-phone:focus {
   &::before {
     background-color: $color-burnt-orange;
   }
 }
 
-.communications__link--header-phone:active {
+.communications__link--promo-email:active,
+.communications__link--promo-phone:active {
   &::after {
     opacity: 0.3;
   }
+}
+
+.communications__link--header-email:hover,
+.communications__link--header-email:focus {
+  @media (min-width: $desktop-width) {
+    &::before {
+      background-color: $color-neon-carrot-orange;
+    }
+  }
+}
+
+.communications__link--header-phone:hover,
+.communications__link--header-phone:focus {
+  @media (min-width: $desktop-width) {
+    &::before {
+      background-color: $color-burnt-orange;
+    }
+  }
+}
+
+
+.communications__link--header-email:active,
+.communications__link--header-phone:active {
+  @media (min-width: $desktop-width) {
+    &::after {
+      opacity: 0.3;
+    }
+  }
+}
+
+.communications__link:hover .communications__icon,
+.communications__link:focus .communications__icon {
+  fill: $color-supernova-yellow;
+}
+
+.communications__link:active .communications__icon {
+  opacity: 0.3;
 }
 
 .communications__link--in-authorize:hover,

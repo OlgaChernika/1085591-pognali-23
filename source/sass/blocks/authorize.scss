@@ -26,7 +26,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 105px 75px 103px 75px;
+    padding: 105px 75px 105px 75px;
   }
 }
 
@@ -85,7 +85,7 @@
   margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    margin-bottom: 58px;
   }
 
   @media (min-width: $desktop-width) {
@@ -144,6 +144,10 @@
   color: $color-white;
   border: 4px solid $color-white;
   outline: none;
+
+  &::placeholder {
+    color: $color-white;
+  }
 }
 
 .authorize__email-input--error {
@@ -185,6 +189,25 @@
     width: 323px;
     padding: 0 42px;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 50%;
+
+    width: 14px;
+    height: 16px;
+
+    background-image: url("../img/icon-arrow-button.svg");
+    background-repeat: no-repeat;
+    background-size: 14px 16px;
+    transform: translate(50%, -50%);
+
+    @media (min-width: $desktop-width) {
+      right: 40px;
+    }
+  }
 }
 
 .authorize__button:hover,
@@ -194,6 +217,12 @@
 
 .authorize__button:active .authorize__button-text {
   color: rgba($color-catalina-blue, 0.3);
+}
+
+.authorize__button:active {
+  &::after {
+    opacity: 0.3;
+  }
 }
 
 .authorize__button-text {

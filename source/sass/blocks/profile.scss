@@ -16,16 +16,23 @@
 .profile:hover,
 .profile:focus {
   box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.16);
-  overflow: hidden;
 }
 
 .profile:hover .profile__image,
 .profile:focus .profile__image {
-  transform: scale(1.05) translateY(-7px);
+  transform: scale(1.05);
 }
 
 .profile__link {
   width: 100%;
+
+  overflow: hidden;
+
+  border-radius: 10px 10px 0 0;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 20px 20px 0 0;
+  }
 }
 
 .profile__image {
@@ -36,8 +43,16 @@
 
   object-fit: cover;
 
+  transition: all 0.3s;
+
   @media (min-width: $tablet-width) {
+    min-width: 285px;
+
     border-radius: 20px 20px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 291px;
   }
 }
 
@@ -58,7 +73,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 24px 0;
-    padding: 8px 30px 0 68px;
+    padding: 6px 30px 0 68px;
 
     text-align: left;
   }
@@ -66,6 +81,8 @@
 
 .profile__name-link {
   position: relative;
+
+  max-width: 200px;
 
   font-style: normal;
   font-weight: bold;
@@ -118,8 +135,11 @@
 
 .profile__level {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 16px;
+  left: 17px;
+
+  background-color: rgba($color-black, 0.6);
+  border-radius: 50%;
 }
 
 .profile__tags-list {
@@ -129,11 +149,11 @@
   flex-wrap: wrap;
   justify-content: center;
   min-width: 200px;
-  margin: 0 auto 14px auto;
+  margin: 0 auto 15px auto;
   padding: 0 43px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto 24px auto;
+    margin: 0 auto 23px auto;
     padding: 0 20px;
   }
 }
@@ -174,66 +194,149 @@
 }
 
 .profile__route {
+  position: relative;
   display: block;
   width: 35px;
   height: 25px;
   margin-bottom: 10px;
 
   background-repeat: no-repeat;
+  background-size: 35px 25px;
 
   object-fit: contain;
 
   &--sri-lanka {
-    background-image: url("../img/sri-lanka-flag-min.svg");
+    background-image: url("../img/sri-lanka.svg");
   }
 
   &--thailand {
-    background-image: url("../img/thailand-flag-min.svg");
+    background-image: url("../img/thailand.svg");
   }
 
   &--seychelles {
-    background-image: url("../img/seychelles-flag-min.svg");
+    background-image: url("../img/seychelles.svg");
   }
 
   &--belgium {
-    background-image: url("../img/belgium-flag-min.svg");
+    background-image: url("../img/belgium.svg");
   }
 
   &--czech {
-    background-image: url("../img/czech-flag-min.svg");
+    background-image: url("../img/czech.svg");
   }
 }
 
 .profile__tooltip {
-  position: relative;
-
+  position: absolute;
   display: none;
-  padding: 20px;
+  justify-content: center;
+  align-items: center;
+
+  bottom: -60px;
+  left: 50%;
+
+  width: fit-content;
+  min-height: 50px;
+  padding: 0 18px;
 
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 20px;
   text-align: center;
+  color: $color-white;
 
   background-color: $color-midnight-express-mod;
+  border-radius: 4px;
+  transform: translateX(-50%);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 45%;
+
+    width: 15px;
+    height: 15px;
+
+    background-color: $color-midnight-express-mod;
+    transform: rotate(45deg);
+  }
 }
 
 .profile__transport-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 21px;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 136px;
+  margin: 0 23% 20px auto;
 
   @include list-reset;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 28px;
+    margin: 0 25% 29px auto;
   }
 }
 
 .profile__transport-item {
-  width: 23px;
+  position: relative;
+  width: 33px;
   height: 24px;
+}
 
-  background-color: #f80000;
+.profile__transport-icon {
+  position: absolute;
+  top: 0;
+
+  opacity: 0.15;
+
+  @media (min-width: $tablet-width) {
+    top: 3px;
+  }
+
+  &--current {
+    opacity: 1;
+  }
+
+  &--fly {
+    left: 3px;
+
+    @media (min-width: $tablet-width) {
+      left: 0;
+
+      width: 23px;
+      height: 22px;
+    }
+  }
+
+  &--car {
+    left: 5px;
+  }
+
+  &--bicycle {
+    left: 3px;
+
+    @media (min-width: $tablet-width) {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  &--on-foot {
+    left: 0;
+  }
+}
+
+.profile__transport-item:hover {
+  .profile__tooltip {
+    display: flex;
+    opacity: 1;
+  }
+}
+
+.profile__route:hover {
+  .profile__tooltip {
+    display: flex;
+    opacity: 1;
+  }
 }

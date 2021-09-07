@@ -1,17 +1,156 @@
 .header {
+  z-index: 99;
+  position: fixed;
+
+  width: 100vw;
+
   background-color: $color-midnight-express-mod-2;
 
   @media (min-width: $tablet-width) {
     background-color: $color-midnight-express;
   }
 
-  &--scroll {
-    z-index: 99;
-    position: fixed;
+  @media (min-width: $desktop-width) {
+    background-color: $color-midnight-express-mod-2;
+  }
 
-    width: 100%;
+  &--no-js {
+    position: relative;
 
+    .header__toggle {
+      display: none;
+    }
+
+    .header__container {
+      padding: 0;
+
+      @media (min-width: $desktop-width) {
+        padding: 0 60px 0 44px;
+      }
+    }
+
+    .header__logo {
+      @media (min-width: $tablet-width) {
+        width: 90%;
+        margin: 0;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 100%;
+        margin: 33px 0 0 0;
+      }
+    }
+
+    .header__logo-image {
+      @media (min-width: $tablet-width) {
+        top: 55px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 16px;
+      }
+    }
+
+    .header__wrapper {
+      @media (min-width: $desktop-width) {
+        padding-bottom: 1px;
+      }
+    }
+
+    .header__top-wrapper {
+      padding: 0 25px;
+
+      background-color: $color-white;
+
+      @media (min-width: $tablet-width) {
+        padding: 0 40px;
+      }
+
+      @media (min-width: $desktop-width) {
+        padding: 0;
+
+        background-color: $color-midnight-express-mod-2;
+
+        &--inner-page {
+          background-color: $color-midnight-express;
+        }
+      }
+    }
+
+    .header__menu--closed {
+      position: static;
+      display: block;
+      top: unset;
+      left: unset;
+      transform: none;
+
+      min-height: 496px;
+      margin-top: -1px;
+      padding-top: 45px;
+
+      @media (min-width: $tablet-width) {
+        min-height: 779px;
+        padding-top: 51px;
+      }
+
+      @media (min-width: $desktop-width) {
+        display: flex;
+        min-height: 110px;
+        padding-top: 42px;
+      }
+    }
+
+    .header__nav {
+      @media (min-width: $desktop-width) {
+        padding-left: 104px;
+      }
+    }
+
+    .header__communications {
+      @media (min-width: $desktop-width) {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &--inner-page {
+    background-color: $color-midnight-express;
+
+    .header__top-wrapper,
+    .header__menu {
+      @media (min-width: $desktop-width) {
+        background-color: $color-midnight-express;
+      }
+    }
+  }
+
+  &--scrolled {
     background-color: $color-white;
+
+    border-bottom: 1px solid $color-whisper-grey;
+
+    .header__top-wrapper,
+    .header__menu {
+      background-color: $color-white;
+    }
+
+    .header__link {
+      font-weight: 500;
+      color: $color-midnight-express-mod-3;
+    }
+
+    .header__logo-image {
+      fill: $color-midnight-express-mod-3;
+    }
+
+    .header__toggle::before,
+    .header__toggle::after {
+      background-color: $color-very-light-grey;
+    }
+
+    .header__nav::before {
+      background-color: $color-midnight-express-mod-3;
+    }
   }
 }
 
@@ -29,7 +168,7 @@
 
   display: grid;
   min-height: 73px;
-  padding: 13px 0 33px 0;
+  padding: 6px 0 25px 0;
 
   grid-template-columns: 1fr min-content;
 
@@ -43,32 +182,68 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-height: 100px;
-    padding-top: 50px;
-  }
+    padding: 0;
 
-  &--scroll {
-    background-color: $color-white;
+    background-color: $color-midnight-express-mod-2;
   }
 }
 
 .header__logo {
   z-index: 99;
 
-  width: 100%;
+  @media (min-width: $tablet-width) {
+    margin-top: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 44px 0 0 -32px;
+  }
+
+  &--opened {
+    margin-top: 4px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 19px;
+    }
+
+    .header__logo-image {
+      fill: $color-midnight-express-mod-3;
+    }
+  }
+}
+
+.header__logo-image {
+  fill: $color-white;
+
+  @media (min-width: $tablet-width) {
+    top: 32px;
+    left: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 14px;
+    left: 77px;
+  }
 }
 
 .header__toggle {
   position: relative;
   z-index: 99;
 
-  width: 19px;
-  height: 19px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
 
   background-color: $color-transparent;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    top: 45px;
+    top: 38px;
+    left: -26px;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,43 +253,40 @@
   &::before {
     content: "";
     position: absolute;
-    top: 4px;
-    left: -2px;
+    top: 17px;
+    left: 15px;
 
     width: 23px;
     height: 2px;
 
-    background-color: $color-very-light-grey;
+    background-color: $color-white;
   }
 
   &::after {
     content: "";
     position: absolute;
-    top: 8px;
-    left: -2px;
+    top: 25px;
+    left: 15px;
 
     width: 23px;
     height: 2px;
 
-    background-color: $color-very-light-grey;
+    background-color: $color-white;
   }
 
-  &--scroll {
-    &::before {
-      background-color: $color-very-light-grey;
+  &--closed {
+    margin-top: 14px;
+
+    @media (min-width: $tablet-width) {
+      top: 31px;
+      left: -28px;
     }
 
-    &::after {
-      color: $color-very-light-grey;
-    }
-  }
-
-  &--close {
     &::before {
       content: "";
       position: absolute;
-      top: 8px;
-      left: -2px;
+      top: 14px;
+      left: 16px;
 
       width: 23px;
       height: 2px;
@@ -126,8 +298,8 @@
     &::after {
       content: "";
       position: absolute;
-      top: 8px;
-      left: -2px;
+      top: 14px;
+      left: 16px;
 
       width: 23px;
       height: 2px;
@@ -145,15 +317,15 @@
   z-index: 98;
 
   display: block;
-  width: 100%;
-  min-height: 568px;
-  padding: 100px 25px 0 25px;
+  width: 100vw;
+  min-height: 567px;
+  padding: 117px 25px 0 25px;
 
   background-color: $color-white;
   transform: translateX(-50%);
 
   @media (min-width: $tablet-width) {
-    padding: 185px 40px 0 40px;
+    padding: 181px 40px 0 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -162,14 +334,12 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    width: 100%;
     padding: 50px 0 0 0;
     min-height: 100px;
 
-    background-color: $color-midnight-express;
-  }
-
-  &--scroll {
-    background-color: $color-white;
+    background-color: $color-midnight-express-mod-2;
   }
 
   &--closed {
@@ -182,13 +352,31 @@
 }
 
 .header__nav {
-  margin-bottom: 50px;
+  margin-bottom: 53px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 134px;
+  }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     height: 100%;
     width: 100%;
     margin: 0;
     padding-left: 89px;
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      top: 24px;
+      left: 30px;
+
+      width: 60px;
+      height: 2px;
+
+      background-color: $color-white;
+    }
   }
 }
 
@@ -196,7 +384,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 42px auto;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 129px;
@@ -204,10 +392,11 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row-reverse;
+    align-items: flex-start;
     min-width: 288px;
     width: fit-content;
     height: 100%;
-    margin: 0;
+    margin: 0 10px 0 0;
   }
 }
 
@@ -222,6 +411,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
     flex-direction: row;
     min-height: 50px;
     padding: 0;
@@ -230,7 +420,7 @@
 
 .header__authorize {
   order: -1;
-  margin-bottom: 50px;
+  margin-bottom: 52px;
   padding: 10px;
 
   font-weight: bold;
@@ -286,13 +476,13 @@
   @include list-reset;
 
   display: flex;
-  width: 100px;
-  margin: 0 auto 40px auto;
+  width: 110px;
+  margin: 0 auto 30px auto;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 80px 0;
-    padding-left: 57px;
-    width: 200px;
+    margin: 0 0 85px 0;
+    padding-left: 76px;
+    width: 225px;
   }
 
   @media (min-width: $desktop-width) {

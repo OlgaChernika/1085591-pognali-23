@@ -24,17 +24,35 @@
   grid-template-rows: min-content;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+
     padding: 0 75px;
+
+    background: url("../img/rogovaya-back-desktop.png"),
+      url("../img/smolov-back-desktop.png");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 285px 285px, 143px 143px;
+    background-position: 85% 83px, 40px 428px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/rogovaya-back-desktop@2x.png"),
+        url("../img/smolov-back-desktop@2x.png");
+      background-repeat: no-repeat;
+      background-size: 285px 285px, 143px 143px;
+      background-position: 85% 83px, 40px 428px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
 
-    padding: 130px 60px 85px 60px;
+    padding: 130px 60px 79px 60px;
 
     column-gap: 60px;
 
     grid-template-columns: 1fr 1fr;
+
+    background-position: 16.3% 94%, 42% 136px;
   }
 }
 
@@ -42,11 +60,35 @@
   padding: 65px 25px 0 25px;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+
     padding: 141px 30% 0 0;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 19% 60px 70px;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      z-index: -1;
+
+      top: 75px;
+      left: -36px;
+
+      width: 212px;
+      height: 212px;
+
+      background-color: $color-midnight-express-mod-6;
+      border-radius: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -58px;
+      left: 0;
+    }
   }
 }
 
