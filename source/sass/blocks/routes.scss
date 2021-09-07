@@ -22,7 +22,13 @@
 
     background-image: url("../img/flags-bg-tablet.png");
     background-repeat: no-repeat;
-    background-position: 92% 19%;
+    background-position: 92% 18%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/flags-bg-tablet@2x.png");
+      background-repeat: no-repeat;
+      background-size: 288px 574px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -96,6 +102,8 @@
   @include list-reset;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+
     min-width: 450px;
     margin-bottom: 47px;
 
@@ -104,6 +112,28 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 0 70px;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      z-index: -1;
+
+      top: -36px;
+      left: -35px;
+
+      width: 141px;
+      height: 141px;
+
+      background-color: $color-lavender;
+      border-radius: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -72px;
+      left: -71px;
+    }
   }
 }
 
@@ -118,6 +148,12 @@
     min-height: 140px;
 
     grid-template-columns: 1fr 185px;
+  }
+
+  @media (min-width: $desktop-width) {
+    overflow: hidden;
+
+    border-radius: 20px 0 0 20px;
   }
 }
 
@@ -137,17 +173,65 @@
     width: 100%;
     min-height: 140px;
     margin: 0;
-    padding: 28px 26px 20px 30px;
+    padding: 28px 48px 48px 30px;
 
     border-radius: 20px 0 0 20px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 22px 26px 20px 30px;
+    padding: 22px 26px 48px 30px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: -13px;
+    left: 25px;
+
+    width: 35px;
+    height: 24px;
+
+    background-repeat: no-repeat;
+    background-size: 35px 24px;
+
+    @media (min-width: $tablet-width) {
+      top: 17px;
+      left: unset;
+      right: -35px;
+
+      width: 70px;
+      height: 47px;
+
+      background-size: 70px 47px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 22px;
+      right: -32px;
+    }
+  }
+
+  &--thailand {
+    &::before {
+      background-image: url("../img/thailand.svg");
+    }
+  }
+
+  &--france {
+    &::before {
+      background-image: url("../img/france.svg");
+    }
   }
 
   &--czech {
-    padding-bottom: 8px;
+    @media (max-width: $only-mobile-width) {
+      padding-bottom: 8px;
+    }
+
+    &::before {
+      background-image: url("../img/czech.svg");
+    }
   }
 }
 
@@ -187,8 +271,11 @@
 
 .routes__counter {
   position: absolute;
+
   top: 25px;
-  left: 76%;
+  right: 26px;
+
+  width: 40px;
 
   font-style: normal;
   font-weight: normal;
@@ -210,8 +297,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 4px;
-    left: -20px;
+    top: 6px;
+    left: -18px;
 
     width: 11px;
     height: 12px;
@@ -235,14 +322,14 @@
 .routes__image {
   width: 100%;
 
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px 10px 0 0;
 
   @media (min-width: $tablet-width) {
-    min-width: 100%;
+    min-width: 559px;
     height: 100%;
+    margin-left: -373px;
 
-    border-radius: 0 20px 20px 0;
+    border-radius: 20px;
 
     object-fit: cover;
   }

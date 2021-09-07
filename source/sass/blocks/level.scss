@@ -1,3 +1,143 @@
 .level {
-  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 60px;
+  height: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.level__circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &--80 {
+    stroke-dasharray: 109, 33;
+  }
+
+  &--99 {
+    stroke-dasharray: 134, 7;
+  }
+
+  &--50 {
+    stroke-dasharray: 50, 88;
+  }
+
+  &--25 {
+    stroke-dasharray: 50, 138;
+    transform: rotate(-90deg);
+  }
+}
+
+.level__number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 6px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  &--form {
+    margin: 0 0 0 -7px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 0 -3px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 0 5px -3px;
+    }
+  }
+}
+
+.level__number--white {
+  .level__text {
+    color: $color-white;
+  }
+}
+
+.level__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-catalina-blue;
+
+  &--bold {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  &--hidden {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      position: relative;
+      display: inline-flex;
+
+      color: rgba($color-black, 0.4);
+    }
+
+    &::before {
+      @media (min-width: $tablet-width) {
+        content: "";
+        position: absolute;
+
+        top: -1px;
+        left: -2px;
+
+        width: 28px;
+        height: 1px;
+
+        background-color: rgba($color-black, 0.1);
+      }
+    }
+  }
+
+  &--form {
+    font-size: 38px;
+    line-height: 38px;
+
+    @media (min-width: $desktop-width) {
+      color: $color-white;
+    }
+  }
+
+  &--form-min {
+    position: relative;
+
+    padding-top: 9px;
+
+    font-size: 18px;
+    line-height: 18px;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 6px;
+      color: $color-white;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      top: 0;
+      left: -9px;
+
+      width: 51px;
+      height: 1px;
+
+      background-color: rgba($color-charcoal-grey, 0.3);
+    }
+  }
 }

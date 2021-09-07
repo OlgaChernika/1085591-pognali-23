@@ -8,6 +8,8 @@
 }
 
 .social__link {
+  position: relative;
+
   width: 20px;
   height: 20px;
 
@@ -19,36 +21,71 @@
     height: 30px;
   }
 
-  &--fb {
-    background-image: url("../img/fb-icon.svg");
-    background-size: 11px 21px;
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
 
-    @media (min-width: $tablet-width) {
-      background-size: 14px 26px;
+    top: 50%;
+    left: 50%;
+
+    background-repeat: no-repeat;
+
+    transform: translate(-50%, -50%);
+  }
+
+  &--fb {
+    &::after {
+      width: 11px;
+      height: 21px;
+
+      background-image: url("../img/fb-icon.svg");
+      background-size: 11px 21px;
+
+      @media (min-width: $tablet-width) {
+        width: 14px;
+        height: 26px;
+
+        background-size: 14px 26px;
+      }
     }
   }
 
   &--vk {
-    background-image: url("../img/vk-icon.svg");
-    background-size: 23px 12px;
+    &::after {
+      width: 23px;
+      height: 12px;
 
-    @media (min-width: $tablet-width) {
-      background-size: 28px 18px;
+      background-image: url("../img/vk-icon.svg");
+      background-size: 23px 12px;
+
+      @media (min-width: $tablet-width) {
+        width: 28px;
+        height: 18px;
+
+        background-size: 28px 18px;
+      }
     }
   }
 
   &--inst {
-    background-image: url("../img/insta-icon.svg");
-    background-size: 18px 18px;
+    &::after {
+      width: 18px;
+      height: 18px;
 
-    @media (min-width: $tablet-width) {
-      background-size: 22px 22px;
+      background-image: url("../img/insta-icon.svg");
+      background-size: 18px 18px;
+
+      @media (min-width: $tablet-width) {
+        width: 22px;
+        height: 22px;
+
+        background-size: 22px 22px;
+      }
     }
   }
 
   &--yellow {
-    position: relative;
-
     width: 45px;
     height: 45px;
 
@@ -77,5 +114,15 @@
 .social__link--yellow:focus {
   &::before {
     background-color: $color-supernova-yellow;
+  }
+
+  &::after {
+    opacity: 0.6;
+  }
+}
+
+.social__link:active {
+  &::after {
+    opacity: 0.3;
   }
 }

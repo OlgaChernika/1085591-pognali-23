@@ -1,25 +1,29 @@
 .user-plan {
-  padding-top: 28px;
+  position: relative;
+  z-index: -1;
+
+  margin-bottom: -25px;
+  padding: 26px 0 14px 0;
 
   background-color: $color-hawkes-blue-mod;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 57px;
+    padding-top: 53px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 55px;
+    padding-top: 52px;
   }
 }
 
 .user-plan__title {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 50px;
-    padding-left: 35px;
+    margin-bottom: 51px;
+    padding-left: 34px;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,7 +44,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 65px 65px;
+    padding: 0 0 60px 63px;
   }
 }
 
@@ -55,7 +59,7 @@
     position: relative;
 
     min-height: 152px;
-    padding: 40px 40px 14px 40px;
+    padding: 38px 40px 12px 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -63,14 +67,14 @@
     justify-content: space-between;
     min-height: 97px;
     margin-bottom: 15px;
-    padding: 40px 43px;
+    padding: 37px 43px;
   }
 
   &::before {
     @media (min-width: $tablet-width) {
       content: "";
       position: absolute;
-      bottom: 60px;
+      bottom: 54px;
       left: 0;
 
       width: 100%;
@@ -86,7 +90,7 @@
 }
 
 .user-plan__route {
-  margin: 0 0 20px 0;
+  margin: 0 0 19px 0;
 
   font-style: normal;
   font-weight: bold;
@@ -117,8 +121,8 @@
 
     @media (min-width: $tablet-width) {
       position: absolute;
-      top: 0;
-      right: 0;
+      top: 3px;
+      right: -12px;
 
       font-weight: 500;
       font-size: 20px;
@@ -142,29 +146,39 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    column-gap: 14%;
+    padding: 20px 0 0;
 
     font-size: 20px;
     line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 540px;
+    min-width: 587px;
     padding: 0;
+
+    column-gap: 21%;
   }
 }
 
 .user-plan__info {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 
   color: $color-catalina-blue;
   letter-spacing: 0.1em;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    column-gap: 8%;
   }
 }
 
@@ -176,7 +190,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 35px 0 0;
+    margin: 0;
   }
 }
 
@@ -199,4 +213,12 @@
   @media (min-width: $tablet-width) {
     letter-spacing: 0.1em;
   }
+}
+
+.user-plan__button:hover {
+  color: rgba($color-black, 0.6);
+}
+
+.user-plan__button:active {
+  color: rgba($color-black, 0.1);
 }

@@ -1,18 +1,20 @@
 .card {
   position: relative;
 
-  padding-top: 15px;
+  min-height: 416px;
+  padding-top: 14px;
 
   background-color: $color-white;
-  border-radius: 25px;
+  border-radius: 20px;
 
   @media (min-width: $tablet-width) {
     z-index: 1;
 
     display: grid;
-    padding: 35px 25px 25px 35px;
+    min-height: 333px;
+    padding: 32px 25px 27px 35px;
 
-    gap: 22px;
+    gap: 20px;
     grid-template-columns: 1fr min-content;
   }
 
@@ -21,26 +23,18 @@
     min-height: 286px;
     padding: 0;
 
+    gap: 27px;
     grid-template-areas: "name routes"
       "name transport";
   }
+}
 
-  &::before {
-    @media (min-width: $tablet-width) {
-      content: "";
-      position: absolute;
-      bottom: 82px;
-      left: 0;
-      z-index: -1;
+.card:nth-child(2n) {
+  @media (max-width: $only-mobile-width) {
+    min-height: 394px;
 
-      width: 100%;
-      height: 1px;
-
-      background-color: $color-solitude-grey-mod-2;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: none;
+    .card__routes-wrapper {
+      margin-bottom: 26px;
     }
   }
 }
@@ -58,7 +52,7 @@
     margin: 0;
     padding: 0;
 
-    gap: 15px 33px;
+    gap: 21px 33px;
     grid-template-columns: min-content 1fr;
     grid-template-rows: min-content min-content 1fr;
   }
@@ -99,6 +93,30 @@
   }
 }
 
+.card__name-link {
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
+.card__name-link:hover {
+  color: rgba($color-catalina-blue, 0.6);
+
+  &::before {
+    opacity: 0.6;
+  }
+}
+
+.card__name-link:active {
+  color: rgba($color-catalina-blue, 0.3);
+
+  &::before {
+    opacity: 0.3;
+  }
+}
+
 .card__status {
   &::before {
     content: "";
@@ -113,14 +131,14 @@
     border-radius: 50%;
 
     @media (min-width: $tablet-width) {
-      top: 10px;
+      top: 12px;
 
       width: 8px;
       height: 8px;
     }
 
     @media (min-width: $desktop-width) {
-      top: 54px;
+      top: 58px;
       right: unset;
       left: 0;
     }
@@ -141,14 +159,15 @@
   @media (min-width: $tablet-width) {
     width: 190px;
     height: 190px;
-    margin: 0;
+    margin: 2px 0 0;
 
     grid-row: 1/-1;
   }
 
   @media (min-width: $desktop-width) {
     width: 285px;
-    height: 285px;
+    height: 100%;
+    margin: 1px 0 0;
   }
 }
 
@@ -157,7 +176,7 @@
 
   @media (min-width: $tablet-width) {
     width: 190px;
-    height: 190px;
+    height: 100%;
 
     border-radius: 20px;
 
@@ -166,9 +185,8 @@
 
   @media (min-width: $desktop-width) {
     width: 285px;
-    height: 285px;
 
-    border-radius: 25px 0 0 25px;
+    border-radius: 20px 0 0 20px;
   }
 }
 
@@ -178,21 +196,25 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0 46px 0 7px;
+  padding: 0 46px 0 2px;
 
   grid-column: 1/-1;
 
   @media (min-width: $tablet-width) {
+    align-items: start;
     width: 70%;
     min-width: 230px;
+    height: fit-content;
     margin-right: auto;
-    padding: 0;
+    padding: 0 0 100px 0;
 
     grid-column: 2;
+    grid-row: 2/4;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 0 26px;
+    width: 77%;
+    padding: 0 0 125px 20px;
   }
 }
 
@@ -213,9 +235,12 @@
 }
 
 .card__description {
+  position: absolute;
+  top: -9px;
+  left: 16px;
   display: inline-flex;
-  min-width: 96px;
-  margin: -22px auto 3px 15px;
+  width: fit-content;
+  margin: 0;
   padding: 0 10px;
 
   font-style: normal;
@@ -238,6 +263,10 @@
 }
 
 .card__level-description {
+  left: unset;
+  right: 13px;
+  justify-content: flex-end;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -245,11 +274,14 @@
 
 .card__routes-description {
   @media (min-width: $tablet-width) {
+    position: relative;
     z-index: 1;
 
+    top: unset;
+    left: unset;
+
     width: fit-content;
-    margin-bottom: 20px;
-    margin-left: 35px;
+    margin: -6px 0 0 39px;
     padding: 0 10px;
 
     background-color: $color-white;
@@ -261,7 +293,8 @@
 }
 
 .card__wrapper {
-  margin-bottom: 22px;
+  position: relative;
+  margin-bottom: 14px;
 
   border-top: 1px solid $color-solitude-grey-mod-2;
 
@@ -273,15 +306,19 @@
 }
 
 .card__routes-wrapper {
+  margin-bottom: 21px;
+
   @media (min-width: $tablet-width) {
     order: 3;
+
+    margin: 0;
 
     grid-column: 1/-1;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 232px;
-    padding: 33px 43px 0 0;
+    padding: 44px 43px 0 0;
 
     grid-area: routes;
   }
@@ -290,21 +327,48 @@
 .card__routes {
   @include list-reset;
 
-  margin: 0;
+  margin: 28px 0 0 0;
   padding: 0 25px;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: 0;
+    padding: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      top: -10px;
+      left: 50%;
+
+      width: calc(100% + 60px);
+      height: 1px;
+
+      background-color: $color-solitude-grey-mod-2;
+      transform: translateX(-50.6%);
+    }
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: column;
+    display: block;
+
+    min-height: 109px;
     padding: 0;
+
+    &::before {
+      display: none;
+    }
   }
 }
 
 .card__routes-item {
-  margin-bottom: 10px;
+  position: relative;
+  margin-bottom: 12px;
   padding-left: 40px;
 
   font-style: normal;
@@ -315,8 +379,112 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin: 19px 27px 0 0;
+    padding-left: 47px;
+
     font-size: 20px;
     line-height: 20px;
+
+    &--usa {
+      margin-right: 23px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-flex;
+    align-items: center;
+    min-height: 36px;
+    padding-left: 58px;
+    margin: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 26px;
+    height: 18px;
+
+    background-repeat: no-repeat;
+    background-size: 26px 18px;
+
+    @media (min-width: $tablet-width) {
+      width: 35px;
+      height: 24px;
+
+      top: -4px;
+      left: 2px;
+
+      background-size: 35px 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 7px;
+      left: 3px;
+    }
+  }
+
+  &--sri-lanka {
+    &::before {
+      background-image: url("../img/sri-lanka.svg");
+    }
+  }
+
+  &--thailand {
+    &::before {
+      background-image: url("../img/thailand.svg");
+    }
+  }
+
+  &--seychelles {
+    &::before {
+      background-image: url("../img/seychelles.svg");
+    }
+  }
+
+  &--belgium {
+    &::before {
+      background-image: url("../img/belgium.svg");
+    }
+  }
+
+  &--czech {
+    &::before {
+      background-image: url("../img/czech.svg");
+    }
+  }
+
+  &--usa {
+    &::before {
+      background-image: url("../img/usa.svg");
+    }
+  }
+
+  &--australia {
+    &::before {
+      background-image: url("../img/australia.svg");
+    }
+  }
+
+  &--dominica {
+    &::before {
+      background-image: url("../img/dominica.svg");
+    }
+  }
+
+  &--uk {
+    &::before {
+      background-image: url("../img/uk.svg");
+    }
+  }
+
+  &--germany {
+    &::before {
+      background-image: url("../img/germany.svg");
+    }
   }
 }
 
@@ -324,29 +492,45 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 17px 22px 0;
 
   @media (min-width: $tablet-width) {
+    justify-content: flex-start;
     flex-direction: column;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    padding: 0 43px 42px 0;
+    justify-content: space-between;
+    min-width: 282px;
+    padding: 0 44px 42px 0;
 
     grid-area: transport;
   }
 }
 
+.card__level-wrapper {
+  @media (min-width: $tablet-width) {
+    margin-top: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
 .card__transport {
   display: flex;
+  flex-wrap: wrap;
+
   margin: 0;
 
   @include list-reset;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
+    justify-content: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -355,32 +539,146 @@
 }
 
 .card__transport-item {
+  position: relative;
+
   width: 32px;
   height: 32px;
 
   background-color: $color-solitude-grey-mod-2;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    background-color: $color-transparent;
+  }
+}
+
+.card__transport-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  fill: $color-catalina-blue;
+  opacity: 0.15;
+
+  transform: translate(-50%, -50%);
+
+  &--current {
+    opacity: 1;
+  }
+
+  &--fly {
+    @media (min-width: $tablet-width) {
+      width: 23px;
+      height: 22px;
+    }
+  }
+
+  &--car {
+    @media (min-width: $tablet-width) {
+      width: 19px;
+      height: 20px;
+    }
+  }
+
+  &--bicycle {
+    @media (min-width: $tablet-width) {
+      width: 26px;
+      height: 25px;
+    }
+  }
+
+  &--on-foot {
+    @media (min-width: $tablet-width) {
+      width: 23px;
+      height: 24px;
+    }
+  }
 }
 
 .card__tooltip {
   display: none;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+
+  top: 32px;
+  left: 50%;
+
+  min-height: 56px;
+  padding: 0 20px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: $color-white;
+  background-color: $color-midnight-express-mod;
+  border-radius: 4px;
+  transform: translateX(-50%);
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: -5px;
+    left: 45%;
+
+    width: 15px;
+    height: 15px;
+
+    background-color: $color-midnight-express-mod;
+    transform: rotate(45deg);
+  }
+}
+
+.card__transport-item:hover .card__tooltip {
+  display: inline-flex;
+}
+
+.card__level {
+  position: relative;
+
+  width: 45px;
+  height: 45px;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.card__circle {
+  @media (min-width: $tablet-width) {
+    top: -3px;
+    left: -3px;
+
+    width: 64px;
+    height: 64px;
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+    }
+  }
 }
 
 .card__add-wrapper {
-  padding: 0 25px;
+  display: flex;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    bottom: 38%;
-    left: 33%;
+    top: 52%;
+    left: 34%;
 
     width: fit-content;
     height: fit-content;
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 16%;
-    left: 35%;
+    top: unset;
+    bottom: 16.5%;
+    left: 33.5%;
   }
 }
 
@@ -388,7 +686,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 0 0 23px 0;
+  margin: 0 0 20px 0;
   padding: 12px;
 
   font-style: normal;
@@ -412,10 +710,111 @@
   }
 }
 
-.card__like-counter {
+.card__add-button:hover,
+.card__add-button:focus {
+  background-color: $color-supernova-yellow;
+}
+
+.card__add-button:active {
+  color: rgba($color-midnight-express-mod-2, 0.3);
+}
+
+.card__like-wrapper {
+  display: flex;
+  align-items: center;
   position: absolute;
-  top: 63px;
-  left: 104px;
+
+  top: 56px;
+  left: 68px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: unset;
+    left: unset;
+  }
+}
+
+.card__like-button {
+  position: relative;
+  width: 30px;
+  height: 30px;
+
+  background-color: $color-lavender;
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 50px;
+    height: 50px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 12px;
+    height: 12px;
+
+    background-image: url("../img/icon-heart.svg");
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    opacity: 0.3;
+
+    transform: translate(-50%, -50%);
+
+    @media (min-width: $tablet-width) {
+      width: 20px;
+      height: 18px;
+
+      background-size: 20px 18px;
+    }
+  }
+
+  &--liked {
+    background-color: $color-tutu-pink;
+
+    &::before {
+      background-image: url("../img/icon-heart-fill.svg");
+      opacity: 1;
+    }
+  }
+}
+
+.card__like-button:hover,
+.card__like-button:focus {
+  &::before {
+    opacity: 0.5;
+  }
+}
+
+.card__like-button:active {
+  &::before {
+    opacity: 0.1;
+  }
+}
+
+.card__like-button--liked:hover,
+.card__like-button--liked:focus {
+  background-color: $color-remy-pink;
+
+  &::before {
+    opacity: 1;
+  }
+}
+
+.card__like-button--liked:active {
+  &::before {
+    opacity: 0.3;
+  }
+}
+
+.card__like-counter {
+  margin-left: 6px;
 
   font-style: normal;
   font-weight: bold;
@@ -425,12 +824,6 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    top: unset;
-    left: unset;
-
-    padding-left: 57px;
-
     font-size: 20px;
     line-height: 20px;
   }

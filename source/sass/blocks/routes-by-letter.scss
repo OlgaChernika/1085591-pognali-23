@@ -1,6 +1,16 @@
+.routes-by-letter {
+  text-align: left;
+}
+
 .routes-by-letter__item {
   &--form {
+    margin-bottom: 4px;
+
     @media (min-width: $tablet-width) {
+      margin-bottom: 9px;
+    }
+
+    @media (min-width: $desktop-width) {
       margin-bottom: 10px;
     }
   }
@@ -25,5 +35,18 @@
       font-size: 20px;
       line-height: 30px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0.02em;
+    }
   }
+}
+
+.routes-by-letter__link:hover,
+.routes-by-letter__link:focus {
+  color: $color-catalina-blue;
+}
+
+.routes-by-letter__link:active {
+  color: rgba($color-catalina-blue, 0.3);
 }

@@ -120,3 +120,12 @@
     padding: 45px 0;
   }
 }
+
+.for-business__button:hover,
+.for-business__button:focus {
+  background-color: $color-solitude-grey-mod-2;
+}
+
+.for-business__button:active {
+  color: rgba($color-catalina-blue, 0.3);
+}

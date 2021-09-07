@@ -18,14 +18,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, min-content);
     align-items: center;
     justify-content: left;
     height: 100%;
+    padding: 0 47px;
 
     font-weight: normal;
     font-size: 20px;
     line-height: 20px;
+
+    row-gap: 20px;
   }
 }
 

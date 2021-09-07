@@ -1,11 +1,39 @@
+.logo {
+  position: relative;
+  align-items: center;
+}
+
 .logo__image {
   z-index: 1;
 
-  &--deep {
+  &--background {
     display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      align-self: center;
+
+      width: 155px;
+      height: 42px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 200px;
+      height: 50px;
+    }
   }
 
-  &--scroll {
-    display: block;
+  &--text {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+
+      width: 107px;
+      height: 17px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 129px;
+      height: 20px;
+    }
   }
 }
