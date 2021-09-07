@@ -2,6 +2,7 @@ const navMenu = document.querySelector(".header__menu");
 const navToggle = document.querySelector(".header__toggle");
 const mainHeader = document.querySelector(".header");
 const logoImage = document.querySelector(".header__logo");
+const navLink = document.querySelector(".nav__link");
 
 mainHeader.classList.remove("header--no-js");
 
@@ -11,10 +12,12 @@ navToggle.addEventListener("click", (evt) => {
     navMenu.classList.remove("header__menu--closed");
     navToggle.classList.add("header__toggle--closed");
     logoImage.classList.add("header__logo--opened");
+    navLink.focus();
   } else {
     navMenu.classList.add("header__menu--closed");
     navToggle.classList.remove("header__toggle--closed");
     logoImage.classList.remove("header__logo--opened");
+    navToggle.focus();
   };
 });
 
@@ -24,6 +27,7 @@ window.addEventListener("keydown", (evt) => {
       evt.preventDefault();
       navMenu.classList.add("header__menu--closed");
       navToggle.classList.remove("header__toggle--closed");
+      navToggle.focus();
     };
   };
 });
@@ -75,12 +79,14 @@ const initModalTariff = () => {
     modal.classList.add("modal--opened");
     disableScrolling();
     document.addEventListener("click", onDocumentClick);
+    closeModalButton.focus();
   });
 
   const onDocumentClick = ({target}) => {
     if (target.closest(".modal-close-button") || target.closest(".for-business__overlay")) {
       clearOpenedModal(modal);
       document.removeEventListener("click", onDocumentClick);
+      openModalLink.focus();
     };
   };
 
@@ -88,6 +94,7 @@ const initModalTariff = () => {
     if (evt.key === "Esc" || evt.key === "Escape") {
       evt.preventDefault();
       clearOpenedModal(modal);
+      openModalLink.focus();
     };
   });
 
