@@ -46,6 +46,8 @@
     }
 
     .inner-page__title {
+      margin-top: 1px;
+
       @media (min-width: $desktop-width) {
         padding-right: 480px;
 
@@ -65,8 +67,8 @@
   position: relative;
 
   width: fit-content;
-  margin: 0 auto 0 0;
-  padding-bottom: 15px;
+  margin: 2px auto 0 0;
+  padding-bottom: 14px;
 
   font-style: normal;
   font-weight: bold;
@@ -75,7 +77,8 @@
   color: $color-white;
 
   @media (min-width: $tablet-width) {
-    padding: 0 235px 71px 35px;
+    margin-top: -1px;
+    padding: 0 235px 71px 34px;
 
     font-size: 60px;
     line-height: 60px;

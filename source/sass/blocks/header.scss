@@ -42,12 +42,16 @@
     }
 
     .header__logo-image {
+      fill: $color-midnight-express-mod-3;
+
       @media (min-width: $tablet-width) {
         top: 55px;
       }
 
       @media (min-width: $desktop-width) {
         top: 16px;
+
+        fill: $color-white;
       }
     }
 
@@ -132,6 +136,20 @@
     .header__top-wrapper,
     .header__menu {
       background-color: $color-white;
+    }
+
+    .header__top-wrapper {
+      min-height: 72px;
+
+      @media (min-width: $tablet-width) {
+        min-height: 131px;
+      }
+    }
+
+    .header__wrapper {
+      @media (min-width: $desktop-width) {
+        padding-bottom: 9px;
+      }
     }
 
     .header__link {
