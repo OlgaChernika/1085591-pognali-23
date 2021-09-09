@@ -28,6 +28,7 @@
       background: url("../img/globe-back-tablet@2x.png"),
         $color-midnight-express;
       background-repeat: no-repeat;
+      background-position: 0 382px;
       background-size: 768px 612px;
     }
   }
@@ -166,12 +167,7 @@
   margin: 0 auto 25px auto;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
-  }
-
-  @media (min-width: $desktop-width) {
     display: none;
-    min-width: 288px;
   }
 }
 
@@ -182,20 +178,6 @@
   padding: 10px;
 
   line-height: 20px;
-
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-
-    padding: 15px;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: relative;
-    top: unset;
-    right: unset;
-  }
 }
 
 .promo__review {

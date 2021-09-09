@@ -128,8 +128,10 @@
 
   @media (min-width: $tablet-width) {
     justify-content: start;
+
+    width: 400px;
     margin-bottom: 15px;
-    padding: 20px 180px 24px 89px;
+    padding: 20px 20px 24px 89px;
 
     font-size: 20px;
     line-height: 20px;
@@ -163,8 +165,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 600px;
     margin-bottom: 15px;
-    padding: 24px 110px 24px 160px;
+    padding: 24px 20px 24px 160px;
 
     &::before {
       top: 0;

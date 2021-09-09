@@ -46,6 +46,10 @@
 
   background-color: $color-white;
 
+  @media (min-width: $tablet-width) {
+    flex-grow: unset;
+  }
+
   &::before {
     content: "";
     position: absolute;

@@ -46,6 +46,25 @@
       row-gap: 34px;
     }
   }
+
+  &--second-row {
+    @media (min-width: $desktop-width) {
+      margin-bottom: -4px;
+    }
+  }
+
+  &--third-row {
+    @media (min-width: $desktop-width) {
+      margin-bottom: 32px;
+      row-gap: 39px;
+    }
+  }
+
+  &--fourth-row {
+    @media (min-width: $desktop-width) {
+      margin-bottom: -5px;
+    }
+  }
 }
 
 .alphabet__link {

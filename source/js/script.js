@@ -183,7 +183,7 @@ const initMap = () => {
   const MapContainer = document.querySelector("#map");
   if (!MapContainer) {
     return;
-  }
+  };
 
   window.ymaps.ready(function () {
     const map = new window.ymaps.Map(document.querySelector('#map'), {
@@ -217,6 +217,9 @@ const initAlphabetCatalog = () => {
   if(!alphabetToggle) {
     return;
   };
+
+  alphabetCatalog.classList.remove(".land-filter__container--no-js");
+
   alphabetToggle.addEventListener("click", (evt) => {
     evt.preventDefault();
     const parent = evt.target.closest(".land-filter__container");

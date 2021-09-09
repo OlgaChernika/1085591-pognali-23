@@ -75,7 +75,8 @@
   }
 }
 
-.nav__link:hover {
+.nav__link:hover,
+.nav__link:focus {
   color: $color-energy-yellow;
 
   @media (min-width: $desktop-width) {
@@ -83,7 +84,8 @@
   }
 }
 
-.nav__link:hover .nav__link-animation {
+.nav__link:hover .nav__link-animation,
+.nav__link:focus .nav__link-animation {
   @media (min-width: $desktop-width) {
     transform: translateY(-100%);
   }
