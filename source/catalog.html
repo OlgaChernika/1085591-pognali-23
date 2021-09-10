@@ -79,8 +79,8 @@
       <div class="header__container container">
         <div class="header__wrapper">
           <div class="header__top-wrapper">
-            <a href="index.html" class="header__logo logo" aria-label="Перейти на главную страницу" tabindex="1">
-              <img class="logo__image logo__image--background" src="img/logo-bg.svg" alt="">
+            <a href="index.html" class="header__logo logo" aria-label="Перейти на главную страницу">
+              <img class="logo__image logo__image--background" src="img/logo-bg.svg" alt="Логотип Погнали">
               <svg class="header__logo-image logo__image logo__image--text" width="96" height="15">
                 <use xlink:href="#logo-text"></use>
               </svg>
@@ -858,7 +858,7 @@
                 <button class="companions-filter__toggle companions-filter__toggle--opened button" type="button">Транспорт<span class="companions-filter__toggle-colon">:</span></button>
                 <ul class="companions-filter__checkbox companions-filter__checkbox--opened transport transport--filter">
                   <li class="transport__item">
-                    <input class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-fly" value="fly" checked>
+                    <input class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-fly" value="fly" aria-label="Авиаперелет" checked>
                     <label class="transport__label transport__label--fly" for="transport-fly">
                       <svg class="transport__icon transport__icon--fly" width="14" height="16">
                         <use xlink:href="#icon-airplane"></use>
@@ -867,7 +867,7 @@
                     </label>
                   </li>
                   <li class="transport__item">
-                    <input class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-car" value="car" checked>
+                    <input class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-car" value="car" aria-label="Автотранспорт" checked>
                     <label class="transport__label transport__label--car" for="transport-car">
                       <svg class="transport__icon transport__icon--car" width="17" height="17">
                         <use xlink:href="#icon-bus"></use>
@@ -876,7 +876,7 @@
                     </label>
                   </li>
                   <li class="transport__item">
-                    <input class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-bicycle" value="bicycle">
+                    <input class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-bicycle" value="bicycle" aria-label="Велосипед">
                     <label class="transport__label transport__label--bicycle" for="transport-bicycle">
                       <svg class="transport__icon transport__icon--bicycle" width="20" height="20">
                         <use xlink:href="#icon-bicycle"></use>
@@ -885,7 +885,7 @@
                     </label>
                   </li>
                   <li class="transport__item">
-                    <input class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-on-foot" value="on-foot" checked>
+                    <input class="transport__input visually-hidden" type="checkbox" name="transport" id="transport-on-foot" value="on-foot" aria-label="Пешком" checked>
                     <label class="transport__label transport__label--on-foot" for="transport-on-foot">
                       <svg class="transport__icon transport__icon--on-foot" width="16" height="20">
                         <use xlink:href="#icon-run"></use>
@@ -906,8 +906,8 @@
                     <button class="companions-filter__level-toggle companions-filter__level-toggle--max button" type="button" aria-label="Настроить максимальный уровень"></button>
                   </div>
                   <div class="companions-filter__levels">
-                    <input class="companions-filter__input companions-filter__input--min-level" type="text" name="min-vevel" value="30">
-                    <input class="companions-filter__input companions-filter__input--max-level" type="text" name="max-level" value="100">
+                    <input class="companions-filter__input companions-filter__input--min-level" type="text" name="min-level" value="30" aria-label="Минимальный уровень">
+                    <input class="companions-filter__input companions-filter__input--max-level" type="text" name="max-level" value="100" aria-label="Максимальный уровень">
                   </div>
                 </div>
               </fieldset>
@@ -932,7 +932,7 @@
                     </picture>
                   </a>
                   <h3 class="card__name">
-                    <a class="card__name-link card__status">Таня Фирсова</a>
+                    <a class="card__name-link card__status" href="#">Таня Фирсова</a>
                   </h3>
                   <ul class="card__tags-list">
                     <li class="card__tags-item">
@@ -1027,7 +1027,7 @@
                     </picture>
                   </a>
                   <h3 class="card__name">
-                    <a class="card__name-link card__status">Петя Демин</a>
+                    <a class="card__name-link card__status" href="#">Петя Демин</a>
                   </h3>
                   <ul class="card__tags-list">
                     <li class="card__tags-item">
@@ -1118,7 +1118,7 @@
                     </picture>
                   </a>
                   <h3 class="card__name">
-                    <a class="card__name-link card__status">Марк Смолов</a>
+                    <a class="card__name-link card__status" href="#">Марк Смолов</a>
                   </h3>
                   <ul class="card__tags-list">
                     <li class="card__tags-item">
@@ -1210,7 +1210,7 @@
                     </picture>
                   </a>
                   <h3 class="card__name">
-                    <a class="card__name-link card__status card__status--online">Лариса Роговая</a>
+                    <a class="card__name-link card__status card__status--online" href="#">Лариса Роговая</a>
                   </h3>
                   <ul class="card__tags-list">
                     <li class="card__tags-item">
@@ -1312,7 +1312,7 @@
     <footer class="footer">
       <div class="footer__container container">
         <a href="index.html" class="footer__logo logo" aria-label="Перейти на главную страницу">
-          <img class="footer__logo-bg logo__image logo__image--background" src="img/logo-bg.svg" alt="">
+          <img class="footer__logo-bg logo__image logo__image--background" src="img/logo-bg.svg" alt="Логотип Погнали">
           <svg class="footer__logo-image logo__image logo__image--text" width="96" height="15">
             <use xlink:href="#logo-text"></use>
           </svg>

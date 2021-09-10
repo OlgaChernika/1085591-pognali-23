@@ -156,11 +156,11 @@
   &::placeholder {
     color: $color-red;
   }
+}
 
-  &:hover {
-    &::placeholder {
-      color: $color-red;
-    }
+.authorize__email-input--error:hover {
+  &::placeholder {
+    color: $color-red;
   }
 }
 

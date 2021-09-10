@@ -175,6 +175,10 @@
       background: linear-gradient(to top, $color-solitude-grey-mod-2 0%, $color-transparent 100%);
     }
   }
+
+  picture {
+    width: 100%;
+  }
 }
 
 .routes__land-description {
