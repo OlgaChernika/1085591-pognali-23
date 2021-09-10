@@ -1,6 +1,10 @@
 .logo {
   position: relative;
   align-items: center;
+
+  &--index {
+    pointer-events: none;
+  }
 }
 
 .logo__image {
