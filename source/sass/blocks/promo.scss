@@ -6,14 +6,15 @@
   background: url("../img/globe-back-mobile.png"),
     linear-gradient(to top, $color-midnight-express 0%, $color-midnight-express 20%, $color-midnight-express-mod-2 20%, $color-midnight-express-mod-2 100%);
   background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
+  background-position: 50% 12%;
+  background-size: 320px 400px, contain;
 
   @media (min-resolution: 2dppx) {
     background: url("../img/globe-back-mobile@2x.png"),
       linear-gradient(to top, $color-midnight-express 0%, $color-midnight-express 20%, $color-midnight-express-mod-2 20%, $color-midnight-express-mod-2 100%);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: 50% 12%;
+    background-size: 320px 400px, contain;
   }
 
   @media (min-width: $tablet-width) {
@@ -100,7 +101,7 @@
   @media (min-width: $desktop-width) {
     max-width: 1000px;
     margin: 0 auto 0 0;
-    padding: 0 450px 100px 67px;
+    padding: 0 40% 100px 67px;
 
     text-align: left;
   }
@@ -140,6 +141,8 @@
     }
 
     @media (min-width: $desktop-width) {
+      z-index: -1;
+
       top: -95px;
       right: 25px;
 

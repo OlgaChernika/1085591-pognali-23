@@ -137,7 +137,7 @@
     width: 100%;
     min-height: 100px;
     margin-bottom: 109px;
-    padding: 25px 28px;
+    padding: 25px 20px 25px 28px;
 
     background-color: $color-white;
     border-radius: 20px;
@@ -146,6 +146,7 @@
   @media (min-width: $desktop-width) {
     max-width: 949px;
     margin-bottom: 77px;
+    padding-right: 23px;
   }
 }
 

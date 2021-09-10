@@ -144,11 +144,9 @@
       @media (min-width: $tablet-width) {
         min-height: 131px;
       }
-    }
 
-    .header__wrapper {
       @media (min-width: $desktop-width) {
-        padding-bottom: 9px;
+        min-height: 99px;
       }
     }
 
@@ -213,11 +211,14 @@
 .header__logo {
   z-index: 99;
 
+  width: 50%;
+
   @media (min-width: $tablet-width) {
     margin-top: 18px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 100%;
     margin: 44px 0 0 -32px;
   }
 

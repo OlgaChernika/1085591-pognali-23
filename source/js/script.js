@@ -218,7 +218,7 @@ const initAlphabetCatalog = () => {
     return;
   };
 
-  alphabetCatalog.classList.remove(".land-filter__container--no-js");
+  alphabetCatalog.classList.remove("land-filter__container--no-js");
 
   alphabetToggle.addEventListener("click", (evt) => {
     evt.preventDefault();

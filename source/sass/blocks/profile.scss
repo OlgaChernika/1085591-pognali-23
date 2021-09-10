@@ -140,6 +140,11 @@
 
   background-color: rgba($color-black, 0.6);
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 19px;
+    left: 20px;
+  }
 }
 
 .profile__tags-list {
@@ -269,61 +274,55 @@
   flex-wrap: wrap;
   align-items: center;
   width: 136px;
-  margin: 0 23% 20px auto;
+  margin: 0 auto 20px auto;
 
   @include list-reset;
 
   @media (min-width: $tablet-width) {
-    margin: 0 25% 29px auto;
+    width: 140px;
+    margin: 0 auto 26px auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 29px;
   }
 }
 
 .profile__transport-item {
   position: relative;
-  width: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 34px;
   height: 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 35px;
+    height: 25px;
+    margin-top: 2px;
+  }
 }
 
 .profile__transport-icon {
-  position: absolute;
-  top: 0;
-
   opacity: 0.15;
-
-  @media (min-width: $tablet-width) {
-    top: 3px;
-  }
 
   &--current {
     opacity: 1;
   }
 
   &--fly {
-    left: 3px;
-
     @media (min-width: $tablet-width) {
-      left: 0;
-
       width: 23px;
       height: 22px;
     }
   }
 
-  &--car {
-    left: 5px;
-  }
-
   &--bicycle {
-    left: 3px;
-
     @media (min-width: $tablet-width) {
       width: 25px;
       height: 25px;
     }
-  }
-
-  &--on-foot {
-    left: 0;
   }
 }
 
