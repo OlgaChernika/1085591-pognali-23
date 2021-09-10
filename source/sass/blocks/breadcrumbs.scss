@@ -24,6 +24,8 @@
   height: 5px;
   padding: 11px;
 
+  pointer-events: none;
+
   @media (min-width: $tablet-width) {
     padding: 18px;
   }
@@ -32,6 +34,8 @@
     width: fit-content;
     height: fit-content;
     padding: 0;
+
+    pointer-events: unset;
   }
 
   &::before {

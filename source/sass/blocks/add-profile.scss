@@ -17,7 +17,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 164px 0 152px;
+    padding: 164px 0 151px;
   }
 }
 
@@ -52,11 +52,15 @@
 }
 
 .add-profile__image {
+  margin: 0 0 0 auto;
+
   @media (min-width: $tablet-width) {
     position: absolute;
     right: 85px;
     bottom: -3px;
     z-index: 1;
+
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -105,7 +109,7 @@
       top: -50px;
       right: -161px;
 
-      width: 446px;
+      width: 46%;
       height: 150%;
     }
   }
