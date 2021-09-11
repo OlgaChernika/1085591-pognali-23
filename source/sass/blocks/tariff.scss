@@ -137,6 +137,10 @@
   }
 
   &--for-business {
+    @media (min-width: $tablet-width) {
+      min-width: 160px;
+    }
+
     @media (min-width: $desktop-width) {
       min-width: 165px;
     }

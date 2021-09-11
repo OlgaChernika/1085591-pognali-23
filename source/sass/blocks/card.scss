@@ -75,7 +75,6 @@
   font-weight: bold;
   font-size: 20px;
   line-height: 20px;
-  color: $color-catalina-blue;
 
   @media (min-width: $tablet-width) {
     width: fit-content;
@@ -95,6 +94,8 @@
 
 .card__name-link {
   padding-bottom: 30px;
+
+  color: $color-catalina-blue;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;

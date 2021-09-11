@@ -83,7 +83,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
   }
 
   &--transport {
@@ -342,10 +342,14 @@
 
 .companions-filter__level-toggle:hover,
 .companions-filter__level-toggle:focus {
+  top: -7px;
+
   width: 16px;
   height: 16px;
 
   @media (min-width: $tablet-width) {
+    top: -8px;
+
     width: 19px;
     height: 19px;
   }

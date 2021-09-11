@@ -47,7 +47,10 @@
 
 .catalog__button-show-more {
   position: relative;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
   margin: 0 auto 20px;
   padding: 0 0 0 30px;
 
@@ -69,6 +72,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    justify-content: flex-start;
     width: 325px;
     margin: 0 auto 73px auto;
     padding-left: 50px;
@@ -81,7 +85,7 @@
     position: absolute;
 
     top: 6px;
-    left: 5px;
+    left: 7px;
 
     width: 2px;
     height: 18px;
@@ -106,7 +110,7 @@
     position: absolute;
 
     top: 6px;
-    left: 5px;
+    left: 7px;
 
     width: 2px;
     height: 18px;
